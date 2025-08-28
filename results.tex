@@ -19,15 +19,22 @@ Recall that the defining bases \ref{def:GPA} for the spaces
 \[
     \Hom_{\GPA(\Gamma)}(m\to n)
 \]
-are given in terms of pairs of paths. The (undirected) graphs we are using have at most a single edge between any two vertices. Hence an edge is equivalent to a pair of vertices, and a path is equivalent to an ordered tuple of vertices. For example, the path
+are given in terms of pairs of paths. 
+The (undirected) graphs we are using have at most a single edge between any two vertices. 
+Hence an edge is equivalent to a pair of vertices, and a path is equivalent to an ordered tuple of vertices. 
+For example, the path
 \[
     p = v_1 \longrightarrow v_2 \longrightarrow v_3
 \]
-is equivalent to the ordered triple $(v_1,v_2,v_3)$. Which paths $q$ pair validly with $p$ to form a basis element of the $2\to 1$ hom-space of a GPA? Well, by definition, $q$ must be parallel to $p$; i.e. the sources and targets of $p$ and $q$ must coincide. It follows that the only valid pairing for such $p$ is
+is equivalent to the ordered triple $(v_1,v_2,v_3)$. 
+Which paths $q$ pair validly with $p$ to form a basis element of the $2\to 1$ hom-space of a GPA? 
+Well, by definition, $q$ must be parallel to $p$; i.e. the sources and targets of $p$ and $q$ must coincide. 
+It follows that the only valid pairing for such $p$ is
 \[
     q = v_1 \longrightarrow v_3,
 \]
-which may also be represented as $(v_1,v_3)$. So the only $2\to 1$ basis element which $p$ appears in is
+which may also be represented as $(v_1,v_3)$. 
+So the only $2\to 1$ basis element which $p$ appears in is
 \[
     \big( (v_1,v_2,v_3), (v_1,v_3) \big).
 \]
@@ -35,15 +42,22 @@ But the parallel condition defining basis elements makes including $(v_1,v_3)$ r
 \[
     (v_1,v_2,v_3).
 \]
-This is how we refer to $2\to 1$ GPA basis elements. Indeed, in Table~\ref{tab:lvl-3-triv-coefs}, the first two columns combine to specify which basis elements are being specified, and the third column gives the approximate coordinate of the trivalent embedding on that basis element. For example, the first row of Table~\ref{tab:lvl-3-triv-coefs} tells us that the coordinate of the $(2,2,2)$ basis element is approximately $1.08393$; the second row tells us that the coordinate of the $(4,2,3)$ basis element is approximately $0.619371$. 
+This is how we refer to $2\to 1$ GPA basis elements. 
+Indeed, in Table~\ref{tab:lvl-3-triv-coefs}, the first two columns combine to specify which basis elements are being specified, and the third column gives the approximate coordinate of the trivalent embedding on that basis element. 
+For example, the first row of Table~\ref{tab:lvl-3-triv-coefs} tells us that the coordinate of the $(2,2,2)$ basis element is approximately $1.08393$; the second row tells us that the coordinate of the $(4,2,3)$ basis element is approximately $0.619371$. 
 
-Paths of the form $(i,j,i)$, $(i,i,j)$, or $(i,j,j)$ for $i,j\neq1$ require a bit more care to describe. They nontrivially with the graph symmetry swapping vertices 2 and 4. When these two vertices are swapped, a path whose coordinate has absolute value $0.155691$ is sent to one whose coordinate has absolute value $1.69414$. The nine paths whose coordinates have absolute value $0.155691$ are:
+Paths of the form $(i,j,i)$, $(i,i,j)$, or $(i,j,j)$ for $i,j\neq1$ require a bit more care to describe. 
+There is nontrivial interplay with the graph symmetry swapping vertices 2 and 4. 
+When these two vertices are swapped, a path whose coordinate has absolute value $0.155691$ is sent to one whose coordinate has absolute value $1.69414$. 
+The nine paths whose coordinates have absolute value $0.155691$ are:
 \[
     (2,3,3),\hspace{0.2em} (3,3,2),\hspace{0.2em} (3,2,3),\hspace{0.2em} (2,4,2),\hspace{0.2em} (4,3,4),\hspace{0.2em} (2,2,4),\hspace{0.2em} (3,4,4),\hspace{0.2em} (4,2,2),\hspace{0.2em} (4,4,3) 
 \]
 One may use symmetry to find the rest of the coordinates.
 
-Table~\ref{tab:lvl-3-proj-coefs} holds numerical approximations to the nonzero projection coordinates. There are blocks of nonzero coordinates of length 9 and 16. These sizes, and the location of the nonzero real coordinates follow naturally when one considers three facts:
+Table~\ref{tab:lvl-3-proj-coefs} holds numerical approximations to the nonzero projection coordinates. 
+There are blocks of nonzero coordinates of length 9 and 16. 
+These sizes, and the location of the nonzero real coordinates follow naturally when one considers three facts:
 \begin{enumerate}
     \item The object $g$ is $\Z_3$ and simple and therefore has fusion graph given in Figure~\ref{fig:g-fusion-graphs}.
     \item There is a map $T_g \in \Hom_{\cat{q_3}_{A_3}}(Y^{\otimes2} \to g)$ whose outer product $T_g^\dagger \circ T_g$ equals $P_g$, projection onto $g$.
@@ -190,7 +204,7 @@ We now compute some important dimensions.
     Counting common irreducible constituents of $V_{\Lambda_1}^{\otimes2}$ and $V_{\Lambda_1}\otimes A_3$ gives the desired result.
 \end{proof}
 We have an immediate consequence.
-\begin{corollary}
+\begin{corollary}\label{cor:dominant-functor}
         There is a dominant monoidal functor
     \[
         \Psi_3: \DD_3 \to \cat{q}_{A_3}
@@ -207,7 +221,7 @@ We have an immediate consequence.
 
 
 
-\begin{lemma}
+\begin{lemma}\label{lem:faithful}
     The induced map
     \[
         \ol{\Psi_3} : \ol{\DD_3} \to \ol{\Rep(U_{q_3}(\gg_2))}_{A_3} 
@@ -233,7 +247,9 @@ We have an immediate consequence.
     \]
     where $\FF_1$ and $\FF_2$ are the induced functors. At this point we shift our focus to the lower layer of the diagram.
     
-    By \cite{something},  $(\FF_2 \circ \FF_1)|_{\ol{\GG_2(q_3)}} = \FF_{A_3}|_{\ol{\GG_2(q_3)}}$ implies $\FF_2 \circ \FF_1 = \FF_{A_3}$. Note that both $\ol{\Rep(U_{q_3}(\gg_2))}$ and $\Ab(\ol{\DD_3})$ are semisimple, and therefore $\FF_1$ has a lax-monoidal right adjoint $\FF_1^\vee$. Proposition~\ref{prop:exact-functor} now allows us to conjure $K$ and $B$ such that the following diagram commutes up to natural isomorphism:
+    By \cite{},  $(\FF_2 \circ \FF_1)|_{\ol{\GG_2(q_3)}} = \FF_{A_3}|_{\ol{\GG_2(q_3)}}$ implies $\FF_2 \circ \FF_1 = \FF_{A_3}$. 
+    Note that both $\ol{\Rep(U_{q_3}(\gg_2))}$ and $\Ab(\ol{\DD_3})$ are semisimple, and therefore $\FF_1$ has a lax-monoidal right adjoint $\FF_1^\vee$. 
+    Proposition~\ref{prop:exact-functor} now allows us to conjure $K$ and $B$ such that the following diagram commutes up to natural isomorphism:
     \[
         \xymatrix@R=40pt@C=65pt{
         \ol{\Rep(U_{q_3}(\gg_2))} \ar[r]^{\FF_1} \ar[dr]_{\FF_B} & \Ab(\ol{\DD_3}) \ar[r]^{\FF_2} \ar[d]^{K} & \ol{\Rep(U_q(\gg_2))}_A \\
@@ -273,8 +289,11 @@ At level $k=4$ we have $q = q_4 = e^{\frac{2\pi i}{48}}$ and $A_4=V_\emptyset \o
     \]
 \end{theorem}
 
-This theorem is proved by using analogues of Proposition~\ref{prop:level-3-fusion}, Corollary~\ref{cor:dominant-functor}, Lemma~\ref{lem:faithful} and the same argument as was used in the proof of Theorem~\ref{thm:level-3} (with, e.g., every $q_3$ switched out for a $q_4$).
+This theorem is proved by using analogues of Proposition~\ref{prop:level-3-fusion}, Corollary~\ref{cor:dominant-functor}, Lemma~\ref{lem:faithful}.
+The same argument used in the proof of Theorem~\ref{thm:level-3} except with, e.g., every $q_3$ switched out for a $q_4$, may be applied.
 
+Note that since $\cat{q_4}_{A_4}^0$ contributes a $\Z_2$-like simple object, there is only one decoration of a trivalent vertex;
+we represent this as an undirected colored strand.
 The structure constants for $\DD_4$ are:
 \begin{equation*}
     \omega = -1
