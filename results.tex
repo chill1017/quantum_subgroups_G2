@@ -215,7 +215,8 @@ We have an immediate consequence.
     \]
 \end{corollary}
 \begin{proof}
-    Proposition~\ref{prop:level-3-fusion}, along with the defining relations of $\DD_3$ tell us this assignment is functorial. Since $Y$ is a $\otimes$-generator and $\Psi_3$ surjects onto objects of $\PP_Y$, dominance also follows.
+    Proposition~\ref{prop:level-3-fusion}, along with the defining relations of $\DD_3$ tell us this assignment is functorial. 
+    Since $Y$ is a $\otimes$-generator and $\Psi_3$ surjects onto objects of $\PP_Y$, dominance also follows.
 \end{proof}
 
 
@@ -315,9 +316,20 @@ The structure constants for $\DD_4$ are:
     t_1 = ..., \quad t_2 = ...
 \end{equation*}
 
+\pagebreak
 
+\begin{tikzpicture}
+    \node[shape=circle,draw=black] (A) at (1.5,1.66) {1};
+    \node[shape=circle,draw=black] (B) at (0,3) {2};
+    \node[shape=circle,draw=black] (C) at (3,3) {3};
+    \node[shape=circle,draw=black] (D) at (1.5,0) {4};
+    
+    \path [-] (D) edge node {} (B);
+    \path [-] (B) edge node {} (C);
+    \path [-] (C) edge node {} (D);
 
+    \path [-] (A) edge node {} (B);
+    \path [-] (A) edge node {} (C);
+    \path [-] (A) edge node {} (D);
 
-
-
-% \section{Other Levels}
+\end{tikzpicture}
