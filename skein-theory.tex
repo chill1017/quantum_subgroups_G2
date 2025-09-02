@@ -56,7 +56,7 @@ Finally we define the class of categories we will be working with, and show they
     I actually don't think we need the n-generator.
     If we have an order constraint (i.e., $n$ neighboring strands pop), we get the generator and its absorbtion for free.
 }
-\begin{definition}\label{def:eval-criteria}
+\begin{definition}\label{def:zn-ext}
     Let $\CC = \left\langle \skein{/skein_figs/trivalent}{0.15} \right\rangle$ 
     be a trivalent category that is Euler-evaluable. 
     Call $\DD$ a {\bf $\Z_n$-like extension} of $\CC$ if 
@@ -81,7 +81,9 @@ Finally we define the class of categories we will be working with, and show they
     \end{equation*}
 
     \begin{equation*}\tag{Schur 1}
-        a = b \quad c = d \quad \cdots \quad e = f
+        \skein{/skein_figs/schur_1_1}{0.1} = 0 \quad 
+        \skein{/skein_figs/schur_1_2}{0.1} = 0 \quad \cdots \quad 
+        \underbrace{ \skein{/skein_figs/schur_1_n-1}{0.11} }_{\text{$n-1$}} = 0
     \end{equation*}
 
     \begin{equation*}\tag{Change of Basis}
@@ -119,23 +121,19 @@ Finally we define the class of categories we will be working with, and show they
 
 
 
-Under the above conditions we have the following fact.
-\begin{proposition}\label{prop:eval-criteria}
-    
-\end{proposition}
 
+Diagrams inside a $\Z_n$-like extension exhibit the following nice property, which will be key in proving their evaluability.
+Essentially, we use the following lemma to exchange decorated faces for singly-externally-decorated faces.
+The defining relations for a $\Z_n$-like extension then pop the singly-decorated faces.
 
-
-
-
-Under the conditions of \ref{def:eval-criteria} we obtain the following lemma.
 \begin{lemma}\label{lem:ext-dec}
     A decorated diagram may be expressed as a combination of externally decorated diagrams
 \end{lemma}
 \begin{proof}
     We prove the lemma for a decorated trigon, and leave the remaining cases to the reader. 
-    \red{All less decorated cases are absorbed in this analysis.}
-    Consider a maximally-decorated trigon:
+    We begin with a maximally-decorated trigon.
+    All less decorated cases are absorbed along the way in this analysis.
+    Now, a maximally-decorated trigon is of the form:
     \[
         \skein{/skein_figs/dec_3gon1}{0.2}
     \]
@@ -155,7 +153,14 @@ Under the conditions of \ref{def:eval-criteria} we obtain the following lemma.
 \end{proof}
 
 
-\begin{proof}[Proof of Proposition~\ref{prop:eval-criteria}]
+
+
+
+\begin{proposition}\label{prop:eval-criteria}
+    A $\Z_n$-like extension of an Euler-evaluable trivalent category is evaluable.
+\end{proposition}
+
+\begin{proof}
     Suppose we begin with a closed diagram consisting of a single black connected component.
     Begin by applying relations from the underlying trivalent category's evaluation algorithm; this decreases the number of trivalent vertices.
     By the standard Euler characteristic calculation, there must remain some black $n$-gon with $n\in\{ 2,\dots,5 \}$.
@@ -172,14 +177,16 @@ Under the conditions of \ref{def:eval-criteria} we obtain the following lemma.
     
     If any black loop has more or less than $n$ strands entering or exiting (Schur 0) implies the whole diagram is zero.
     So suppose each black loop has exactly $n$ strands entering or exiting.
-    If each black loop has only one neighbor, then repeated application of (Order) pops the chain.
+    If each black loop has only one neighbor, then repeated application of (Order) pops the whole diagram.
     \red{
-        Count the following:
-        \begin{itemize}
-            \item number of possible vertices mod $n$
-            \item number of edges mod $n$
-            \item number of nodes reachable from a given vertex
-        \end{itemize}
+        Case: n-1, 1, n-1, 1, ... circle.
+        recouple to get a bunch of n-nbrs and use (Order).
+    }
+
+    \red{
+        Suppose the graph is big enough.
+        Look at a node; look at its right neighbor; look at its right neighbor's neighbor.
+        Now look at its left nighbor. Recouple right nbr's nbr with left nbr.
     }
 \end{proof}
 
