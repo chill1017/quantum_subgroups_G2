@@ -84,12 +84,99 @@ With this ordering and fact (3) above in mind, and recalling that the GPA's dagg
 
 
 
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=0.35\linewidth]{figs/graphs/graph_A.png}
+%     \includegraphics[width=0.425\linewidth]{figs/graphs/graph_B.png}
+%     \caption{Fundamental graphs used for levels 3 (left) and 4 (right).}
+%     \label{fig:graphs}
+% \end{figure}
+
 \begin{figure}
     \centering
-    \includegraphics[width=0.35\linewidth]{figs/graphs/graph_A.png}
-    \includegraphics[width=0.425\linewidth]{figs/graphs/graph_B.png}
-    \caption{Fundamental graphs used for levels 3 (left) and 4 (right).}
-    \label{fig:graphs}
+    \begin{tikzpicture}
+        \node[shape=circle,draw=black] (A) at (1.5,1.66) {1};
+        \node[shape=circle,draw=black] (B) at (0,3) {2};
+        \node[shape=circle,draw=black] (C) at (3,3) {3};
+        \node[shape=circle,draw=black] (D) at (1.5,0) {4};
+        
+        \path (B) edge [loop, in=120, out=180, looseness=10] node {} (B);
+        \path (C) edge [loop, in=0, out=60, looseness=10] node {} (C);
+        \path (D) edge [loop, in=240, out=300, looseness=10] node {} (D);
+        
+        \path [-] (D) edge node {} (B);
+        \path [-] (B) edge node {} (C);
+        \path [-] (C) edge node {} (D);
+
+        \path [-] (A) edge node {} (B);
+        \path [-] (A) edge node {} (C);
+        \path [-] (A) edge node {} (D);
+    \end{tikzpicture}
+    \begin{tikzpicture}
+        \node[shape=circle,draw=black] (A) at (1.5,1.66) {1};
+        \node[shape=circle,draw=black] (B) at (0,3) {2};
+        \node[shape=circle,draw=black] (C) at (3,3) {3};
+        \node[shape=circle,draw=black] (D) at (1.5,0) {4};
+
+        \path [->] (A) edge [loop, in=45, out=135, looseness=8] node {} (A);
+
+        \path [->] (B) edge node {} (C);
+        \path [->] (C) edge node {} (D);
+        \path [->] (D) edge node {} (B);
+    \end{tikzpicture}
+    \caption{Fusion graphs at level 3 for $Y$ (left) and $g$ (right).}
+    \label{fig:new-graphs-lvl3}
+\end{figure}
+
+
+\begin{figure}
+    \begin{tikzpicture}
+        \node[shape=circle,draw=black] (A) at (0,1.5) {1};
+        \node[shape=circle,draw=black] (B) at (1.25,3) {2};
+        \node[shape=circle,draw=black] (C) at (4.25,3) {3};
+        \node[shape=circle,draw=black] (D) at (5.5,1.5) {4};
+        \node[shape=circle,draw=black] (E) at (4.25,0) {5};
+        \node[shape=circle,draw=black] (F) at (1.25,0) {6};
+
+        \path (B) edge [loop, in=45, out=135, looseness=8] node {} (B);
+        \path (C) edge [loop, in=45, out=135, looseness=8] node {} (C);
+        \path (E) edge [loop, in=225, out=315, looseness=8] node {} (E);
+        \path (F) edge [loop, in=225, out=315, looseness=8] node {} (F);
+
+        \path [-] (A) edge node {} (B);
+        \path [-] (A) edge node {} (F);
+
+        \path [-] (B) edge node {} (C);
+        \path [-] (B) edge node {} (E);
+        \path [-] (B) edge node {} (F);
+
+        \path [-] (C) edge node {} (D);
+        \path [-] (C) edge node {} (E);
+        \path [-] (C) edge node {} (F);
+
+        \path [-] (D) edge node {} (E);
+
+        \path [-] (E) edge node {} (F);
+    \end{tikzpicture}
+    \begin{tikzpicture}
+        \node[shape=circle,draw=black] (A) at (0,1.5) {1};
+        \node[shape=circle,draw=black] (B) at (1.25,3) {2};
+        \node[shape=circle,draw=black] (C) at (4.25,3) {3};
+        \node[shape=circle,draw=black] (D) at (5.5,1.5) {4};
+        \node[shape=circle,draw=black] (E) at (4.25,0) {5};
+        \node[shape=circle,draw=black] (F) at (1.25,0) {6};
+
+        \path [->] (A) edge [loop, in=135, out=225, looseness=8] node {} (A);
+        \path [->] (D) edge [loop, in=45, out=-45, looseness=8] node {} (D);
+
+        \path [->] (B) edge [bend right] node  {} (F);
+        \path [->] (F) edge [bend right] node {} (B);
+
+        \path [->] (C) edge [bend right] node {} (E);
+        \path [->] (E) edge [bend right] node {} (C);
+    \end{tikzpicture}
+    \caption{Fusion graphs at level 4 for $Y$ (left) and $g$ (right).}
+    \label{fig:new-graphs-lvl4}
 \end{figure}
 
 
@@ -281,7 +368,17 @@ We have an immediate consequence.
 
 
 \section{Results: Level 4}
-At level $k=4$ we have $q = q_4 = e^{\frac{2\pi i}{48}}$ and $A_4=V_\emptyset \oplus V_{3\Lambda_1}$. From \cite{DMNO} we have $\cat{q_4}_{A_4}^0 \cong \Vecc(\Z_2)$, giving us one new $\Z_2$-like simple object $h$. The details of the GPA embedding at level 4 are less instructive than the level 3 case, so we relegate the details to the attached Mathematica files. Much of the story remains the same. The trivalent coordinates are algebraically nicer than those at level 3; up to sign, we showed 5 of 9 in Subsection~\ref{subsec:triv-vertex}. The nonzero coordinates of the projection come in blocks of \red{4, and 9}. There is also an analogue of Theorem~\ref{thm:level-3} for level 4.
+At level $k=4$ we have $q = q_4 = e^{\frac{2\pi i}{48}}$ and 
+$A_4=V_\emptyset \oplus V_{3\Lambda_1}$. 
+From \cite{DMNO} we have $\cat{q_4}_{A_4}^0 \cong \Vecc(\Z_2)$, giving us one new 
+$\Z_2$-like simple object $h$. 
+The details of the GPA embedding at level 4 are less instructive than the level 3 case, 
+so we relegate the details to the attached Mathematica files. 
+Much of the story remains the same. 
+The trivalent coordinates are algebraically nicer than those at level 3; 
+up to sign, we showed 5 of 9 in Subsection~\ref{subsec:triv-vertex}. 
+The nonzero coordinates of the projection come in blocks of \red{4, and 9}. 
+There is also an analogue of Theorem~\ref{thm:level-3} for level 4.
 
 \begin{theorem}\label{thm:level-4}
     There is a monoidal equivalence
@@ -316,20 +413,3 @@ The structure constants for $\DD_4$ are:
     t_1 = ..., \quad t_2 = ...
 \end{equation*}
 
-\pagebreak
-
-\begin{tikzpicture}
-    \node[shape=circle,draw=black] (A) at (1.5,1.66) {1};
-    \node[shape=circle,draw=black] (B) at (0,3) {2};
-    \node[shape=circle,draw=black] (C) at (3,3) {3};
-    \node[shape=circle,draw=black] (D) at (1.5,0) {4};
-    
-    \path [-] (D) edge node {} (B);
-    \path [-] (B) edge node {} (C);
-    \path [-] (C) edge node {} (D);
-
-    \path [-] (A) edge node {} (B);
-    \path [-] (A) edge node {} (C);
-    \path [-] (A) edge node {} (D);
-
-\end{tikzpicture}
