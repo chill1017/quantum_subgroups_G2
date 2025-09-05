@@ -1,10 +1,14 @@
-\section{Results: Level 3}
+\section{Results: Level 3}\label{sec:results-3}
 
-We begin at level $k=3$, which makes $q=q_3=e^{\frac{2\pi i}{42}}$. From the conformal embedding $\hat{\gg_2}\subseteq\hat{\ee_6}$ given in \cite{DMNO} we obtain the algebra object $A=V_{\emptyset} \oplus V_{\Lambda_1+\Lambda_2}$, as described in \cite{g2_graphs}. Also given in \cite{g2_graphs} is (the orbifold of) the graph $\Gamma_3$ with adjacency matrix
+We begin at level $k=3$, which makes $q=q_3=e^{\frac{2\pi i}{42}}$. 
+From the conformal embedding $\hat{\gg_2}\subseteq\hat{\ee_6}$ given in \cite{DMNO} we obtain the 
+algebra object $A=V_{\emptyset} \oplus V_{\Lambda_1+\Lambda_2}$, as described in \cite{g2_graphs}. 
+Also given in \cite{g2_graphs} is (the orbifold of) the module fusion graph $\Gamma_3$ with adjacency matrix
 \[
     M_{\Gamma_3} = \begin{bmatrix} 0&1&1&1\\ 1&1&1&1\\ 1&1&1&1\\ 1&1&1&1\end{bmatrix}.
 \]
 The graph $\Gamma_3$ itself is depicted on the left side of Figure~\ref{fig:graphs}.
+
 It is known from \cite{DMNO} that 
 \[
     \cat{q}_A^0\cong \Vecc(\Z_3);
@@ -94,12 +98,13 @@ With this ordering and fact (3) above in mind, and recalling that the GPA's dagg
 
 \begin{figure}
     \centering
-    \begin{tikzpicture}
+    \begin{tikzpicture}[scale=1.25]
         \node[shape=circle,draw=black] (A) at (1.5,1.66) {1};
         \node[shape=circle,draw=black] (B) at (0,3) {2};
         \node[shape=circle,draw=black] (C) at (3,3) {3};
         \node[shape=circle,draw=black] (D) at (1.5,0) {4};
         
+        % module fusion graph
         \path (B) edge [loop, in=120, out=180, looseness=10] node {} (B);
         \path (C) edge [loop, in=0, out=60, looseness=10] node {} (C);
         \path (D) edge [loop, in=240, out=300, looseness=10] node {} (D);
@@ -111,26 +116,20 @@ With this ordering and fact (3) above in mind, and recalling that the GPA's dagg
         \path [-] (A) edge node {} (B);
         \path [-] (A) edge node {} (C);
         \path [-] (A) edge node {} (D);
-    \end{tikzpicture}
-    \begin{tikzpicture}
-        \node[shape=circle,draw=black] (A) at (1.5,1.66) {1};
-        \node[shape=circle,draw=black] (B) at (0,3) {2};
-        \node[shape=circle,draw=black] (C) at (3,3) {3};
-        \node[shape=circle,draw=black] (D) at (1.5,0) {4};
 
-        \path [->] (A) edge [loop, in=45, out=135, looseness=8] node {} (A);
-
-        \path [->] (B) edge node {} (C);
-        \path [->] (C) edge node {} (D);
-        \path [->] (D) edge node {} (B);
+        % g fusion graph
+        \path [->, draw=orange] (B) edge [bend left] node {} (C);
+        \path [->, draw=orange] (C) edge [bend left] node {} (D);
+        \path [->, draw=orange] (D) edge [bend left] node {} (B);
+        \path [->, draw=orange] (A) edge [loop] node {} (A);
     \end{tikzpicture}
-    \caption{Fusion graphs at level 3 for $Y$ (left) and $g$ (right).}
+    \caption{Fusion graphs at level 3 for $Y$ (black) and $g$ (orange).\\ See \cite[Figure \red{XXX}]{g2_graphs}}
     \label{fig:new-graphs-lvl3}
 \end{figure}
 
 
 \begin{figure}
-    \begin{tikzpicture}
+    \begin{tikzpicture}[scale=1.25]
         \node[shape=circle,draw=black] (A) at (0,1.5) {1};
         \node[shape=circle,draw=black] (B) at (1.25,3) {2};
         \node[shape=circle,draw=black] (C) at (4.25,3) {3};
@@ -138,6 +137,7 @@ With this ordering and fact (3) above in mind, and recalling that the GPA's dagg
         \node[shape=circle,draw=black] (E) at (4.25,0) {5};
         \node[shape=circle,draw=black] (F) at (1.25,0) {6};
 
+        % module fusion graph
         \path (B) edge [loop, in=45, out=135, looseness=8] node {} (B);
         \path (C) edge [loop, in=45, out=135, looseness=8] node {} (C);
         \path (E) edge [loop, in=225, out=315, looseness=8] node {} (E);
@@ -157,25 +157,18 @@ With this ordering and fact (3) above in mind, and recalling that the GPA's dagg
         \path [-] (D) edge node {} (E);
 
         \path [-] (E) edge node {} (F);
+
+        % g fusion graph
+        \path [->, draw=orange] (A) edge [loop, in=135, out=225, looseness=8] node {} (A);
+        \path [->, draw=orange] (D) edge [loop, in=45, out=-45, looseness=8] node {} (D);
+
+        \path [->, draw=orange] (B) edge [bend right] node  {} (F);
+        \path [->, draw=orange] (F) edge [bend right] node {} (B);
+
+        \path [->, draw=orange] (C) edge [bend right] node {} (E);
+        \path [->, draw=orange] (E) edge [bend right] node {} (C);
     \end{tikzpicture}
-    \begin{tikzpicture}
-        \node[shape=circle,draw=black] (A) at (0,1.5) {1};
-        \node[shape=circle,draw=black] (B) at (1.25,3) {2};
-        \node[shape=circle,draw=black] (C) at (4.25,3) {3};
-        \node[shape=circle,draw=black] (D) at (5.5,1.5) {4};
-        \node[shape=circle,draw=black] (E) at (4.25,0) {5};
-        \node[shape=circle,draw=black] (F) at (1.25,0) {6};
-
-        \path [->] (A) edge [loop, in=135, out=225, looseness=8] node {} (A);
-        \path [->] (D) edge [loop, in=45, out=-45, looseness=8] node {} (D);
-
-        \path [->] (B) edge [bend right] node  {} (F);
-        \path [->] (F) edge [bend right] node {} (B);
-
-        \path [->] (C) edge [bend right] node {} (E);
-        \path [->] (E) edge [bend right] node {} (C);
-    \end{tikzpicture}
-    \caption{Fusion graphs at level 4 for $Y$ (left) and $g$ (right).}
+    \caption{Fusion graphs at level 4 for $Y$ (black) and $g$ (orange).\\ See \cite[Figure \red{XXX}]{g2_graphs}}
     \label{fig:new-graphs-lvl4}
 \end{figure}
 
@@ -367,11 +360,12 @@ We have an immediate consequence.
 
 
 
-\section{Results: Level 4}
+\section{Results: Level 4}\label{sec:results-4}
 At level $k=4$ we have $q = q_4 = e^{\frac{2\pi i}{48}}$ and 
 $A_4=V_\emptyset \oplus V_{3\Lambda_1}$. 
 From \cite{DMNO} we have $\cat{q_4}_{A_4}^0 \cong \Vecc(\Z_2)$, giving us one new 
 $\Z_2$-like simple object $h$. 
+The module fusion graph for level 4 is show in Figure~\ref{fig:new-graphs-lvl4}
 The details of the GPA embedding at level 4 are less instructive than the level 3 case, 
 so we relegate the details to the attached Mathematica files. 
 Much of the story remains the same. 
@@ -398,18 +392,14 @@ The structure constants for $\DD_4$ are:
 \end{equation*}
 
 \begin{equation*}
-    r_1 = -1, \quad r_2 = -1
+    r_1 = e^{-\frac{\pi i}{6}}, \quad r_2 = e^{-\frac{2\pi i}{3}}
 \end{equation*}
 
 \begin{equation*}
-    s_1 = ..., \quad s_2 = ...
+    s_1 = e^{-\frac{\pi i}{6}} \quad s_2 = e^{-\frac{4\pi i}{3}}
 \end{equation*}
 
 \begin{equation*}
-    r_1 = ..., \quad r_2 = ...
-\end{equation*}
-
-\begin{equation*}
-    t_1 = ..., \quad t_2 = ...
+    t_1 = -1 \quad t_2 = -1
 \end{equation*}
 
