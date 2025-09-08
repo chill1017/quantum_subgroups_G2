@@ -59,8 +59,20 @@ In Section~\ref{} we will discuss these numbers further.
 
 
 
-\subsection{Projection and relations}\label{subsec:proj-relns}
-The process of finding a GPA embedding of the projection $\skein{/skein_figs/Pg}{0.08}$ is similar to the process of finding the trivalent vertex described above. Now, however, we may use relations involving both $\skein{/skein_figs/trivalent}{0.08}$ and $\skein{/skein_figs/Pg}{0.08}$. Call the coordinates of the projection $b_i$. Since the coordinates of the trivalent vertex are now known, the degree of the resulting equations now depends only on the number of projection strands appearing. Moreover, we do not necessarily assume the $b_i$ are real; hence the resulting equations are polynomial in $b_i$ and $\ol{b_i}$. The following Proposition, Lemma 2.4 from \cite{cain_noah_hans}, provides a system of linear equations in the projection coefficients and is therefore of great utility.
+\subsection{Projection and its relations}\label{subsec:proj-relns}
+The process of finding a GPA embedding of the projection 
+$\skein{/skein_figs/Pg}{0.08}$ is similar to the process of finding the trivalent vertex described above. 
+Now, however, we must use relations involving both 
+$\skein{/skein_figs/trivalent}{0.08}$ and $\skein{/skein_figs/Pg}{0.08}$. 
+Call the coordinates of the projection $b_i$. 
+Since the coordinates of the trivalent vertex are now known, 
+the degree of the resulting equations now depends only on the number of projection strands appearing.
+Moreover, we do not necessarily assume the $b_i$ are real; 
+hence the resulting equations are polynomial in $b_i$ and $\ol{b_i}$. 
+
+The relation (decStick) along with the one-strand relations of (Schur 0) and (Schur 1) give a system of linear equations, 
+and the following Proposition \cite[Lemma 2.4]{cain_noah_hans} provides an additional set of linear equations 
+in the projection coefficients.
 
 \begin{proposition}
     The following relation holds:
@@ -69,22 +81,34 @@ The process of finding a GPA embedding of the projection $\skein{/skein_figs/Pg}
     \end{equation*}
 \end{proposition}
 
-\red{once we have a projection find relns}
+\begin{remark}
+    The relation (Half-braid) is not used in the evaluation algorithm.
+    It is merely a vehicle for obtaining a huge set of linear equations in the $b_i$ and $\ol{b_i}$.
+\end{remark}
 
-
-
-
-% \subsection{Finding Relations} 
-When searching for a GPA embedding of the underlying trivalent category, we have a set of known relations on the trivalent vertex; 
-i.e., the defining relations of $\GG_2(q)$. 
-In order to uncover relations such as those of Definition~\ref{def:zn-ext}, we use a process reminiscent of the scientific method. 
-This process begins by considering a decorated trivalent graph and searching for ways to decrease its complexity. 
+In total, the linear system was enough to pin down the projection coefficients for both levels 3 and 4.
+It is at this point that the present work diverges from other similar published works on the topics of
+GPA embeddings \cite{Cain_Dan} or presentations for conformal embeddigns \cite{cain_noah_hans}.
+Previous investigations utilizing GPA embeddings have had a full set of relations on hand,
+and these relations were used to {\it find} the embeddings.
+On the other hand, recent progress on conformal embeddings have used theoretical means to uncover relations.
+At the present step in this work, we are standing before an unexplored category, with but an embedding 
+of two of its generators, $\skein{/skein_figs/trivalent}{0.1}$ and $\skein{/skein_figs/Pg}{0.1}$, in hand.
+We have a set of relations for $\skein{/skein_figs/trivalent}{0.1}$ 
+(i.e., the defining relations of $\GG_2(q)$) sufficient to evaluate any undecorated closed diagram.
+However, we do not know what further relations we will find, nor exactly when we ought to stop looking.
+% When searching for a GPA embedding of the underlying trivalent category, 
+% we had a set of known relations on the trivalent vertex; i.e., the defining relations of $\GG_2(q)$. 
+In order to uncover relations such as those of Definition~\ref{def:zn-ext}, 
+we use a process reminiscent of the scientific method. 
+This process begins by considering a decorated trivalent diagram and searching for ways to decrease its complexity. 
 We begin the process by assuming no more than a minimal collection of moves; i.e., (decStick), (Recouple), and (Product).
 Once we have applied all these minimal moves, we begin to barter. We look for the least egregious move we might make, and assume it comes at some cost. 
 For example, being able to apply (Swap) might allow us to then apply (decStick); 
 thus we eliminate a colored strand at the cost of a scalar $\omega$. 
 This is clearly a trade we should make.
-In order to find the exact price of this trade, we use our GPA-embedding $F$, assuming we know the form the cost will come in.
+In order to find the exact price of this trade, we use our GPA-embedding $F:\DD_3 \to\GPA(\Gamma_3)$, 
+assuming we know the form the cost will come in.
 We use the embedding coefficients we previously found to set up and solve the linear equation
 \[
     F\left( \skein{/skein_figs/swap_LHS}{0.15} \right) = \omega F\left( \skein{/skein_figs/swap_RHS}{0.15} \right)
@@ -97,7 +121,10 @@ The costs incurred in the (decTrigon), (decTetragon), and (decPentagon) relation
 The form the relations are presented in is the product of trial and error. 
 As one will note when inspecting the coefficients of these relations in the attached Mathematica files,
 many of the (decTetragon) and (decPentagon) coefficients are zero.
-The obvious next question one asks is which of the numbers $\alpha_{i,j}$, $\beta_{i,j}$, and $\gamma_{i,j}$ one should expect to be nonzero.
+The obvious next question one asks is which of the numbers $u_{i,j}$, $v_{i,j}$, and $w_{i,j}$ one should expect to be nonzero.
 The examples we construct based on $\GG_2(q)$ are too isolated to notice a pattern and drawn conclusions in general.
-However, forthcoming work of the present author and Edie-Michell constructing many examples of near-groups 
-as $Z_n$-like extensions will work to shed light on the phenomenon as a whole.
+However, forthcoming work of the present author and Edie-Michell \cite{cain_me_near_groups} 
+constructing many examples of near-groups as $Z_n$-like extensions will work to shed light on the phenomenon as a whole.
+
+Once we have a sufficient set of relations to recognize our quantum subgroups as $\Z_n$-like extensions,
+we must ascend to a more theoretical plane to prove that we have really finished the job.
