@@ -1,0 +1,164 @@
+\section{Introduction}
+Quantum subgroups are a well-known source of tensor categories.
+More precisely, given a conformal embedding $\VV(\gg,k) \subseteq \VV(\hh,1)$ of VOAs 
+as in \cite{DMNO}, one obtains a corresponding Etale algebra $A$.
+This algebra then allows one to consider the category $\ol{\Rep(U_q(\gg))}_A$ of right $A$-modules.
+A half-braiding on $A$ then gives a tensor product on $\ol{\Rep(U_q(\gg))}_A$, and one may study this
+new category in its own right.
+The free functor then gives an embedding $\ol{\Rep(U_q(\gg))} \hookrightarrow \ol{\Rep(U_q(\gg))}_A$,
+and it remains only to find a description of the new morphisms in $\ol{\Rep(U_q(\gg))}_A$.
+Recent works of Edie-Michell and Snyder \cite{cain_noah} have used this reasoning, and 
+representation theoretic techniques to give diagrammatic descriptions of new tensor categories of modules
+corresponding to the family of conformal embeddings $\VV(\sl_N,N^2) \subseteq \VV(\sl_{N^2-1},1)$.
+
+On the other hand, one may start with a known category and compute graph planar algebra (GPA) embeddings for it.
+This has been done for $\ol{\Rep(U_q(\sl_N))}$ in \cite{Cain_Dan} and for the 
+extended Haagerup categories in \cite{extended_haagerup}.
+This computation has the theoretical and practical consequences.
+By the GPA embedding theorem \cite{something}, such an embedding immediately gives a module category.
+It additionally gives a concrete representation of the category in which one may perform explicit computations.
+
+The present work describes a blend of these two techniques.
+We begin by fidning a GPA embedding on the well-known trivalent category $\GG_2(q)$ of \cite{Kuperberg,tricats}
+which we view as a diagrammatic presentation for $\ol{\Rep(U_q(\gg_2))}$.
+Through the free fucntor we can view our GPA embedding as a GPA embedding for a $\otimes$-generating 
+object's planar algebra in $\ol{\Rep(U_q(\gg_2))}_A$.
+This gives us a black-strand.
+We then search inside the GPA embedding for new morphisms.
+According to \cite{DMNO} there ought to be a projection onto a $\Z_k$-like simple object in $\ol{\Rep(U_q(\gg_2))}_A$,
+so this is what we search for inside the GPA.
+We view this new morphism as an orange strand.
+The properties of this new morphism are unknown beyond a scant basic set.
+Once we have or hands on the imagine in the GPA of this projection, though, 
+we may explore its properties through explicit computations.
+We perform this process of extending GPA embeddings for the two conformal embeddings
+\begin{equation}\label{eq:conf-embs}
+    \VV(\gg_2,3) \subseteq \VV(\ee_6,1) \quad\text{and}\quad \VV(\gg_2,4) \subseteq \VV(\dd_7,1).
+\end{equation}
+
+Now we begin by introducing some notation for a skein theory involving an oritned, colored strand 
+in addition to unoriented black strands.
+\begin{definition}
+    For a diagram $\EE$ the notation $r^i(\EE)$ means an $i$-click right rotation. 
+    For instance, 
+    \[
+    r^1\left( \skein{/skein_figs/doubleStick}{0.07} \right) = \skein{/skein_figs/capcup}{0.07} 
+    \quad\text{and}\quad 
+    r^2\left( \skein{/skein_figs/doubleStick}{0.07} \right) = \skein{/skein_figs/doubleStick}{0.07}.
+    \] 
+
+    Suppose the diagram $\EE$ has $m$ boundary points. 
+    We define $dec_i(\EE)$ to be the $i$-th external single clockwise decoration of $\EE$. 
+    For example,
+    \[
+        dec_1\left(\skein{/skein_figs/trivalent}{0.15}\right) = \skein{/skein_figs/rightDown}{0.1},
+    \quad
+    \text{and} 
+    \quad
+        \sum_{i=1}^{3} dec_i\left(\skein{/skein_figs/trivalent}{0.15}\right) = \skein{/skein_figs/rightDown}{0.1} +\skein{/skein_figs/bottomLeft}{0.1} +\skein{/skein_figs/leftUp}{0.1}
+    \]
+    We adopt the convention that $dec_0 (\EE) = \EE$.
+\end{definition}
+
+Both of the categories studied in this paper are extensions of trivalent categories by a colored, directed, $\Z_n$-like strand. 
+The underlying trivalent categories we deal with have evaluation algorithms based on the standard Euler characteristic argument.
+One way to capture this evaluability is by considering dimensions of box spaces.
+\begin{definition}
+    In a trivalent category we define a {\bf box space} $B(k,f)$ to be the span of diagrams $k\to0$ with $f$ internal faces.
+    If $\CC$ is a trivalent catgeory such that, for $k=1,\dots,5$, the constraint
+    \[
+    \dim B(k,1) \leq \dim B(k,0)
+    \]
+    holds, we will refer to $\CC$ as {\bf Euler-evaluable}.
+\end{definition}
+
+Next we define the class of categories we will be working with.
+In Section~\ref{sec:skein} we will show they are evaluable in general.
+\begin{definition}\label{def:zn-ext}
+    Let $\CC = \left\langle \skein{/skein_figs/trivalent}{0.1} \right\rangle$ 
+    be a trivalent category that is Euler-evaluable. 
+    Call $\DD$ a {\bf $\Z_n$-like extension} of $\CC$ if 
+    $\DD = \left\langle \skein{/skein_figs/trivalent}{0.1}, \skein{/skein_figs/Pg}{0.1} \right\rangle$ 
+    and $\DD$ enjoys the following relations\footnote{Conditions from \cite{czenky}.}:
+    \begin{equation*}\tag{Recouple}
+        \skein{/skein_figs/recouple_LHS}{0.1} 
+        = c \skein{/skein_figs/recouple_RHS}{0.1}
+    \end{equation*}
+
+    \begin{equation*}\tag{$\Z_n$}
+        \underbrace{ \skein{/skein_figs/n_g_strands}{0.08} }_{\text{$n$}} 
+        = o \skein{/skein_figs/capcup}{0.1}
+    \end{equation*}
+
+    \begin{equation*}\tag{Split}
+        \underbrace{ \skein{/skein_figs/split_LHS}{0.125} }_{\text{$n$}} 
+        = s \underbrace{ \skein{/skein_figs/split_RHS}{0.085} }_{\text{$n$}}
+    \end{equation*}
+
+    \begin{equation*}\tag{Schur 0}
+        \skein{/skein_figs/schur_0_1}{0.1} = 0 \quad 
+        \skein{/skein_figs/schur_0_2}{0.1} = 0 \quad \cdots \quad 
+        \underbrace{ \skein{/skein_figs/schur_0_n-1}{0.11} }_{\text{$n-1$}} = 0
+    \end{equation*}
+
+    \begin{equation*}\tag{Schur 1}
+        \skein{/skein_figs/schur_1_1}{0.1} = 0 \quad 
+        \skein{/skein_figs/schur_1_2}{0.1} = 0 \quad \cdots \quad 
+        \underbrace{ \skein{/skein_figs/schur_1_n-1}{0.11} }_{\text{$n-1$}} = 0
+    \end{equation*}
+
+    \begin{equation*}\tag{Change of Basis}
+        \skein{/skein_figs/leftUp}{0.1} 
+        = \sum_{i=0}^{n-1} r_i \skein{/skein_figs/rightUp}{0.1}^i
+    \end{equation*}
+
+    \begin{equation*}\tag{Swap}
+        \skein{/skein_figs/swap_LHS}{0.15} 
+        = \omega \skein{/skein_figs/swap_RHS}{0.15}
+    \end{equation*}
+
+    \begin{equation*}\tag{decStick}
+        \skein{/skein_figs/stick_w_Pg}{0.25} 
+        = a \skein{/skein_figs/stick}{0.1}
+    \end{equation*}
+
+    \begin{equation*}\tag{decBigon}
+        \skein{/skein_figs/g_bigon2}{0.1} = b \skein{/skein_figs/stick}{0.15}
+    \end{equation*}
+
+    \begin{equation*}\tag{Slide}
+        \skein{/skein_figs/slide_LHS}{0.1} 
+        = \sum_{i=0}^{n-1} s_i \skein{/skein_figs/slide_RHS2}{0.1}^i
+    \end{equation*}
+
+    \begin{equation*}\tag{decTrigon}
+        \skein{/skein_figs/trigon_singly}{0.1} 
+        = \sum_{i=0}^{n-1} t_i \skein{/skein_figs/rightUp}{0.1}^i
+    \end{equation*}\label{eq:decTrigon}
+
+    \begin{equation*}\tag{decTetragon \red{wrong rhs!!}}
+         \skein{/skein_figs/square_singly}{0.12} 
+         = \sum_{i=0}^4 \sum_{j=0}^3 u_{i,j} dec_i\left( r^j\left( \skein{/skein_figs/pent_1}{0.2} \right) \right)
+    \end{equation*}
+
+     \begin{equation*}\tag{decPentagon}
+        \skein{/skein_figs/pentagon_singly}{0.17} 
+        = \sum_{i=0}^5 \sum_{j=0}^4 v_{i,j} dec_i\left( r^j\left( \skein{/skein_figs/pent_1}{0.2} \right) \right) 
+        + \sum_{i=0}^5 \sum_{j=0}^4 w_{i,j} dec_i\left( r^j\left( \skein{/skein_figs/pent_2}{0.12} \right) \right)
+    \end{equation*}
+\end{definition}
+
+
+Deifne $\DD_4$ to be the $\Z_2$-like extension of $\GG_2(q_4)$ with structure constants
+\[......\]
+One of our primary results shows that the tensor category $\ol{\Rep(U_{q_4}(\gg_2))}_{A_4}$
+corresponding to the conformal embeddings \ref{eq:conf-embs} may be presented as $\Z_2$-like extension
+of $\GG_2(q_4)$.
+\begin{theorem}
+    There is an equivalence
+    \[
+        \Ab(\DD_4) \cong \ol{\Rep(U_{q_4}(\gg_2))}_{A_4}
+    \]
+    where $A_4$ is the algebra object corresponding to the level-4 conformal embedding of \ref{eq:conf-embs}.
+\end{theorem}
+We have an analogous theorem for level 3, with structure constants given in the attached Mathematica files.
