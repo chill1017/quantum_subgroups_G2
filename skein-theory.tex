@@ -49,6 +49,22 @@ With the new strand type, we have another measure: number of colored strands.
 \end{remark}
 
 
+
+\red{
+The underlying trivalent categories we deal with have evaluation algorithms based on the standard Euler characteristic argument.
+One way to capture this evaluability is by considering dimensions of box spaces.
+\begin{definition}
+    In a trivalent category we define a {\bf box space} $B(k,f)$ to be the span of diagrams $k\to0$ with $f$ internal faces.
+    If $\CC$ is a trivalent catgeory such that, for $k=1,\dots,5$, the constraint
+    \[
+    \dim B(k,1) \leq \dim B(k,0)
+    \]
+    holds, we will refer to $\CC$ as {\bf Euler-evaluable}.
+\end{definition}
+}
+
+
+
 Diagrams inside a $\Z_n$-like extension exhibit the following nice property, which will be key in proving their evaluability.
 Essentially, we use the following lemma to exchange decorated faces for singly-externally-decorated faces.
 The defining relations for a $\Z_n$-like extension then pop the singly-decorated faces.
