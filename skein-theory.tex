@@ -36,9 +36,21 @@ One way to capture this evaluability is by considering dimensions of box spaces.
 
 
 
-Diagrams inside a $\Z_n$-like extension exhibit the following nice property, which will be key in proving their evaluability.
-Essentially, we use the following lemma to exchange decorated faces for singly-externally-decorated faces.
+Diagrams inside a $\Z_n$-like extension exhibit the following nice properties, which will be key in proving their evaluability.
+Essentially, we use the following lemmas to exchange decorated faces for singly-externally-decorated faces.
 The defining relations for a $\Z_n$-like extension then pop the singly-decorated faces.
+
+\begin{lemma}
+    In a $\Z_n$-like extension, there exist $n$ scalars $s_i$ such that the following relation holds:
+    \begin{equation*}\tag{Slide}
+        \skein{/skein_figs/slide_LHS}{0.1} 
+        = \sum_{i=0}^{n-1} s_i \skein{/skein_figs/slide_RHS2}{0.1}^i
+    \end{equation*}
+\end{lemma}
+\begin{proof}
+    Apply (decStick), (Recouple), and (Change of Basis).
+\end{proof}
+
 
 \begin{lemma}\label{lem:ext-dec}
     A decorated diagram in a $\Z_n$-like extension may be expressed as a combination of singly-externally decorated diagrams
