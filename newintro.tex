@@ -1,4 +1,4 @@
-\section{Introduction}
+\section{Introduction}\label{sec:intro}
 Quantum subgroups are a well-known source of tensor categories.
 More precisely, given a conformal embedding $\VV(\gg,k) \subseteq \VV(\hh,1)$ of VOAs 
 as in \cite{DMNO}, one obtains a corresponding Etale algebra $A$.
@@ -143,6 +143,26 @@ categories in this class are evaluable in general.
     \end{equation*}
 \end{definition}
 
+
+\begin{remark}
+    A quick sketch shows that using (Order) followed by repeated applications of (Recouple) and (decStick) 
+    allows one to swap an up-oriented strand for $n-1$ down-oriented strand. 
+    This means that, upon reversing the orientations of the lefthand sides of the relations in 
+    Definition~\ref{def:zn-ext} will give similar relations.
+    This fact will be used in the proof of Lemma~\ref{lem:ext-dec}.
+\end{remark}
+
+
+\begin{remark}
+    It is worth noting the following standard abuse of language. 
+    A diagrammatically presented category such as a $\Z_n$-like extension has hom-spaces which are formal spans of diagrams.
+    When applying a relation such as (decTrigon) locally, the result is clearly a {\it linear combination} of diagrams.
+    Usually, though, this linear combination has some desirable quality, such as a smaller number of internal faces in each summand.
+    In this instance, we prefer to say something along the lines of, 
+    ``applying (decTrigon) decreases the number of internal faces,''
+    instead of, for instance, the more wordy,
+    ``applying (decTrigon) turns this diagram into a linear combination of diagrams with fewer internal faces.''
+\end{remark}
 
 
 

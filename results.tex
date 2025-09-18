@@ -1,25 +1,84 @@
-\section{Results: Level 3}\label{sec:results-3}
+\section{Results}\label{sec:results}
+This section is devoted to discussing the GPA embedding coordinates
+and the proofs of Theorem~\ref{thm:level-3} and its analogue at level 4.
 
+
+\subsection{Level 3}\label{subsec:results-3}
 We begin at level $k=3$, which makes $q=q_3=e^{\frac{2\pi i}{42}}$. 
-From the conformal embedding $\hat{\gg_2}\subseteq\hat{\ee_6}$ given in \cite{DMNO} we obtain the 
-algebra object $A=V_{\emptyset} \oplus V_{\Lambda_1+\Lambda_2}$, as described in \cite{g2_graphs}. 
-Also given in \cite{g2_graphs} is (the orbifold of) the module fusion graph $\Gamma_3$ with adjacency matrix
+From the conformal embedding $\VV(\gg_2,3) \subseteq \VV(\ee_6,1)$ given in \cite{DMNO} we obtain the 
+algebra object $A_3 = V_{\emptyset} \oplus V_{\Lambda_1+\Lambda_2}$, as described in \cite{g2_graphs}. 
+Let $X = V_{\Lambda_1}$ be the object of $\cat{q_3}$ whose tensor powers
+constitute the objects of the planar algebra $\PP_X \cong \GG_2(q_3)$. 
+Also given in \cite{g2_graphs} is (the orbifold of) the module fusion graph $\Gamma_3$ for $X$;
+its adjacency matrix is
 \[
     M_{\Gamma_3} = \begin{bmatrix} 0&1&1&1\\ 1&1&1&1\\ 1&1&1&1\\ 1&1&1&1\end{bmatrix}.
 \]
-The graph $\Gamma_3$ itself is depicted on the left side of Figure~\ref{fig:graphs}.
+The graph $\Gamma_3$ itself is depicted in Figure~\ref{fig:new-graphs-lvl3}.
+\footnote{We will reference both a graph and its adjacency matrix by the same name. 
+Whether we mean a matrix or a collection of nodes and edges should be clear from context.}
 
 It is known from \cite{DMNO} that 
 \[
-    \cat{q}_A^0\cong \Vecc(\Z_3);
+    \cat{q}_{A_3}^0\cong \Vecc(\Z_3);
 \]
-we deduce from the inclusion $\cat{q}_A^0 \hookrightarrow \cat{q}_A$ that $\cat{q}_A$ contains two $\Z_3$-like simple objects, denoted $g$ and $g^{-1}$. 
+we deduce from the inclusion $\cat{q_3}_{A_3}^0 \hookrightarrow \cat{q_3}_{A_3}$ 
+that $\cat{q_3}_{A_3}$ contains two $\Z_3$-like simple objects, denoted $g$ and $g^{-1}$. 
+The $A_3$-modules $g$ and $g^{-1}$ are both $V_{2\Lambda_1}$ as objects; 
+they differ only in their $A_3$-multiplication maps.
+
+
+Define $Y=\FF_{A_3}(X)$ to be the image of $X$ under the free functor. 
+Then $\FF_{A_3}$ restricts to an embedding 
+\[
+\PP_{X;\cat{q_3}} \hookrightarrow \PP_{Y;\cat{q}_{A_3}}.
+\] 
+Invertibility of the objects $g$ and $g^{-1}$ implies $g^{j}\otimes Y \cong Y$, 
+with rigidity maps for $g$ and $g^{-1}$ building the mutually inverse isomorphisms.
+
+We now compute some important dimensions.
+\begin{proposition}\label{prop:level-3-fusion}
+    The following are true:
+    \begin{enumerate}
+        \item $\dim\Hom_{\CC_{A_3}}(Y^{\otimes2}\to Y)=3$
+        \item $\dim\Hom_{\CC_{A_3}}(Y^{\otimes2}\to g^j)=1$
+        \item $\dim\Hom_{\CC_{A_3}}(Y\to Y)=1$ (i.e., $Y$ is simple)
+    \end{enumerate}
+\end{proposition}
+\begin{proof}
+    All three are proved using fusion graph calculations, so we will only discuss (1) here.
+    See, e.g., Figure 4 of \cite{spectral_measures_G2} for the $X$ fusion graph. 
+    The fusion graph tells us that 
+    \[
+    V_{\Lambda_1}^{\otimes2} \cong V_\emptyset \oplus V_{\Lambda_1} \oplus V_{2\Lambda_1} \oplus V_{\Lambda_2}
+    \]
+    and
+    \[
+    A_3 \otimes V_{\Lambda_1} 
+    \cong V_{\Lambda_1} \oplus V_{2\Lambda_1} \oplus  V_{3\Lambda_1} 
+    \oplus V_{\Lambda_2} \oplus V_{\Lambda_2+\Lambda_1} \oplus V_{\Lambda_2+2\Lambda_1}.
+    \]
+    On the other hand, we compute
+    \begin{align*}
+        \Hom_{\cat{q_3}_{A_3}}(Y^{\otimes2} \to Y) & = \Hom_{\cat{q_3}_{A_3}}( \FF_{A_3}(V_{\Lambda_1})^{\otimes 2} \to \FF_{A_3}(V_{\Lambda_1})) \\
+        & \cong \Hom_{\cat{q_3}_{A_3}}( \FF_{A_3}(V_{\Lambda_1}^{\otimes 2}) \to \FF_{A_3}(V_{\Lambda_1})) \\
+        & = \Hom_{\cat{q_3}_{A_3}}( \FF_{A_3}(V_{\Lambda_1}^{\otimes 2}) \to A_3 \otimes V_{\Lambda_1}) \\
+        & \cong \Hom_{\cat{q_3}}( V_{\Lambda_1}^{\otimes 2} \to A_3 \otimes V_{\Lambda_1}). \\
+    \end{align*}
+    Counting common irreducible constituents of $V_{\Lambda_1}^{\otimes2}$ and 
+    $A_3 \otimes V_{\Lambda_1}$ gives the desired result.
+\end{proof}
+
+We have now set the stage for a $\Z_3$-like extension of $\GG_2(q_3)$.
 
 
 
-\subsection{GPA Embedding and Relations}
-Here we give details of both the GPA-embedding of $\DD(q_3)$ and its governing equations. 
-Recall that the defining bases \ref{def:GPA} for the spaces 
+
+
+
+\subsubsection{GPA Embedding}
+Here we give details of both the GPA-embedding of $\DD_3$ and its $\Z_3$-like structure constants. 
+Recall from Definition~\ref{def:GPA} that the defining bases for the spaces 
 \[
     \Hom_{\GPA(\Gamma)}(m\to n)
 \]
@@ -63,7 +122,7 @@ Table~\ref{tab:lvl-3-proj-coefs} holds numerical approximations to the nonzero p
 There are blocks of nonzero coordinates of length 9 and 16. 
 These sizes, and the location of the nonzero real coordinates follow naturally when one considers three facts:
 \begin{enumerate}
-    \item The object $g$ is $\Z_3$ and simple and therefore has fusion graph given in Figure~\ref{fig:g-fusion-graphs}.
+    \item The object $g$ is $\Z_3$ and simple and therefore has fusion graph given in Figure~\ref{fig:new-graphs-lvl3}.
     \item There is a map $T_g \in \Hom_{\cat{q_3}_{A_3}}(Y^{\otimes2} \to g)$ whose outer product $T_g^\dagger \circ T_g$ equals $P_g$, projection onto $g$.
     \item The dagger of a simple projection is itself; i.e., $\left( \skein{/skein_figs/Pg}{0.15} \right)^\dagger = \skein{/skein_figs/Pg}{0.15}$.
 \end{enumerate}
@@ -123,53 +182,8 @@ With this ordering and fact (3) above in mind, and recalling that the GPA's dagg
         \path [->, draw=orange] (D) edge [bend left] node {} (B);
         \path [->, draw=orange] (A) edge [loop] node {} (A);
     \end{tikzpicture}
-    \caption{Fusion graphs at level 3 for $Y$ (black) and $g$ (orange).\\ See \cite[Figure \red{XXX}]{g2_graphs}}
+    \caption{Fusion graphs at level 3 for $Y$ (black) and $g$ (orange). See \cite[Figure 18b]{g2_graphs}.}
     \label{fig:new-graphs-lvl3}
-\end{figure}
-
-
-\begin{figure}
-    \begin{tikzpicture}[scale=1.25]
-        \node[shape=circle,draw=black] (A) at (0,1.5) {1};
-        \node[shape=circle,draw=black] (B) at (1.25,3) {2};
-        \node[shape=circle,draw=black] (C) at (4.25,3) {3};
-        \node[shape=circle,draw=black] (D) at (5.5,1.5) {4};
-        \node[shape=circle,draw=black] (E) at (4.25,0) {5};
-        \node[shape=circle,draw=black] (F) at (1.25,0) {6};
-
-        % module fusion graph
-        \path (B) edge [loop, in=45, out=135, looseness=8] node {} (B);
-        \path (C) edge [loop, in=45, out=135, looseness=8] node {} (C);
-        \path (E) edge [loop, in=225, out=315, looseness=8] node {} (E);
-        \path (F) edge [loop, in=225, out=315, looseness=8] node {} (F);
-
-        \path [-] (A) edge node {} (B);
-        \path [-] (A) edge node {} (F);
-
-        \path [-] (B) edge node {} (C);
-        \path [-] (B) edge node {} (E);
-        \path [-] (B) edge node {} (F);
-
-        \path [-] (C) edge node {} (D);
-        \path [-] (C) edge node {} (E);
-        \path [-] (C) edge node {} (F);
-
-        \path [-] (D) edge node {} (E);
-
-        \path [-] (E) edge node {} (F);
-
-        % g fusion graph
-        \path [->, draw=orange] (A) edge [loop, in=135, out=225, looseness=8] node {} (A);
-        \path [->, draw=orange] (D) edge [loop, in=45, out=-45, looseness=8] node {} (D);
-
-        \path [->, draw=orange] (B) edge [bend right] node  {} (F);
-        \path [->, draw=orange] (F) edge [bend right] node {} (B);
-
-        \path [->, draw=orange] (C) edge [bend right] node {} (E);
-        \path [->, draw=orange] (E) edge [bend right] node {} (C);
-    \end{tikzpicture}
-    \caption{Fusion graphs at level 4 for $Y$ (black) and $g$ (orange).\\ See \cite[Figure \red{XXX}]{g2_graphs}}
-    \label{fig:new-graphs-lvl4}
 \end{figure}
 
 
@@ -217,73 +231,26 @@ With this ordering and fact (3) above in mind, and recalling that the GPA's dagg
     \label{tab:lvl-3-proj-coefs}
 \end{table}
 
-
-
-
-Finally we give explicit values for the coefficients of the equations of Proposition~\ref{prop:eval-criteria}, excluding (decTetragon) and (decPentagon); the curious reader may find these in the attached Mathematica notebook. The structure constants for $\DD_3$ are:
-\begin{equation*}
-    \omega = e^{2\pi i/3}
-\end{equation*}
-
-\begin{equation*}
-    r_1 = ..., \quad r_2 = ..., \quad r_3 = ...
-\end{equation*}
-
-\begin{equation*}
-    s_1 = ..., \quad s_2 = ..., \quad s_3 = ...
-\end{equation*}
-
-\begin{equation*}
-    r_1 = ..., \quad r_2 = ..., \quad r_3 = ...
-\end{equation*}
-
-\begin{equation*}
-    t_1 = ..., \quad t_2 = ..., \quad t_3 = ...
-\end{equation*}
+One may find the $\Z_n$-like structure constants for $\DD_3$ in the attached Mathematica files.
 
 
 
 
-\subsection{Theorem and proof}
-This subsection is devoted to proving the following theorem.
+\subsubsection{Equivalence theorem}
+This subsection discusses a proof of the following theorem.
+We exhibit $\ol{\DD_3}$ as a subcategory of $\cat{q_3}_{A_3}$, 
+and then we will be in a position to apply the techniques of \cite{cain_noah}. 
 
 \begin{theorem}\label{thm:level-3}
     There is a monoidal equivalence
     \[
         \Ab(\ol{\DD_3}) \cong \ol{ \Rep(U_{q_3}(\gg_2))}_{A_3}.
     \]
+    That is, $\DD_3$ gives a diagrammatic presentation for the category $\ol{ \Rep(U_{q_3}(\gg_2))}_{A_3}$.
 \end{theorem}
 
-Let $X = V_{\Lambda_1}$ be the object of $\cat{q_3}$ by which we generate the planar algebra $\PP_X \cong \GG_2(q)$. Define $Y=\FF_A(X)$ to be the image of $X$ under the free functor. Now $\FF_{A_3}:\cat{q_3} \to \cat{q_3}_{A_3}$ restricts to an embedding $\PP_{X;\cat{q_3}} \hookrightarrow \PP_{Y;\cat{q}_{A_3}}$. Invertibility of the objects $g$ and $g^{-1}$ implies $g\otimes Y \cong Y$, with rigidity maps for $g$ and $g^{-1}$ building the mutually inverse isomorphisms.
 
-We now compute some important dimensions.
-\begin{proposition}\label{prop:level-3-fusion}
-    The following are true:
-    \begin{enumerate}
-        \item $\dim\Hom_{\CC_{A_3}}(Y^{\otimes2}\to Y)=3$
-        \item $\dim\Hom_{\CC_{A_3}}(Y^{\otimes2}\to g^k)=1$
-        \item $\dim\Hom_{\CC_{A_3}}(Y\to Y)=1$ (i.e., $Y$ is simple)
-    \end{enumerate}
-\end{proposition}
-\begin{proof}
-    All three are proved using fusion graph calculations, so we prove only (1)\footnote{See, e.g., Figure 5 of \cite{spectral_measures_G2} for the fusion graph.}. The fusion graph tells us that 
-    \[
-    V_{\Lambda_1}^{\otimes2} \cong V_\emptyset \oplus V_{\Lambda_1} \oplus V_{2\Lambda_1} \oplus V_{\Lambda_2}
-    \]
-    and
-    \[
-    V_{\Lambda_1}\otimes A \cong V_{\Lambda_1} \oplus V_{2\Lambda_1} \oplus  V_{3\Lambda_1} \oplus V_{\Lambda_2} \oplus V_{\Lambda_2+\Lambda_1} \oplus V_{\Lambda_2+2\Lambda_1}.
-    \]
-    On the other hand, we compute
-    \begin{align*}
-        \Hom_{\cat{q_3}_{A_3}}(Y^{\otimes2} \to Y) & = \Hom_{\CC_{A_3}}( \FF_{A_3}(V_7)^{\otimes 2} \to \FF_{A_3}(V_7)) \\
-        & \cong \Hom_{\cat{q_3}_{A_3}}( \FF_{A_3}(V_7^{\otimes 2}) \to \FF_{A_3}(V_7)) \\
-        & = \Hom_{\cat{q_3}_{A_3}}( \FF_{A_3}(V_7^{\otimes 2}) \to V_7\otimes {A_3}) \\
-        & \cong \Hom_{\cat{q_3}}( V_7^{\otimes 2} \to V_7\otimes {A_3}). \\
-    \end{align*}
-    Counting common irreducible constituents of $V_{\Lambda_1}^{\otimes2}$ and $V_{\Lambda_1}\otimes A_3$ gives the desired result.
-\end{proof}
-We have an immediate consequence.
+We begin by giving a consequence of Proposition~\ref{prop:level-3-fusion}.
 \begin{corollary}\label{cor:dominant-functor}
         There is a dominant monoidal functor
     \[
@@ -295,8 +262,11 @@ We have an immediate consequence.
     \]
 \end{corollary}
 \begin{proof}
-    Proposition~\ref{prop:level-3-fusion}, along with the defining relations of $\DD_3$ tell us this assignment is functorial. 
-    Since $Y$ is a $\otimes$-generator and $\Psi_3$ surjects onto objects of $\PP_Y$, dominance also follows.
+    Proposition~\ref{prop:level-3-fusion}, along with the defining relations of $\DD_3$ tell us this assignment is functorial
+    \[
+        \DD_3 \hookrightarrow \PP_{Y;\cat{q_3}_{A_3}}.
+    \] 
+    Since $Y$ is a $\otimes$-generator of $\cat{q_3}_{A_3}$ and $\Psi_3$ surjects onto objects of $\PP_Y$, dominance also follows.
 \end{proof}
 
 
@@ -311,11 +281,17 @@ We have an immediate consequence.
 \end{lemma}
 % Why do we care...?
 \begin{proof}
-    The evaluation algorithm for $\DD_3$ implies that $\DD_3$ has simple unit. Therefore every ideal is contained in the ideal of negligibles, which is killed when passing to the semisimplification $\ol{\DD}$. Hence the map $\ol{\Psi_3}$ has no kernel.
+    The evaluation algorithm for $\DD_3$ implies that $\DD_3$ has simple unit. 
+    Therefore every ideal is contained in the ideal of negligibles, 
+    which is killed when passing to the semisimplification $\ol{\DD}$. 
+    Hence the map $\ol{\Psi_3}$ has no kernel.
 \end{proof}
 
+We are now in a position to apply almost the exact argument of \cite{cain_noah}.
+The only difference is that in our case, it is clear the algebra object $A_3$ has no nontrivial subalgebras.
+The theorem follows.
+
 \begin{comment}
-    
 \begin{proof}[Proof of Theorem~\ref{thm:level-3}]
     We now note that since $\GG_2(q)$ and $\DD_3$ are unitary, we know that $\GG_2(q) \hookrightarrow \DD_3$ induces a $\dagger$-embedding $\ol{\GG_2(q)} \hookrightarrow \ol{\DD_3}$. Thus, there is a chain
     \[
@@ -362,15 +338,14 @@ We have an immediate consequence.
 
 
 
-\section{Results: Level 4}\label{sec:results-4}
+\subsection{Level 4}\label{subsec:results-4}
 At level $k=4$ we have $q = q_4 = e^{\frac{2\pi i}{48}}$ and 
 $A_4=V_\emptyset \oplus V_{3\Lambda_1}$. 
 From \cite{DMNO} we have $\cat{q_4}_{A_4}^0 \cong \Vecc(\Z_2)$, giving us one new 
-$\Z_2$-like simple object $h$. 
-The module fusion graph for level 4 is show in Figure~\ref{fig:new-graphs-lvl4}
-The details of the GPA embedding at level 4 are less instructive than the level 3 case, 
-so we relegate the details to the attached Mathematica files. 
-Much of the story remains the same. 
+$\Z_2$-like simple object. 
+The module fusion graph for level 4 is show in Figure~\ref{fig:new-graphs-lvl4}.
+The details of the GPA embedding of $\GG_2(q_4)$ are less instructive than the level 3 case, 
+so we relegate them to the attached Mathematica files. 
 The trivalent coordinates are algebraically nicer than those at level 3; 
 up to sign, we showed 5 of 9 in Subsection~\ref{subsec:triv-vertex}. 
 The nonzero coordinates of the projection come in blocks of \red{4, and 9}. 
@@ -381,14 +356,16 @@ There is also an analogue of Theorem~\ref{thm:level-3} for level 4.
     \[
         \Ab(\ol{\DD(q_4)}) \cong \ol{ \Rep(U_{q_4}(\gg_2))}_{A_4}.
     \]
+    That is, $\DD_4$ gives a diagrammtic presentation for $\ol{ \Rep(U_{q_4}(\gg_2))}_{A_4}$.
 \end{theorem}
 
-This theorem is proved by using analogues of Proposition~\ref{prop:level-3-fusion}, Corollary~\ref{cor:dominant-functor}, Lemma~\ref{lem:faithful}.
-The same argument used in the proof of Theorem~\ref{thm:level-3} except with, e.g., every $q_3$ switched out for a $q_4$, may be applied.
+This theorem is proved by using analogues of Proposition~\ref{prop:level-3-fusion}, 
+Corollary~\ref{cor:dominant-functor}, Lemma~\ref{lem:faithful}.
+The same argument used in the proof of Theorem~\ref{thm:level-3} may be applied to the present context.
 
-Note that since $\cat{q_4}_{A_4}^0$ contributes a $\Z_2$-like simple object, there is only one decoration of a trivalent vertex;
-we represent this as an undirected colored strand.
-The structure constants for $\DD_4$ are:
+Note that since $\cat{q_4}_{A_4}^0$ contributes a $\Z_2$-like simple object, 
+there is only one decoration of a trivalent vertex.
+The structure constants for $\DD_4$ are given in Section~\ref{sec:intro}, but we recreate them here:
 \begin{equation*}
     \omega = -1
 \end{equation*}
@@ -405,3 +382,59 @@ The structure constants for $\DD_4$ are:
     t_1 = -1 \quad t_2 = -1
 \end{equation*}
 
+\begin{align*}
+    u = 1, && u = 2, && u = 3, && u = 4, && u = 5, && u = 6, \\
+    v = 7, && v = 8, && v = 9, && v = 10, && v = 11, && v = 12 
+\end{align*}
+
+
+
+
+
+
+
+
+
+\begin{figure}
+    \begin{tikzpicture}[scale=1.25]
+        \node[shape=circle,draw=black] (A) at (0,1.5) {1};
+        \node[shape=circle,draw=black] (B) at (1.25,3) {2};
+        \node[shape=circle,draw=black] (C) at (4.25,3) {3};
+        \node[shape=circle,draw=black] (D) at (5.5,1.5) {4};
+        \node[shape=circle,draw=black] (E) at (4.25,0) {5};
+        \node[shape=circle,draw=black] (F) at (1.25,0) {6};
+
+        % module fusion graph
+        \path (B) edge [loop, in=45, out=135, looseness=8] node {} (B);
+        \path (C) edge [loop, in=45, out=135, looseness=8] node {} (C);
+        \path (E) edge [loop, in=225, out=315, looseness=8] node {} (E);
+        \path (F) edge [loop, in=225, out=315, looseness=8] node {} (F);
+
+        \path [-] (A) edge node {} (B);
+        \path [-] (A) edge node {} (F);
+
+        \path [-] (B) edge node {} (C);
+        \path [-] (B) edge node {} (E);
+        \path [-] (B) edge node {} (F);
+
+        \path [-] (C) edge node {} (D);
+        \path [-] (C) edge node {} (E);
+        \path [-] (C) edge node {} (F);
+
+        \path [-] (D) edge node {} (E);
+
+        \path [-] (E) edge node {} (F);
+
+        % g fusion graph
+        \path [->, draw=orange] (A) edge [loop, in=135, out=225, looseness=8] node {} (A);
+        \path [->, draw=orange] (D) edge [loop, in=45, out=-45, looseness=8] node {} (D);
+
+        \path [->, draw=orange] (B) edge [bend right] node  {} (F);
+        \path [->, draw=orange] (F) edge [bend right] node {} (B);
+
+        \path [->, draw=orange] (C) edge [bend right] node {} (E);
+        \path [->, draw=orange] (E) edge [bend right] node {} (C);
+    \end{tikzpicture}
+    \caption{Fusion graphs at level 4 for $Y$ (black) and $g$ (orange). See \cite[Figure 21b]{g2_graphs}.}
+    \label{fig:new-graphs-lvl4}
+\end{figure}
