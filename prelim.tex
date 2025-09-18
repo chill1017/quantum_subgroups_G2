@@ -3,7 +3,88 @@ Here we define the players in this game.
 This includes planar algebras, graph planar algebras, and internal algebra and module objects.
 We give only a few necessary results, and refer the reader to the definitive publications.
 For the general theory of tensor categories, see \cite{EGNO}.
-We will begin with planar algebras, in the spirit of \cite{tricats}.
+
+
+
+\subsection{Algebra and Module Objects}
+We will ultimately show that $\DD_3$ and $\DD_4$ are presentations for the categories
+$\cat{q_3}_{A_3}$ and $\cat{q_4}_{A_4}$ of modules over algebra objects $A_3$ and $A_4$ coming from the conformal embeddings 
+$\CC(\gg_2,3) \subseteq \CC(\ee_6,1)$ and $\CC(\gg_2,4) \subseteq \CC(\dd_7,1)$, respectively. 
+In this subsection we recall basic facts about algebra and module objects,
+as well as conformal embeddings. 
+See \cite{EGNO, ostrik2001modulecategoriesweakhopf} for more complete descriptions. 
+The theory which will apply to our context is given in \cite{cain_noah}.
+Some basic properties concerning the interaction of algebra and module objects with
+monoidal functors will be used in the proof of our main theorems;
+this material can be found in \cite{monoidalFunctorsAndAlgebras}.
+We restate a few definitions and facts here.
+Unless otherwise stated, we will be assuming the underlying tensor categories are braided.
+
+
+\begin{definition}
+    Let $A$ be an algebra object of the braided tensor category $\CC$.
+    $A$ is an {\bf Etale} algebra if it is commutative and separable.
+    We call $A$ {\bf connected} if it is Etale and $\dim\Hom_\CC(\unit \to A)=1$.
+\end{definition}
+
+
+For an Etale algebra object $A$ of $\CC$, we denote by $\CC_A$ the collection of left $A$-modules internal to $\CC$.
+As decribed in \cite{cain_noah}, a braiding on $\CC$ induces a tesnor product on $\CC_A$.
+Separability of $A$ implies semisimplicity of $\CC_A$, 
+and connectedness of $A$ implies the unit $\unit_{\CC_A}=A$ is simple in $\CC_A$ \cite{DMNO}.
+
+Furthermore, the free fucntor 
+\[
+    \FF_A: \CC \xhookrightarrow{X\mapsto A\otimes X} \CC_A
+\]
+is a monoidal embedding which is, as we will see later, not always full.
+Its right adjoint is given by the forgetful functor $\FF^\vee:\CC_A\to\CC$ 
+which acts as the identity on both objects and morphisms. 
+
+One result which will help immensely in arriving at GPA embeddings is the following,
+which is Lemma 2.4 of \cite{cain_noah}.
+
+\begin{lemma}[Half-braid]\label{eq:general-half-braid}
+    Let $\CC$ be a braided tensor category, and $A$ an etale algebra object.
+    For any $f\in\Hom_{\CC_A}( \FF(Y_1) \to \FF(Y_2) )$, the following relation holds:
+    \[
+    \text{\red{(stand in for general hb)}} \skein{/skein_figs/hb_top}{0.15} = \skein{/skein_figs/hb_bottom}{0.2}
+    \]
+\end{lemma}
+
+We will utilize this result to obtain a rather large number (2970 at level 3 and 7776 at level 4)
+of linear equations constraining the GPA coordinates
+of the morphisms not living in the image of $\FF_A$.
+Thus the half-braid relation will be key to our program, despite not being necessary to prove evaluability.
+
+
+
+
+\red{
+\begin{definition}
+    Conformal ebeddings.
+\end{definition}
+}
+
+Affine Lie algebras and conformal embeddings will only be used to obtain algebra objects 
+and module fusion graphs, so we briefly recall the correspondence 
+\[
+    \CC(\gg,k) \cong \ol{\Rep(U_{q}(\gg))}
+\]
+of \cite{something}, where $k$ is the level and $q$ depends on $k$:
+\[
+    q = e^{\frac{2\pi i}{3(4+k)}}.
+\]
+For our purposes this fact translates to 
+\begin{equation}\label{eq:G2-affine-quantum}
+    \CC(\gg_2,k) \cong \ol{\Rep(U_{e^{\frac{2\pi i}{3(4+k)}}}(\gg_2))} \cong \ol{\Kar(\GG_2(e^{\frac{2\pi i}{3(4+k)}}))}
+\end{equation}
+as given in \cite{cain_autoequivalences}.
+At level 3 we have $q_3 = e^{\frac{2\pi i}{42}}$ and at level 4 we have $q_4 = e^{\frac{2\pi i}{48}}$.
+We find the algebra objects and fundamental graphs for GPAs from \cite{g2_graphs}:
+\begin{equation}\label{eq:alg-objetcs}
+    A_3 = V_{\emptyset} \oplus V_{\Lambda_1} \quad\text{and}\quad A_4 = V_{\emptyset} \oplus V_{3\Lambda_1}
+\end{equation}
 
 
 
@@ -67,26 +148,7 @@ Up to a rescaling by a factor of $\kappa = \sqrt{[7]-1}$ we use the same skein t
 \end{definition}
 
 
-\begin{remark}
-    Affine Lie algebras and conformal embeddings will only be used to obtain algebra objects for the quantum subgroups, so we briefly recall the correspondence 
-    \[
-        \CC(\gg,k) \cong \ol{\Rep(U_{q}(\gg))}
-    \]
-    of \cite{}, where $k$ is the level and $q$ depends on $k$:
-    \[
-        q = e^{\frac{2\pi i}{3(4+k)}}.
-    \]
-    For our purposes this fact translates to 
-    \begin{equation}\label{eq:G2-affine-quantum}
-        \CC(\gg_2,k) \cong \ol{\Rep(U_{e^{\frac{2\pi i}{3(4+k)}}}(\gg_2))} \cong \ol{\Kar(\GG_2(e^{\frac{2\pi i}{3(4+k)}}))}
-    \end{equation}
-    as given in \cite{cain_autoequivalences}.
-    At level 3 we have $q_3 = e^{\frac{2\pi i}{42}}$ and at level 4 we have $q_4 = e^{\frac{2\pi i}{48}}$.
-    We find the algebra objects and fundamental graphs for GPAs from \cite{g2_graphs}:
-    \begin{equation}\label{eq:alg-objetcs}
-        A_3 = V_{\emptyset} \oplus V_{\Lambda_1} \quad\text{and}\quad A_4 = V_{\emptyset} \oplus V_{3\Lambda_1}
-    \end{equation}
-\end{remark}
+
 
 
 
@@ -180,13 +242,15 @@ As one might expect, and as was alluded to above, unitarity interacts nicely wit
 
 
 \subsection{Unoriented Graph Planar Algebras}
-We will study the quantum subgroups of type $G_2$ by embedding their skein theories into appropriate graph planar algebras. This serves two purposes:
+We will study the quantum subgroups of type $G_2$ by embedding their skein theories into appropriate graph planar algebras (GPAs). 
+This serves two purposes:
 \begin{itemize}
     \item Giving us solid ground on which to do computations, allowing us to uncover relations by finding them in the GPA hom-spaces, and
     \item Implying some nice general properties for the quantum subgroups (i.e., unitarity)
 \end{itemize}
-In this work we have no use for generalized GPAs, such as the {\it oriented} \cite{Cain_Dan} or {\it multi-color} GPA \cite{emily}, 
-so we consider only the unoriented case. 
+GPAs are an invention of Vaughan Jones \cite{jones_GPA}.
+In this work we have no use for less specialized GPAs, such as the {\it oriented} \cite{Cain_Dan} 
+or {\it multi-color} GPA \cite{emily}, so we consider only the unoriented case. 
 
 \begin{definition}\label{def:GPA}
     Let $\Gamma=(V,E)$ be a finite graph. 
@@ -218,56 +282,6 @@ Unitarity of GPAs implies unitarity of these planar algebras.
 
 
 
-
-\subsection{Algebra and Module Objects}
-We will ultimately show that $\DD_3$ and $\DD_4$ are presentations for the categories
-$\cat{q_3}_{A_3}$ and $\cat{q_4}_{A_4}$ of modules over algebra objects $A_3$ and $A_4$ coming from the conformal embeddings 
-$\VV(\gg_2,3) \subseteq \VV(\ee_6,1)$ and $\VV(\gg_2,4) \subseteq \VV(\dd_7,1)$, respectively. 
-In this subsection we recall basic facts about algebra and module objects. 
-See \cite{EGNO, ostrik2001modulecategoriesweakhopf} for more complete descriptions. 
-The theory which will apply to our context is given in \cite{cain_noah}.
-Some basic properties concerning the interaction of algebra and module objects with
-monoidal functors will be used in the proof of our main theorems;
-this material can be found in \cite{monoidalFunctorsAndAlgebras}.
-We restate a few definitions and facts here.
-Unless otherwise stated, we will be assuming the underlying tensor categories are braided.
-
-
-\begin{definition}
-    Let $A$ be an algebra object of the braided tensor category $\CC$.
-    $A$ is an {\bf Etale} algebra if it is commutative and separable.
-    We call $A$ {\bf connected} if it is Etale and $\dim\Hom_\CC(\unit \to A)=1$.
-\end{definition}
-
-
-For an Etale algebra object $A$ of $\CC$, we denote by $\CC_A$ the collection of left $A$-modules internal to $\CC$.
-As decribed in \cite{cain_noah}, a braiding on $\CC$ induces a tesnor product on $\CC_A$.
-Separability of $A$ implies semisimplicity of $\CC_A$, 
-and connectedness of $A$ implies the unit $\unit_{\CC_A}=A$ is simple in $\CC_A$ \cite{DMNO}.
-
-Furthermore, the free fucntor 
-\[
-    \FF_A: \CC \xhookrightarrow{X\mapsto A\otimes X} \CC_A
-\]
-is a monoidal embedding which is, as we will see later, not always full.
-Its right adjoint is given by the forgetful functor $\FF^\vee:\CC_A\to\CC$ 
-which acts as the identity on both objects and morphisms. 
-
-One result which will help immensely in arriving at GPA embeddings is the following,
-which is Lemma 2.4 of \cite{cain_noah}.
-
-\begin{lemma}[Half-braid]\label{eq:general-half-braid}
-    Let $\CC$ be a braided tensor category, and $A$ an etale algebra object.
-    For any $f\in\Hom_{\CC_A}( \FF(Y_1) \to \FF(Y_2) )$, the following relation holds:
-    \[
-    \text{\red{(stand in for general hb)}} \skein{/skein_figs/hb_top}{0.15} = \skein{/skein_figs/hb_bottom}{0.2}
-    \]
-\end{lemma}
-
-We will utilize this result to obtain a rather large number (2970 at level 3 and 7776 at level 4)
-of linear equations constraining the GPA coordinates
-of the morphisms not living in the image of $\FF_A$.
-Thus the half-braid relation will be key to our program, despite not being necessary to prove evaluability.
 
 
 
