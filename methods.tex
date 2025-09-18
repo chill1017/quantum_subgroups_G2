@@ -1,4 +1,4 @@
-\section{Methods: GPA Embeddings}\label{sec:methods}
+\section{GPA Embeddings}\label{sec:methods}
 
 The defining relations for $\DD_3$ and $\DD_4$ were not computed theoretically. Instead, we deduced them from embedding the planar algebras $\PP_{Y_4;\cat{q_3}_{A_3}}$ and $\PP_{Y_4;\cat{q_4}_{A_4}}$ into graph planar algebras.
 
@@ -6,14 +6,19 @@ One may give a functor $F:\PP_{Y} \to \GPA(\Gamma)$ by giving the image of the m
 \[
 F\left( \skein{skein_figs/trivalent}{0.08} \right) \in \Hom_{\GPA(\Gamma)}(2\to1).
 \]
-This amounts to giving a list of $M\coloneqq\tr(\Gamma^2\cdot\Gamma)$ complex scalars, say $a_1,\dots,a_M$. These complex numbers satisfy equations in the $a_i$ and $\ol{a_i}$. If we assume for now that each $a_i$ is real, then this reduces the system to a collection of polynomials in the $a_i$ \footnote{This assumption is useful only if it turns out to help us solve the system. In fact, any assumptions we make about this system, if they yield solutions, are in some way valid.}.
+This amounts to giving a list of $M\coloneqq\tr(\Gamma^2\cdot\Gamma)$ complex scalars\footnote{
+    We freely switch between using $\Gamma$ to mean the graph itself and the graph's adjacency matrix. }, 
+say $a_1,\dots,a_M$. These complex numbers satisfy equations in the $a_i$ and $\ol{a_i}$. If we assume for now that each $a_i$ is real, then this reduces the system to a collection of polynomials in the $a_i$ \footnote{This assumption is useful only if it turns out to help us solve the system. In fact, any assumptions we make about this system, if they yield solutions, are in some way valid.}.
 Once we have the image of the trivalent vertex in hand, we have found an embedding of the planar algebra it generates. We can then solve for the image
 \[
 F\left( \skein{skein_figs/Pg}{0.08} \right) \in \Hom_{\GPA(\Gamma)}(2\to2).
 \]
 
 \subsection{Trivalent Vertex}\label{subsec:triv-vertex}
-The goal of this subsection is to describe in more detail the process of finding the image of the trivalent vertex. We will walk through the details for the level 4 case. The level 3 case follows the same process, but is somewhat less instructive. See Sections~\ref{} to find the exact graph used at level 4.
+The goal of this subsection is to describe in more detail the process of finding the image of the trivalent vertex. 
+We will walk through the details for the level 4 case. 
+The level 3 case follows the same process, but is somewhat less instructive. 
+\red{See Sections~\ref{} to find the exact graph used at level 4.}
 
 Let 
 \[
@@ -53,8 +58,6 @@ These six degree-8 algebraic numbers now begin a cascade of equation solving. Th
 \[
 a_{10} = \frac{1}{2} \left(\sqrt{1+\sqrt{6-3 \sqrt{3}}}+\sqrt{\sqrt{2+\sqrt{3}}-1}\right).
 \]
-In Section~\ref{} we will discuss these numbers further.
-
 
 
 
@@ -70,9 +73,9 @@ the degree of the resulting equations now depends only on the number of projecti
 Moreover, we do not necessarily assume the $b_i$ are real; 
 hence the resulting equations are polynomial in $b_i$ and $\ol{b_i}$. 
 
-The relation (decStick) along with the one-strand relations of (Schur 0) and (Schur 1) give a system of linear equations, 
-and the following Proposition \cite[Lemma 2.4]{cain_noah_hans} provides an additional set of linear equations 
-in the projection coefficients.
+The relation (decStick) along with the one-strand relations of (Schur 0) and (Schur 1) give a system of linear equations. 
+The following proposition, which is a specialization of Proposition~\ref{prop:hb-general} 
+to the case where $f=P_g$, provides an additional set of linear equations in the projection coefficients.
 
 \begin{proposition}
     The following relation holds:
@@ -81,19 +84,17 @@ in the projection coefficients.
     \end{equation*}
 \end{proposition}
 
-\begin{remark}
-    The relation (Half-braid) is not used in the evaluation algorithm.
-    It is merely a vehicle for obtaining a huge set of linear equations in the $b_i$ and $\ol{b_i}$.
-\end{remark}
+The relation (Half-braid) is not used in the evaluation algorithm.
+It is merely a vehicle for obtaining a huge set of linear equations in the $b_i$ and $\ol{b_i}$.
 
-
-In total, the linear system was enough to pin down the projection coefficients for both levels 3 and 4.
+In total, the linear system was enough to fully determine the projection coefficients for both levels 3 and 4.
 It is at this point that the present work diverges from other similar published works on the topics of
-GPA embeddings \cite{Cain_Dan} or presentations for conformal embeddigns \cite{cain_noah_hans}.
+GPA embeddings \cite{Cain_Dan} or presentations for conformal embeddigns \cite{cain_noah}.
 Previous investigations utilizing GPA embeddings have had a full set of relations on hand,
 and these relations were used to {\it find} the embeddings.
 On the other hand, recent progress on conformal embeddings have used theoretical means to uncover relations.
-At the present step in this work, we are standing before an unexplored category, with but an embedding 
+
+At the present step in this work, we are standing before an unexplored category, with an embedding 
 of two of its generators, $\skein{/skein_figs/trivalent}{0.1}$ and $\skein{/skein_figs/Pg}{0.1}$, in hand.
 We have a set of relations for $\skein{/skein_figs/trivalent}{0.1}$ 
 (i.e., the defining relations of $\GG_2(q)$) sufficient to evaluate any undecorated closed diagram.
@@ -103,19 +104,21 @@ However, we do not know what further relations we will find, nor exactly when we
 In order to uncover relations such as those of Definition~\ref{def:zn-ext}, 
 we use a process reminiscent of the scientific method. 
 This process begins by considering a decorated trivalent diagram and searching for ways to decrease its complexity. 
-We begin the process by assuming no more than a minimal collection of moves; i.e., (decStick), (Recouple), and (Product).
-Once we have applied all these minimal moves, we begin to barter. We look for the least egregious move we might make, and assume it comes at some cost. 
+We begin the process by assuming no more than a minimal collection of moves; i.e., (decStick), (Recouple), and ($\Z_n$).
+Once we have applied all these minimal moves, we begin to look for 
+a move we might hope to make, and assume it comes at some cost. 
 For example, being able to apply (Swap) might allow us to then apply (decStick); 
-thus we eliminate a colored strand at the cost of a scalar $\omega$. 
+thus we would eliminate a colored strand at the cost of a scalar $\omega$. 
 This is clearly a trade we should make.
 In order to find the exact price of this trade, we use our GPA-embedding $F:\DD_3 \to\GPA(\Gamma_3)$, 
-assuming we know the form the cost will come in.
+and assume we know the form the cost will come in.
 We use the embedding coefficients we previously found to set up and solve the linear equation
 \[
     F\left( \skein{/skein_figs/swap_LHS}{0.15} \right) = \omega F\left( \skein{/skein_figs/swap_RHS}{0.15} \right)
 \]
 for $\omega$.
-Another example of bartering appears in the proof of Lemma~\ref{lem:ext-dec}. 
+
+Another example of this tradeoff appears in the proof of Lemma~\ref{lem:ext-dec}. 
 During the proof, we apply (Swap) and (Change of Basis) with the goal of ridding ourselves of internal strands; 
 this comes at the cost of external strands.
 The costs incurred in the (decTrigon), (decTetragon), and (decPentagon) relations are less straightforward to predict.
@@ -123,9 +126,6 @@ The form the relations are presented in is the product of trial and error.
 As one will note when inspecting the coefficients of these relations in the attached Mathematica files,
 many of the (decTetragon) and (decPentagon) coefficients are zero.
 The obvious next question one asks is which of the numbers $u_{i,j}$, $v_{i,j}$, and $w_{i,j}$ one should expect to be nonzero.
-The examples we construct based on $\GG_2(q)$ are too isolated to notice a pattern and drawn conclusions in general.
-However, forthcoming work of the present author and Edie-Michell \cite{cain_me_near_groups} 
-constructing many examples of near-groups as $Z_n$-like extensions will work to shed light on the phenomenon as a whole.
-
-Once we have a sufficient set of relations to recognize our quantum subgroups as $\Z_n$-like extensions,
-we must ascend to a more theoretical plane to prove that we have really finished the job.
+The examples we construct based on $\GG_2(q)$ are too isolated to notice a pattern and draw conclusions in general.
+However, forthcoming work of the present author and Edie-Michell constructing many 
+examples of near-groups as $Z_n$-like extensions will work to shed light on the phenomenon as a whole.
