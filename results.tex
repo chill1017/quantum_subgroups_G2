@@ -77,7 +77,7 @@ We have now set the stage for a $\Z_3$-like extension of $\GG_2(q_3)$.
 
 
 \subsubsection{GPA Embedding}
-Here we give details of both the GPA-embedding of $\DD_3$ and its $\Z_3$-like structure constants. 
+Here we give some details of the GPA-embedding of $\DD_3$. 
 Recall from Definition~\ref{def:GPA} that the defining bases for the spaces 
 \[
     \Hom_{\GPA(\Gamma)}(m\to n)
@@ -200,7 +200,6 @@ With this ordering and fact (3) above in mind, and recalling that the GPA's dagg
     \caption{Level 3 trivalent embedding coefficients.}
     \label{tab:lvl-3-triv-coefs}
 \end{table}
-
 
 
 
@@ -348,7 +347,7 @@ The details of the GPA embedding of $\GG_2(q_4)$ are less instructive than the l
 so we relegate them to the attached Mathematica files. 
 The trivalent coordinates are algebraically nicer than those at level 3; 
 up to sign, we showed 5 of 9 in Subsection~\ref{subsec:triv-vertex}. 
-The nonzero coordinates of the projection come in blocks of \red{4, and 9}. 
+The nonzero coordinates of the projection come in blocks of 4, and 9. 
 There is also an analogue of Theorem~\ref{thm:level-3} for level 4.
 
 \begin{theorem}\label{thm:level-4}
@@ -394,47 +393,3 @@ The structure constants for $\DD_4$ are given in Section~\ref{sec:intro}, but we
 
 
 
-
-\begin{figure}
-    \begin{tikzpicture}[scale=1.25]
-        \node[shape=circle,draw=black] (A) at (0,1.5) {1};
-        \node[shape=circle,draw=black] (B) at (1.25,3) {2};
-        \node[shape=circle,draw=black] (C) at (4.25,3) {3};
-        \node[shape=circle,draw=black] (D) at (5.5,1.5) {4};
-        \node[shape=circle,draw=black] (E) at (4.25,0) {5};
-        \node[shape=circle,draw=black] (F) at (1.25,0) {6};
-
-        % module fusion graph
-        \path (B) edge [loop, in=45, out=135, looseness=8] node {} (B);
-        \path (C) edge [loop, in=45, out=135, looseness=8] node {} (C);
-        \path (E) edge [loop, in=225, out=315, looseness=8] node {} (E);
-        \path (F) edge [loop, in=225, out=315, looseness=8] node {} (F);
-
-        \path [-] (A) edge node {} (B);
-        \path [-] (A) edge node {} (F);
-
-        \path [-] (B) edge node {} (C);
-        \path [-] (B) edge node {} (E);
-        \path [-] (B) edge node {} (F);
-
-        \path [-] (C) edge node {} (D);
-        \path [-] (C) edge node {} (E);
-        \path [-] (C) edge node {} (F);
-
-        \path [-] (D) edge node {} (E);
-
-        \path [-] (E) edge node {} (F);
-
-        % g fusion graph
-        \path [->, draw=orange] (A) edge [loop, in=135, out=225, looseness=8] node {} (A);
-        \path [->, draw=orange] (D) edge [loop, in=45, out=-45, looseness=8] node {} (D);
-
-        \path [->, draw=orange] (B) edge [bend right] node  {} (F);
-        \path [->, draw=orange] (F) edge [bend right] node {} (B);
-
-        \path [->, draw=orange] (C) edge [bend right] node {} (E);
-        \path [->, draw=orange] (E) edge [bend right] node {} (C);
-    \end{tikzpicture}
-    \caption{Fusion graphs at level 4 for $Y$ (black) and $g$ (orange). See \cite[Figure 21b]{g2_graphs}.}
-    \label{fig:new-graphs-lvl4}
-\end{figure}
