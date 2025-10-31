@@ -2,7 +2,8 @@
 This section is devoted to discussing the details of our GPA embeddings.
 This will include a thorough discussion of the techniques used to solve the defining equations,
 along with a discussion of the coordinates these solutions define.
-We find our underlying graphs by orbifolding Figures 18b and 21b of \cite{g2_graphs}.
+We find our underlying graphs by orbifolding the graphs in Figures 18b and 21b of \cite{g2_graphs}.
+These graphs are shown in Figures~\ref{fig:new-graphs-lvl4} and \ref{fig:new-graphs-lvl3}.
 
 One may give a monoidal functor $F:\GG_2(q_k) \to \GPA(\Gamma)$ by specifying the image of the morphism 
 \[
@@ -19,11 +20,12 @@ of polynomials in the $a_i$ \footnote{
     In fact, any assumptions we make about this system, if they yield solutions, are in some way valid.
     }.
 Once we have the image of the trivalent vertex in hand, we have found an embedding of the planar algebra it generates. 
-We can then solve for the image
+We can then follow a similar approach to solve for the image
 \[
 F\left( \skein{skein_figs/Pg}{0.08} \right) \in \Hom_{\GPA(\Gamma)}(2\to2)
 \]
 to extend the GPA embedding of $\GG_2(q_k)$ to an embedding of $\DD_k$.
+Let us discuss our examples.
 
 
 
@@ -37,8 +39,8 @@ Let $\Gamma_4$ be the graph given in Figure~\ref{fig:new-graphs-lvl4}.
 Set $q_4 \coloneq e^{2\pi i/48}$.
 The following result says that we hvae an embedding of $\GG_2(q_4)$ into the GPA on $\Gamma_4$.
 
-\begin{theorem}
-    There is a faithful monoidal functor $\GG_2(q_3) \to \GPA(\Gamma_3)$.
+\begin{theorem}\label{thm:G2-level3-GPA-emb}
+    There is a faithful monoidal functor $F_4:\ol{\GG_2(q_3)} \hookrightarrow \GPA(\Gamma_4)$.
 \end{theorem}
 \begin{proof}
     See the attached Mathematica notebooks for verification of the necessary equations.
@@ -52,7 +54,7 @@ Let
 \]
 be the defining basis for $\Hom_{\GPA(\Gamma)}(2\to1)$ ($M=88$ at level 4). Then it must be that 
 \[
-    F\left( \skein{skein_figs/trivalent}{0.08} \right) = a_1(p_1,q_1)+\cdots+ a_M(p_M,q_M).
+    F_4 \left( \skein{skein_figs/trivalent}{0.08} \right) = a_1(p_1,q_1)+\cdots+ a_M(p_M,q_M).
 \]
 The \ref{eq:Bigon} relation, when sent through $F$, becomes the system
 \[
@@ -83,15 +85,7 @@ For example, when we apply this approach to the \ref{eq:Rotate} equations, we ar
    \sqrt{6}+\sqrt{3}+2 \sqrt{2}+7 
 \end{equation*}
 
-% \begin{align*}
-    % a_{8}^2+a_{85}^2 & = 4-\sqrt{2}+2 \sqrt{3}-\sqrt{6} \\
-    % a_{69}^2+\left(1+\sqrt{\frac{3}{2}}\right) a_{8}^2 & = \frac{3+\sqrt{3}+\sqrt{6}}{\sqrt{2}} \\
-%     a_{69}^2 \left(\left(2+\sqrt{6}\right) a_{8}^2+\left(2+\sqrt{6}\right)
-%    a_{85}^2-2 \sqrt{2+\sqrt{3}}\right) & = 5+\sqrt{2}+\sqrt{3}+2 \sqrt{6} \\ 
-%    2 a_{69}^4+\left(5+2 \sqrt{6}\right)
-%    a_{85}^4 & = \left(3+\sqrt{2}+\sqrt{3}+\sqrt{6}\right) a_{85}^2+3
-%    \sqrt{6}+\sqrt{3}+2 \sqrt{2}+7 \\
-% \end{align*}
+
 Up to three choices of sign, the solution to this system is
 \begin{align*}
     a_{8} & = \sqrt{2+\sqrt{3}-\sqrt{2+\sqrt{3}}} \\
@@ -114,7 +108,7 @@ For instance,
     a_{10} = \frac{1}{2} \left(\sqrt{1+\sqrt{6-3 \sqrt{3}}}+\sqrt{\sqrt{2+\sqrt{3}}-1}\right).
 \]
 
-Up to sign, the coordinates of $F\left( \skein{skein_figs/trivalent}{0.08} \right)$ 
+Up to sign, the coordinates of $F_4 \left( \skein{skein_figs/trivalent}{0.08} \right)$ 
 take on the following values:
 \begin{align*}
     \alpha_1 & = \sqrt{\frac{1}{2} \left(1+2 \sqrt{2}+\sqrt{3}+\sqrt{6}\right)} \\
@@ -130,7 +124,7 @@ take on the following values:
 
 
 \subsection{Extension of level 4}
-With out embedding of $\GG_2(q_4)$ in hand (i.e., the coordinates of $F\left( \skein{skein_figs/trivalent}{0.08} \right)$),
+With our embedding of $\GG_2(q_4)$, i.e. the coordinates of $F_4 \left( \skein{skein_figs/trivalent}{0.08} \right)$, in hand, 
 we now know where to find a subcategory of $\GPA(\Gamma_4)$ isomorphic to $\GG_2(q_4)$.
 To enlarge this copy of $\GG_2(q_4)$ to a $\Z_n$-like extension, we miust find 
 and element of $\Hom_{\GPA(\Gamma_4)}(2\to 2)$ which captures the behavior of 
@@ -139,9 +133,32 @@ the idempotent $\skein{skein_figs/Pg}{0.08}$.
 To this end, we take a similar approach to the one discusses above.
 
 
-\begin{theorem}
-    There exists an element of the GPA with the following relations
+\begin{theorem}\label{thm:D4-GPA-emg}
+    There exists an element $P_4 \in\Hom_{\GPA(\Gamma_4)}(2\to 2)$ satisfying the relations (), (), (), (), and (), 
+    with structure constants given by those in Definition~\ref{def:D4}.
 \end{theorem}
+\begin{proof}
+    See the attahed Mathemaica notebooks for verification.
+\end{proof}
+
+
+As an immediate consequence of Theorems~\ref{thm:G2-level3-GPA-emb} and \ref{thm:D4-GPA-emg} we have the following corollary.
+
+\begin{corollary}
+    The category $\DD_4$ is a nonzero category which is a $\Z_2$-like extension of $\GG_2(q_4)$.
+    Furthermore $\ol{\DD_4}$ is unitary.
+\end{corollary}
+\begin{proof}
+    We deduce $\DD_4$ is nonzero by its embedding into a nonzero subcategory of $\GPA(\Gamma_4)$.
+    Unitarity of its semisimple quotient follows from unitarity of $\GPA(\Gamma_4)$.
+\end{proof}
+
+
+
+
+
+
+
 
 
 
@@ -200,7 +217,7 @@ Set $q_3 \coloneq e^{2\pi i/42}$.
 The following result gives us a GPA embedding of $\GG_2(q_3)$.
 
 \begin{theorem}
-    There is a faithful monoidal functor $\GG_2(q_3) \to \GPA(\Gamma_3)$.
+    There is a faithful monoidal functor $F_3: \ol{\GG_2(q_3)} \to \GPA(\Gamma_3)$.
 \end{theorem}
 \begin{proof}
     See the attached Mathematica notebooks for verification of the necessary equations.
@@ -243,6 +260,6 @@ The following result gives us a GPA embedding of $\GG_2(q_3)$.
 
 \subsection{Extension of level 3}
 \begin{theorem}
-    There exists an element of the GPA with the following relations
+    There exists an element $P_3  \in\Hom_{\GPA(\Gamma_3)}(2\to 2)$ with the following relations
 \end{theorem}
 
