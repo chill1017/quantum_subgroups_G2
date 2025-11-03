@@ -2,7 +2,11 @@
 This section is devoted to discussing the details of our GPA embeddings.
 This will include a thorough discussion of the techniques used to solve the defining equations,
 along with a discussion of the coordinates these solutions define.
-We find our underlying graphs by orbifolding the graphs in Figures 18b and 21b of \cite{g2_graphs}.
+Subsection~\ref{subsec:extend-level-4} discusses the representation theory which led us to 
+search for $\Z_n$-like extensions in the first place;
+in this respect, we discuss only the details of level 4, but the story at level 3 is essentially the same.
+
+We find our fusion graphs by orbifolding the graphs in Figures 18b and 21b of \cite{g2_graphs}.
 These graphs are shown in Figures~\ref{fig:new-graphs-lvl4} and \ref{fig:new-graphs-lvl3}.
 
 One may give a monoidal functor $F:\GG_2(q_k) \to \GPA(\Gamma)$ by specifying the image of the morphism 
@@ -39,7 +43,7 @@ Let $\Gamma_4$ be the graph given in Figure~\ref{fig:new-graphs-lvl4}.
 Set $q_4 \coloneq e^{2\pi i/48}$.
 The following result says that we hvae an embedding of $\GG_2(q_4)$ into the GPA on $\Gamma_4$.
 
-\begin{theorem}\label{thm:G2-level3-GPA-emb}
+\begin{theorem}\label{thm:G2-level4-GPA-emb}
     There is a faithful monoidal functor $F_4:\ol{\GG_2(q_3)} \hookrightarrow \GPA(\Gamma_4)$.
 \end{theorem}
 \begin{proof}
@@ -123,17 +127,25 @@ take on the following values:
 \end{align*}
 
 
-\subsection{Extension of level 4}
+\subsection{Extension of level 4}\label{subsec:extend-level-4}
 With our embedding of $\GG_2(q_4)$, i.e. the coordinates of $F_4 \left( \skein{skein_figs/trivalent}{0.08} \right)$, in hand, 
 we now know where to find a subcategory of $\GPA(\Gamma_4)$ isomorphic to $\GG_2(q_4)$.
-To enlarge this copy of $\GG_2(q_4)$ to a $\Z_n$-like extension, we miust find 
+In practice, we are relying on the fact that the free functor gives an embedding 
+\[
+    \ol{\Rep(U_{q_4}(\gg_2))} \hookrightarrow \ol{\Rep(U_{q_4}(\gg_2))}_{A_4}
+\]
+which takes a simple $\otimes$-generator to a simple $\otimes$-generator.
+Combine this with the facts that $\ol{\Rep(U_{q_4}(\gg_2))}_{A_4}$ contains a subcategory equivalent to $\Vecc{\Z_2}$,
+and that both of the grouplike simples are subobjects of the square of the $\otimes$-generator.
+One concludes that $\ol{\Rep(U_{q_4}(\gg_2))}_{A_4}$ contains a projection onto a $\Z_2$-like simple object 
+which follows relations analogous to (Recouple) - (decBigon).
+Now, to enlarge our copy of $\GG_2(q_4)$ to a $\Z_2$-like extension, we must find 
 and element of $\Hom_{\GPA(\Gamma_4)}(2\to 2)$ which captures the behavior of 
-the idempotent $\skein{skein_figs/Pg}{0.08}$.
+the idempotent whose role is played by $\skein{skein_figs/Pg}{0.08}$.
+To this end, we take a similar approach to the one of the previous subsection.
 
-To this end, we take a similar approach to the one discusses above.
 
-
-\begin{theorem}\label{thm:D4-GPA-emg}
+\begin{theorem}\label{thm:D4-GPA-emb}
     There exists an element $P_4 \in\Hom_{\GPA(\Gamma_4)}(2\to 2)$ satisfying the relations (), (), (), (), and (), 
     with structure constants given by those in Definition~\ref{def:D4}.
 \end{theorem}
@@ -141,8 +153,86 @@ To this end, we take a similar approach to the one discusses above.
     See the attahed Mathemaica notebooks for verification.
 \end{proof}
 
+\red{We only start with (Recouple) - (decBigon).
+All other relations were discovered.}
 
-As an immediate consequence of Theorems~\ref{thm:G2-level3-GPA-emb} and \ref{thm:D4-GPA-emg} we have the following corollary.
+\red{Give a table of nonzero coordinates like at level 3, in polynomial representation.}
+
+
+\red{ Lead into this. }
+\red{
+    We haven't referenced the representation theory going on.
+    Either remove refrences to $g$, or phrase alternately.
+}
+
+\blue{
+Table~\ref{tab:lvl-3-proj-coefs} holds numerical approximations to the nonzero projection coordinates. 
+There are blocks of nonzero coordinates of length 9 and 16. 
+These sizes, and the location of the nonzero real coordinates follow naturally when one considers three facts:
+\begin{enumerate}
+    \item The object $g$ is $\Z_3$-like and simple and therefore has fusion graph given by the 
+    oriented edges of the graph in Figure~\ref{fig:new-graphs-lvl3}.
+    \item There is a map $T_g \in \Hom_{\cat{q_3}_{A_3}}(Y^{\otimes2} \to g)$ whose outer product $T_g^\dagger \circ T_g$ equals $P_g$, projection onto $g$.
+    \item The dagger of a simple projection is itself; i.e., $\left( \skein{/skein_figs/Pg}{0.15} \right)^\dagger = \skein{/skein_figs/Pg}{0.15}$.
+\end{enumerate}
+The existence and behavior of $T_g$ must be captured by the image of $P_g$ in the GPA, which is all we have access to. 
+This is indeed the case, as the only coordinates of the projection in the GPA which are nonzero are at those basis vectors 
+\[
+    (i \to\blank\to j, i \to\blank\to j)
+\]
+where $i\to j$ is a directed edge of the $g$-fusion graph. 
+For $i=j=1$ there are three possible values for $\blank$; pairing them gives 9 pairs. 
+For $i,j\neq 1$ there are four possible values for $\blank$; pairing them gives 16 pairs. 
+The columns of Table~\ref{tab:lvl-3-proj-coefs} give numerical approximations to the coordinates of the projection, 
+with dictionary ordering on the pairs of $\blank$ values. 
+That is, the column labeled by $1\to\blank\to1$ shows the coordinates on the ordered basis
+\begin{align*}
+    (1\to 2 \to1, 1\to 2 \to1) \\
+    (1\to 2 \to1, 1\to 3 \to1) \\
+    (1\to 2 \to1, 1\to 4 \to1) \\
+    (1\to 3 \to1, 1\to 2 \to1) \\
+    (1\to 3 \to1, 1\to 3 \to1) \\
+    (1\to 3 \to1, 1\to 4 \to1) \\
+    (1\to 4 \to1, 1\to 2 \to1) \\
+    (1\to 4 \to1, 1\to 3 \to1) \\
+    (1\to 4 \to1, 1\to 4 \to1) \\
+\end{align*}
+With this ordering and fact (3) above in mind, and recalling that the GPA's dagger operation swaps paths, the real coordinates appear where one would expect them.
+
+
+}
+\red{4 and 25}
+
+\begin{table}
+    \centering
+    \begin{tabular}{|cccccc|} \hline
+        $1\to\blank\to1$ & $4\to\blank\to4$    &    $2\to\blank\to6$    &    $3\to\blank\to5$ &  $2\to\blank\to6$   &  $3\to\blank\to5$ \\ \hline\hline
+        $2.22$  & $2.22$  & ---   & ---& --- & --- \\
+        $-2.22$ & $-2.22$  & ---  & ---& --- & --- \\
+        $-2.22$ & $-2.22$  & ---  & ---& --- & --- \\
+        $2.22$  & $2.22$  & --- & ---& --- & --- \\
+                &  & --- & ---& --- & --- \\
+                &  & --- & ---& --- & --- \\
+                &  & --- & ---& --- & --- \\
+                &  & --- & ---& --- & --- \\
+                &  & --- & ---& --- & --- \\ 
+                &  & --- & ---& --- & --- \\
+                &  & --- & ---& --- & --- \\
+                &  & --- & ---& --- & --- \\
+                &  & --- & ---& --- & --- \\
+                &  & --- & ---& --- & --- \\
+                &  & --- & ---& --- & --- \\
+                &  & --- & ---& --- & --- \\ \hline
+    \end{tabular}
+    \caption{Level 4 projection embedding coefficients.\\ 
+    \red{Change to polynomial representations, then give vars <-> vals correspondence.}}
+    \label{tab:lvl-4-proj-coefs}
+\end{table}
+
+
+
+
+As an immediate consequence of Theorems~\ref{thm:G2-level3-GPA-emb} and \ref{thm:D4-GPA-emb} we have the following corollary.
 
 \begin{corollary}
     The category $\DD_4$ is a nonzero category which is a $\Z_2$-like extension of $\GG_2(q_4)$.
@@ -212,18 +302,98 @@ As an immediate consequence of Theorems~\ref{thm:G2-level3-GPA-emb} and \ref{thm
 
 
 \subsection{Level 3}
+We now tell a similar story, but at level 3.
+However we use numerical approximations here, and relegate the actual numbers to the attached Mathematica files.
+We were unable to find presentable representations of the GPA-embedding coordinates or structure constants.
+The coordinates for the trivalent GPA embedding were algebraic numbers of degree 12 or 24.
+even worse, the structure constants for the relations (Change of Basis), (decTrigon), (decTetragon), and (decPentagon) 
+are all of the form
+\[
+    g_1 + g_2 \alpha^2 + g_3 q_3 + g_4 \alpha^2 q_3
+\]
+where $g_i\in \Q(q_3+q_3^{-1})$, the maximal real subfield of $\Q(q_3)$, 
+and $\alpha$ is an algebraic number of degree 24 which appears as a coordinate of 
+$F_3 \left( \skein{skein_figs/trivalent}{0.08} \right)$.
+For the relations (Change of Basis) and (decTrigon), the power basis coordinates of the $g_i$ are lowest form rational numbers 
+whose numerators have one or two digits.
+For (decTetrgon), the numerators and denominators of the power basis coordinates of the $g_i$ have around 10 digits on average.
+In the (decPentagon) relation, this digit count explodes to around 135.
+
 Let $\Gamma_3$ be the graph given in Figure~\ref{fig:new-graphs-lvl3}.
 Set $q_3 \coloneq e^{2\pi i/42}$.
 The following result gives us a GPA embedding of $\GG_2(q_3)$.
 
-\begin{theorem}
+\begin{theorem}\label{thm:G2-level3-GPA-emb}
     There is a faithful monoidal functor $F_3: \ol{\GG_2(q_3)} \to \GPA(\Gamma_3)$.
 \end{theorem}
 \begin{proof}
     See the attached Mathematica notebooks for verification of the necessary equations.
 \end{proof}
 
+Despite the more difficult numbers, we are able to recover some of the strutcure of the fusion graph in the GPA coordinates.
+Recall that the defining bases for the spaces 
+\[
+    \Hom_{\GPA(\Gamma)}(m\to n)
+\]
+are given in terms of pairs of paths. 
+The (undirected) graphs we are using have at most a single edge between any two vertices. 
+Hence an edge is equivalent to a pair of vertices, and a path is equivalent to an ordered tuple of vertices. 
+For example, the path
+\[
+    p = v_1 \longrightarrow v_2 \longrightarrow v_3
+\]
+is equivalent to the ordered triple $(v_1,v_2,v_3)$. 
+Which paths $q$ pair validly with $p$ to form a basis element of the $2\to 1$ hom-space of a GPA? 
+Well, by definition, $q$ must be parallel to $p$; i.e. the sources and targets of $p$ and $q$ must coincide. 
+It follows that the only valid pairing for such $p$ is
+\[
+    q = v_1 \longrightarrow v_3,
+\]
+which may also be represented as $(v_1,v_3)$. 
+So the only $2\to 1$ basis element which $p$ appears in is
+\[
+    \big( (v_1,v_2,v_3), (v_1,v_3) \big).
+\]
+But the parallel condition defining basis elements makes including $(v_1,v_3)$ redundant; 
+we might just as well have called the basis element by 
+\[
+    (v_1,v_2,v_3).
+\]
+This is how we refer to $2\to 1$ GPA basis elements. 
+Indeed, in Table~\ref{tab:lvl-3-triv-coefs}, the first two columns combine to specify which basis elements are being specified, 
+and the third column gives the approximate coordinate of the trivalent embedding on that basis element. 
+For example, the first row of Table~\ref{tab:lvl-3-triv-coefs} tells us that the 
+coordinate of the $(2,2,2)$ basis element is approximately $1.08393$; 
+the second row tells us that the coordinate of the $(4,2,3)$ basis element is approximately $0.619371$. 
 
+Paths of the form $(i,j,i)$, $(i,i,j)$, or $(i,j,j)$ for $i,j\neq1$ require a bit more care to describe. 
+There is nontrivial interplay with the graph symmetry swapping vertices 2 and 4. 
+When these two vertices are swapped, a path whose coordinate has absolute value $0.155691$ is sent to 
+one whose coordinate has absolute value $1.69414$. 
+The nine paths whose coordinates have absolute value $0.155691$ are:
+\[
+    (2,3,3),\hspace{0.2em} (3,3,2),\hspace{0.2em} (3,2,3),\hspace{0.2em} (2,4,2),\hspace{0.2em} (4,3,4),\hspace{0.2em} (2,2,4),\hspace{0.2em} (3,4,4),\hspace{0.2em} (4,2,2),\hspace{0.2em} (4,4,3) 
+\]
+One may use symmetry to find the rest of the coordinates.
+
+
+
+
+
+
+\begin{table}
+    \centering
+    \begin{tabular}{|cc|c|} \hline
+        Vertex Path & Conditions & Coefficient \\ \hline\hline
+        $(i,i,i)$ &  $i\neq1$ & 1.08393 \\[10pt]  \hline
+        $(i,j,k)$ &  $\{i,j,k\}=\{2,3,4\}$   & 0.619371 \\[10pt] \hline
+        $(i,1,k)$ &  $i,k\neq 1$, $i\neq k$ & 1.69414 \\[10pt] \hline
+        $(i,1,i)$ &  $i\neq 1$   & 0.861006 \\[10pt] \hline
+        $(i,i,1)$ or $(1,i,i)$ &  $i\neq1$   & 0.967919 \\[10pt] \hline
+    \end{tabular}
+    \caption{Level 3 trivalent embedding coefficients.}
+    \label{tab:lvl-3-triv-coefs}
+\end{table}
 
 \begin{figure}
     \centering
@@ -259,7 +429,56 @@ The following result gives us a GPA embedding of $\GG_2(q_3)$.
 
 
 \subsection{Extension of level 3}
-\begin{theorem}
-    There exists an element $P_3  \in\Hom_{\GPA(\Gamma_3)}(2\to 2)$ with the following relations
+\begin{theorem}\label{thm:D3-GPA-emb}
+    There exists an element $P_3  \in\Hom_{\GPA(\Gamma_3)}(2\to 2)$ satisfying the relations (), (), (), (), and (),
+    with structure constants given in the attached Mathematica notebook.
 \end{theorem}
+\begin{proof}
+    This result is again proved by direct verification of the required equations.
+    See the attached Mathematica notebook.
+\end{proof}
 
+Similarly to the level 4 case, Theorems~\ref{thm:G2-level3-GPA-emb} and \ref{thm:D3-GPA-emb}
+imply nontriviality and unitarity of $\ol{\DD_3}$.
+
+\begin{corollary}
+    The category $\DD_3$ is a nontrivial $\Z_3$-like extension of $\GG_2(q_3)$, 
+    and the semisimple quotient $\ol{\DD_3}$ is unitary.
+\end{corollary}
+
+
+\begin{corollary}
+    The embedding $\GG_2(q_3) \hookrightarrow \DD_3$ descends to a 
+    $\dagger$-embedding $\ol{\GG_2(q_3)} \hookrightarrow \ol{\DD_3}$.
+\end{corollary}
+
+
+
+
+
+
+\begin{table}
+    \centering
+    \begin{tabular}{|cccc|} \hline
+        $1\to\blank\to1$                    & $2\to\blank\to4$                  & $3\to\blank\to2$               & $4\to\blank\to3$ \\ \hline\hline
+        $1.26376$              & $0.791288$                & $0.791288 $              & $0.791288$ \\
+        $-0.631881-1.09445 i$   & $0.567622 - 0.684904 i$   & $0.876955 + 0.149123 i$  & $0.674406 + 0.580055 i$ \\
+        $-0.631881+1.09445 i$   & $0.674406 + 0.580055 i$   & $0.567622 - 0.684904 i$  & $0.876955 + 0.149123 i$ \\
+        $-0.631881+1.09445 i$   & $-0.876955 - 0.149123 i$  & $-0.674406 - 0.580055 i$ & $0.567622 - 0.684904 i$ \\
+        $1.26376$               & $0.567622 + 0.684904 i$   & $0.876955 - 0.149123 i$ & $0.674406 - 0.580055 i$ \\
+        $-0.631881-1.09445 i$   & $1$                       & $1$                      & $1$ \\
+        $-0.631881-1.09445 i$   & $-0.0182917 + 0.999833 i$ & $0.5 - 0.866025 i$       & $0.856735 - 0.515757 i$ \\
+        $-0.631881+1.09445i$    & $-0.5 - 0.866025 i$       & $-0.856735 - 0.515757 i$ & $-0.0182917 - 0.999833 i$ \\
+        $1.26376$               & $0.674406 - 0.580055 i$   & $0.567622 + 0.684904 i$  & $0.876955 - 0.149123 i$ \\ 
+                              & $-0.0182917 - 0.999833 i$ & $0.5 + 0.866025 i$       & $0.856735 + 0.515757 i$ \\
+                              & $1$                       & $1$                      & $1$ \\
+                              & $-0.856735 + 0.515757 i$  & $0.0182917 - 0.999833 i$ & $0.5 - 0.866025 i$ \\
+                              & $-0.876955 + 0.149123 i$  & $-0.674406 + 0.580055 i$ & $0.567622 + 0.684904 i$ \\
+                              & $-0.5 + 0.866025 i$       & $-0.856735 + 0.515757 i$ & $-0.0182917 + 0.999833 i$ \\
+                              & $-0.856735 - 0.515757 i$  & $0.0182917 + 0.999833 i$ & $0.5 + 0.866025 i$ \\
+                              & $1$                       & $1$                      & $1$ \\ \hline
+    \end{tabular}
+    \caption{Level 3 projection embedding coefficients.\\ 
+    \red{Change to polynomial representations, then give vars <-> vals correspondence.}}
+    \label{tab:lvl-3-proj-coefs}
+\end{table}
