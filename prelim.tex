@@ -33,6 +33,15 @@ As decribed in \cite{cain_noah}, a braiding on $\CC$ induces a tesnor product on
 Separability of $A$ implies semisimplicity of $\CC_A$, 
 and connectedness of $A$ implies the unit $\unit_{\CC_A}=A$ is simple in $\CC_A$ \cite{DMNO}.
 
+\red{
+    These are precisely the conditions required to perform the skein theory on $A$-modules 
+    to define the tensor product on $\CC_A$.
+    Etale is the same thing as multiplication having a half-inverse, which means we can pop $A$-bigons.
+    Connected means theres only one $A$-cap and one $A$-cup.
+    This lets us wiggle enough to perfrom the proof that $M\otimes_A N$ is well-defines.
+
+}
+
 Furthermore, the free fucntor 
 \[
     \FF_A: \CC \xhookrightarrow{X\mapsto A\otimes X} \CC_A
@@ -40,6 +49,33 @@ Furthermore, the free fucntor
 is a monoidal embedding which is, as we will see later, not always full.
 Its right adjoint is given by the forgetful functor $\FF^\vee:\CC_A\to\CC$ 
 which acts as the identity on both objects and morphisms. 
+
+
+\red{Needs to be placed properly.}
+\blue{
+
+\begin{proposition}
+    Suppsoe $\CC$ has simple unit, $\DD$ is unitary, and $F:\CC\to \DD$ is a $\dagger$-functor.
+    Then $\ol{\CC}$ is unitary, and $F$ descends to a $\dagger$-embedding $F:\ol{\CC}\to \DD$ such that
+    \[ diagram\]
+\end{proposition}
+
+\begin{lemma}\label{lem:exact-functor}
+    Let $\FF:\CC\to\DD$ be a monoidal functor with faithful exact right adjoint $R$. 
+    If we define $A\coloneqq R(\unit)$, then there is an isomorphism $K$ such that the diagram
+    \[
+    \xymatrix@C=60pt@R=45pt{
+    \CC \ar[r]^{\FF} \ar[dr]^{\FF_A} & \DD \ar[d]^{K} \\
+     & \CC_A
+     }
+    \]
+    commutes up to natural isomorphism.
+\end{lemma}
+
+}
+
+
+
 
 One result which will help immensely in arriving at GPA embeddings is the following,
 which is Lemma 2.4 of \cite{cain_noah}.
@@ -82,6 +118,31 @@ We obtain the algebra objects and fundamental graphs for GPAs from \cite{g2_grap
     A_3 = V_{\emptyset} \oplus V_{\Lambda_1} \quad\text{and}\quad A_4 = V_{\emptyset} \oplus V_{3\Lambda_1}
 \end{equation}
 at levels 3 and 4, respectively.
+
+Additionally at level 3 and 4, respectively, we have the existence of 
+grouplike simple objects 
+\[    
+    g_3 = ..., \quad\text{and}\quad g_4 = ...
+\]
+From \cite{g2_graphs} we see that at both levels $k=3,4$ we have
+\[
+    \dim\Hom_{ \ol{\Rep(U_{q_k}(\gg_2))}_{A_k} }(\FF_{A_k}(V_{\Lambda_1})^{\otimes2} \to g_k) = 1.
+\]
+
+\begin{remark}\label{rem:Pg-properties}
+    It follows that there are idempotents 
+    \[
+        P_{g_k} : \FF_{A_k}(V_{\Lambda_1})^{\otimes2} \to \FF_{A_k}(V_{\Lambda_1})^{\otimes2}
+    \]       
+    projecting onto these grouplike objects.
+    As the $g_i$ are simple, we have $P_{g_k}^\dagger = P_{g_k}$.
+
+    The behavior of the $P_{g_k}$ will be captured by $\skein{/skein_figs/Pg}{0.1}$ in $\DD_k$.
+    As we will see, describing the interaction of $P_{g_k}$ with the image of the free functor 
+    will be sufficient to fully describe $\ol{\Rep(U_{q_k}(\gg_2))}_{A_k}$.
+\end{remark}
+
+
 
 
 
