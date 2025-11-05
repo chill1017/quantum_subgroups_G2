@@ -2,17 +2,11 @@
 
 In this section we prove that the categories $\DD_3$ and $\DD_4$ are indeed
 presentations for quantum subgroups of $\GG_2(q_3)$ and $\GG_2(q_4)$, respectively.
-The machinery we use will be a covariant Galois-like correspondence between subcategories of
-$\ol{\Rep(U_{q_k}(\gg_2))}_{A_k}$ and subalgebras of $A_k$.
-More details of this correspondence may be found in \cite{cain_noah}.
+More details of the argument used may be found in \cite{cain_noah}.
+It is necessary to note that from [\red{TODO}] we know that the nontrivial Etale algebras 
+in $\ol{\Rep(U_{q_3}(\gg_2))}$ and $\ol{\Rep(U_{q_4}(\gg_2))}$ are $A_3$ and $A_4$, respectively.
 
 
-
-
-\red{from thesis:
-
-Need to change to level 4.}
-\blue{
 
 \begin{theorem}\label{thm:level-3}
     There is a monoidal equivalence
@@ -21,59 +15,58 @@ Need to change to level 4.}
     \]
 \end{theorem}
 
-Let $X = V_{\Lambda_1}$ be the object of $\cat{q_3}$ by which we generate the planar algebra $\PP_X \cong \GG_2(q)$. Define $Y=\FF_A(X)$ to be the image of $X$ under the free functor. Now $\FF_{A_3}:\cat{q_3} \to \cat{q_3}_{A_3}$ restricts to an embedding $\PP_{X;\cat{q_3}} \hookrightarrow \PP_{Y;\cat{q}_{A_3}}$. Invertibility of the objects $g$ and $g^{-1}$ implies $g\otimes Y \cong Y$, with rigidity maps for $g$ and $g^{-1}$ building the mutually inverse isomorphisms.
+Corollary \red{TODO} tells us that $\ol{\DD_3}$ is unitary;
+this follows from our $\dagger$-embedding of $\DD_3$ into $\GPA(\Gamma_3)$ and evaluability of $\DD_3$.
+We immediately have the following corollary.
+\begin{corollary}
+    The embedding $\GG_2(q_3) \hookrightarrow \DD_3$ descends to a $\dagger$-embedding
+    $\ol{\GG_2(q_3)} \hookrightarrow \ol{\DD_3}$.
+\end{corollary}
 
+From here we take Karoubi completion.
 
-
-
-\begin{lemma}
-    The induced map
+\begin{proposition}
+    There is an Etale algebra $B_3$ such that 
     \[
-        \ol{\Psi_3} : \ol{\DD_3} \to \ol{\Rep(U_{q_3}(\gg_2))}_{A_3} 
+        \Ab(\ol{\DD_3}) \cong \ol{ \Rep(U_{q_3}(\gg_2))}_{B_3}.
     \]
-    is faithful.
-\end{lemma}
-% Why do we care...?
+\end{proposition}
+
 \begin{proof}
-    The evaluation algorithm for $\DD_3$ implies that $\DD_3$ has simple unit. Therefore every ideal is contained in the ideal of negligibles, which is killed when passing to the semisimplification $\ol{\DD}$. Hence the map $\ol{\Psi_3}$ has no kernel.
+    Taking Karoubi completion of the source and target of $\ol{\GG_2(q_3)} \hookrightarrow \ol{\DD_3}$
+    induces a functor 
+    \[
+        \Ab( \ol{\GG_2(q_3)} ) \hookrightarrow \Ab( \ol{\DD_3} )
+    \]
+    which is faithful exact.
+    By Lemma~\ref{lem:exact-functor}, we deduce that
+    \[
+        \Ab(\ol{\DD_3}) \cong \Ab( \ol{\GG_2(q_3)} )_{B_3}.
+    \]
+    But it is well known that 
+    \[
+        \Ab( \ol{\GG_2(q_3)} ) \cong \ol{ \Rep(U_{q_3}(\gg_2))}.
+    \]
 \end{proof}
+
+Now we are in a position to prove Theorem~\ref{thm:level-3}.
 
 \begin{proof}[Proof of Theorem~\ref{thm:level-3}]
-    We now note that since $\GG_2(q)$ and $\DD_3$ are unitary, we know that $\GG_2(q) \hookrightarrow \DD_3$ induces a $\dagger$-embedding $\ol{\GG_2(q)} \hookrightarrow \ol{\DD_3}$. Thus, there is a chain
+    As we noted before, the only candidates for $B_3$ are $A_3$ and $\unit$.
+    Thus it will suffice to demonstrate that 
     \[
-        \ol{\GG_2(q_3)} \hookrightarrow \ol{\DD_3} \xhookrightarrow{\ol{\Psi_3}} \ol{\Rep(U_{q_3}(\gg_2))}_{A_3}
-    \] 
-    of faithful dominant functors. Using the universal property of Karoubi completion, we arrive at the commutative diagram
-    \[
-        \xymatrix@R=40pt@C=65pt{
-        \ol{\GG_2(q_3)} \ar@{^{(}->}[r] \ar@{^{(}->}[d] & \ol{\DD_3} \ar@{^{(}->}[dr]^{\ol{\Psi}} \ar@{^{(}->}[d] & \\
-        \ol{\Rep(U_{q_3}(\gg_2))} \ar[r]^{\FF_1} & \Ab(\ol{\DD_3}) \ar[r]^{\FF_2} & \ol{\Rep(U_{q_3}(\gg_2))}_{A_3} \\
-        }
+        \Ab(\ol{\DD_3}) \not\cong \ol{ \Rep(U_{q_3}(\gg_2))} \cong \ol{ \Rep(U_{q_3}(\gg_2))}_{\unit}.
     \]
-    where $\FF_1$ and $\FF_2$ are the induced functors. At this point we shift our focus to the lower layer of the diagram.
-    
-    By \cite{something},  $(\FF_2 \circ \FF_1)|_{\ol{\GG_2(q_3)}} = \FF_{A_3}|_{\ol{\GG_2(q_3)}}$ implies $\FF_2 \circ \FF_1 = \FF_{A_3}$. Note that both $\ol{\Rep(U_{q_3}(\gg_2))}$ and $\Ab(\ol{\DD_3})$ are semisimple, and therefore $\FF_1$ has a lax-monoidal right adjoint $\FF_1^\vee$. Proposition~\ref{prop:exact-functor} now allows us to conjure $K$ and $B$ such that the following diagram commutes up to natural isomorphism:
-    \[
-        \xymatrix@R=40pt@C=65pt{
-        \ol{\Rep(U_{q_3}(\gg_2))} \ar[r]^{\FF_1} \ar[dr]_{\FF_B} & \Ab(\ol{\DD_3}) \ar[r]^{\FF_2} \ar[d]^{K} & \ol{\Rep(U_q(\gg_2))}_A \\
-        & \ol{\Rep(U_q(\gg_2))}_B \ar[ur]_{\FF'} & \\
-        }
-    \]
-    Here, $\FF'$ is defined to complete the diagram. From here, apply $\FF_B^\vee$ to the containment $\unit \subseteq \FF'^\vee(\unit)$:
-    \begin{align*}
-        B & = \FF_B^\vee(\unit) \subseteq \FF_B^\vee \circ \FF'^\vee(\unit) \\
-        & \cong (\FF_2 \circ \FF_1)^\vee (\unit) \\
-        & = \FF_{A_3}^\vee(\unit) \\
-        & = \FF_A^\vee(A_3) = A_3.
-    \end{align*}
-    
-    So $B\subseteq A_3$. Since $A_3$ has only two simple summands, we know $A_3$ has no nontrivial subalgebras: $B\cong \unit$ or $B\cong A_3$.
-    If $B\cong \unit$ then
-    \[
-        \Ab(\ol{\DD_3}) \cong \ol{\Rep(U_{q_3}(\gg_2))}_\unit \cong \ol{\Rep(U_{q_3}(\gg_2))}
-    \]
-    A quick dimension count falsifies this. Hence $\Ab(\ol{\DD_3}) \cong \ol{ \Rep(U_{q_3}(\gg_2))}_{A_3}$.
+    % Let $X\coloneq V_{\Lambda_1}$, and let $Y\coloneq \FF_{A_3}(X)$ be the image of $X$ under the free functor.
+    % Recalling that $A_3 = V_{\emptyset} \oplus V_{\Lambda_1}$, we may use a direct fusion graph computation to see
+    % \[
+    %     \dim\Hom
+    % \]
+    \red{
+        D3 has 3 dimensions of $2 \to 1$ but how do we push this through isomorphisms to make this correspond to something in Rep?
+        What do objects of D3 go to in these isomorphisms?
+        Not clear.
+    }
 \end{proof}
 
 
-}
