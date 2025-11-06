@@ -3,10 +3,101 @@
 In this section we prove that the categories $\DD_3$ and $\DD_4$ are indeed
 presentations for quantum subgroups of $\GG_2(q_3)$ and $\GG_2(q_4)$, respectively.
 More details of the argument used may be found in \cite{cain_noah}.
-It is necessary to note that from [\red{TODO}] we know that the nontrivial Etale algebras 
+It is necessary to note that from [\red{TODO}] we know that the only nontrivial Etale algebras 
 in $\ol{\Rep(U_{q_3}(\gg_2))}$ and $\ol{\Rep(U_{q_4}(\gg_2))}$ are $A_3$ and $A_4$, respectively.
 
+We first state and prove the theorem at level 4.
 
+\begin{theorem}\label{thm:level-4}
+    There is a monoidal equivalence
+    \[
+        \Ab(\ol{\DD_4}) \cong \ol{ \Rep(U_{q_4}(\gg_2))}_{A_4}.
+    \]
+\end{theorem}
+
+
+
+\begin{proposition}
+    There is an Etale algebra $B_4$ such that 
+    \[
+        \Ab(\ol{\DD_4}) \cong \ol{ \Rep(U_{q_4}(\gg_2))}_{B_4}.
+    \]
+\end{proposition}
+
+\begin{proof}
+    Recall the $\dagger$-embedding $\ol{\GG_2(q_4)} \hookrightarrow \ol{\DD_4}$ of Corollary~\ref{cor:D4-dagger-emb}.
+    From here we take Karoubi completion, which induces a functor 
+    \[
+        \Ab( \ol{\GG_2(q_4)} ) \hookrightarrow \Ab( \ol{\DD_4} )
+    \]
+    which is faithful exact.
+    By Lemma~\ref{lem:exact-functor}, we deduce that
+    \[
+        \Ab(\ol{\DD_4}) \cong \Ab( \ol{\GG_2(q_4)} )_{B_4}
+    \]
+    for some Etale algebra object $B_4$.
+    But it is well known that 
+    \[
+        \Ab( \ol{\GG_2(q_4)} ) \cong \ol{ \Rep(U_{q_4}(\gg_2))}.
+    \]
+\end{proof}
+
+Now we are in a position to prove Theorem~\ref{thm:level-4}.
+
+\begin{proof}[Proof of Theorem~\ref{thm:level-4}]
+    As we noted before, the only candidates for $B_4$ are $A_4$ and $\unit$.
+    Thus it will suffice to demonstrate that 
+    \[
+        \Ab(\ol{\DD_4}) \not\cong \ol{ \Rep(U_{q_4}(\gg_2))} \cong \ol{ \Rep(U_{q_4}(\gg_2))}_{\unit}.
+    \]
+    
+    The induced functor $\Ab( \ol{\GG_2(q_4)} ) \hookrightarrow \Ab( \ol{\DD_4} )$, whose existence we noted above,
+    is defined to be such that the following diagram commutes:
+    \[
+    \xymatrix@C=60pt@R=45pt{
+    \ol{\GG_2(q_4)} \ar@{^{(}->}[r]^{} \ar@{^{(}->}[d]^{} & \ol{\DD_4} \ar@{^{(}->}[d]^{\JJ} \\
+    \ol{ \Rep(U_{q_4}(\gg_2))} \ar@{^{(}->}[r]^{} & \Ab( \ol{\DD_4} )
+     }
+    \]
+    By Lemma~\ref{lem:exact-functor} there is an equivalence $\KK$ such that, up to isomorphism, the diagram
+    \[
+    \xymatrix@C=60pt@R=45pt{
+    \ol{\GG_2(q_4)} \ar@{^{(}->}[r]^{} \ar@{^{(}->}[d]^{} & \ol{\DD_4} \ar@{^{(}->}[d]^{\JJ} \\
+    \ol{ \Rep(U_{q_4}(\gg_2))} \ar@{^{(}->}[r]^{} \ar[dr]^{\FF_{B_4}} & \Ab( \ol{\DD_4} ) \ar[d]^{\KK} \\
+      & \ol{ \Rep(U_{q_4}(\gg_2))}_{B_4} \\
+     }
+    \]
+    commutes.
+
+    Now, chasing the object $1_{ \ol{\GG_2(q_4)}}$ through the leftmost path on this diagram, we have 
+    \[
+        1_{ \ol{\GG_2(q_4)}} \mapsto V_{\Lambda_1} \mapsto B_4 \otimes V_{\Lambda_1}.
+    \]
+    If it was true that $B_4\cong \unit$, we would have 
+    \[
+        \dim \Hom_{\ol{ \Rep(U_{q_4}(\gg_2))}_{B_4}}((B_4 \otimes V_{\Lambda_1})^{\otimes 2} \to B_4 \otimes V_{\Lambda_1}) = 1.
+    \]
+    Now let us chase $1$ along the top leftmost path to demonstrate that this is not the case.
+    Along this second path we have
+    \[
+        1_{ \ol{\GG_2(q_4)}} \mapsto 1_{\ol{\DD_4}} \mapsto \JJ(1_{\ol{\DD_4}}) \mapsto \KK\circ\JJ(1_{\ol{\DD_4}}).
+    \]
+    Set $\CC_4 \coloneq \ol{ \Rep(U_{q_4}(\gg_2))}$.
+    Now we note that
+    \begin{align*}
+        \dim \Hom_{(\CC_4)_{B_4}}((B_4 \otimes V_{\Lambda_1})^{\otimes 2} \to B_4 \otimes V_{\Lambda_1}) & = 
+            \dim \Hom_{(\CC_4)_{B_4}}((\KK\circ\JJ(1_{\ol{\DD_4}}))^{\otimes 2} \to \KK\circ\JJ(1_{\ol{\DD_4}})) \\
+        & = \dim \Hom_{\Ab( \ol{\DD_4} )}((\JJ(1_{\ol{\DD_4}}))^{\otimes 2} \to \JJ(1_{\ol{\DD_4}})) \\
+        & = \dim \Hom_{\ol{\DD_4} }( (1_{\ol{\DD_4}})^{\otimes 2} \to 1_{\ol{\DD_4}}) \\
+        & = \dim \Hom_{\ol{\DD_4} }( 2_{\ol{\DD_4}} \to 1_{\ol{\DD_4}}) \\
+        & = 2.
+    \end{align*}
+    Since $B_4 \not\cong\unit$, we must have $B_4 \cong A_4$; the theorem is proved.
+\end{proof}
+
+
+The category $\DD_3$, whose $\Z_3$-like structure constants are given in the attached Mathematica notebook,
+admits an analogous theorem at level 3.
 
 \begin{theorem}\label{thm:level-3}
     There is a monoidal equivalence
@@ -15,58 +106,4 @@ in $\ol{\Rep(U_{q_3}(\gg_2))}$ and $\ol{\Rep(U_{q_4}(\gg_2))}$ are $A_3$ and $A_
     \]
 \end{theorem}
 
-Corollary \red{TODO} tells us that $\ol{\DD_3}$ is unitary;
-this follows from our $\dagger$-embedding of $\DD_3$ into $\GPA(\Gamma_3)$ and evaluability of $\DD_3$.
-We immediately have the following corollary.
-\begin{corollary}
-    The embedding $\GG_2(q_3) \hookrightarrow \DD_3$ descends to a $\dagger$-embedding
-    $\ol{\GG_2(q_3)} \hookrightarrow \ol{\DD_3}$.
-\end{corollary}
-
-From here we take Karoubi completion.
-
-\begin{proposition}
-    There is an Etale algebra $B_3$ such that 
-    \[
-        \Ab(\ol{\DD_3}) \cong \ol{ \Rep(U_{q_3}(\gg_2))}_{B_3}.
-    \]
-\end{proposition}
-
-\begin{proof}
-    Taking Karoubi completion of the source and target of $\ol{\GG_2(q_3)} \hookrightarrow \ol{\DD_3}$
-    induces a functor 
-    \[
-        \Ab( \ol{\GG_2(q_3)} ) \hookrightarrow \Ab( \ol{\DD_3} )
-    \]
-    which is faithful exact.
-    By Lemma~\ref{lem:exact-functor}, we deduce that
-    \[
-        \Ab(\ol{\DD_3}) \cong \Ab( \ol{\GG_2(q_3)} )_{B_3}.
-    \]
-    But it is well known that 
-    \[
-        \Ab( \ol{\GG_2(q_3)} ) \cong \ol{ \Rep(U_{q_3}(\gg_2))}.
-    \]
-\end{proof}
-
-Now we are in a position to prove Theorem~\ref{thm:level-3}.
-
-\begin{proof}[Proof of Theorem~\ref{thm:level-3}]
-    As we noted before, the only candidates for $B_3$ are $A_3$ and $\unit$.
-    Thus it will suffice to demonstrate that 
-    \[
-        \Ab(\ol{\DD_3}) \not\cong \ol{ \Rep(U_{q_3}(\gg_2))} \cong \ol{ \Rep(U_{q_3}(\gg_2))}_{\unit}.
-    \]
-    % Let $X\coloneq V_{\Lambda_1}$, and let $Y\coloneq \FF_{A_3}(X)$ be the image of $X$ under the free functor.
-    % Recalling that $A_3 = V_{\emptyset} \oplus V_{\Lambda_1}$, we may use a direct fusion graph computation to see
-    % \[
-    %     \dim\Hom
-    % \]
-    \red{
-        D3 has 3 dimensions of $2 \to 1$ but how do we push this through isomorphisms to make this correspond to something in Rep?
-        What do objects of D3 go to in these isomorphisms?
-        Not clear.
-    }
-\end{proof}
-
-
+The proof of Theorem~\ref{thm:level-3} is analogous to the argument given above.

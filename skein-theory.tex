@@ -1,4 +1,4 @@
-\section{$\Z_n$-like extensions}\label{sec:skein}
+\section{Cyclic extensions}\label{sec:skein}
 
 The goal of this section is to develop the tools needed to prove evaluability of general $\Z_n$-like extensions of trivalent categories.
 We expect this class of extensions to be helpful in the search for novel categories.
@@ -26,10 +26,10 @@ The underlying trivalent categories we deal with have evaluation algorithms base
 One way to capture this evaluability is by considering dimensions of box spaces.
 \begin{definition}
     In a trivalent category we define a {\bf box space} $B(k,f)$ to be the span of diagrams $k\to0$ with $f$ internal faces.
-    If $\CC$ is a trivalent catgeory such that, for $k=1,\dots,5$, the constraint
+    If $\CC$ is a trivalent catgeory such that, for $k=1,\dots,5$, the containment
     \[
-    \dim B(k,1) \leq \dim B(k,0)
-    \]\red{actually I think we need a subspace containment}
+    B(k,1) \subseteq B(k,0)
+    \]
     holds, we will refer to $\CC$ as {\bf Euler-evaluable}.
 \end{definition}
 
@@ -61,19 +61,19 @@ The defining relations for a $\Z_n$-like extension then pop the singly-decorated
     All less decorated cases are absorbed along the way in this analysis.
     Now, a maximally-decorated trigon is of the form:
     \[
-        \skein{/skein_figs/dec_3gon1}{0.2}
+        \skein{/skein_figs/dec_3gon1}{0.15}
     \]
     with any labeling on the colored strands. We apply the relations (Swap) and (Slide) on the internal colored strands to obtain a combination of diagrams of the form
     \[
-        \skein{/skein_figs/dec_3gon2}{0.2}
+        \skein{/skein_figs/dec_3gon2}{0.15}
     \]
     Now apply (Change of Basis) to reduce to a combination of diagrams of the form
     \[
-        \skein{/skein_figs/dec_3gon3}{0.2}
+        \skein{/skein_figs/dec_3gon3}{0.15}
     \]
     By another application of (Slide) and (Change of Basis) we arrive at a diagram of the form 
     \[
-        \skein{/skein_figs/dec_3gon4}{0.2}
+        \skein{/skein_figs/dec_3gon4}{0.15}
     \]
     During this last step, we pick up colored strands between the black ``spokes''; one may happily move these out of the diagram.
 \end{proof}

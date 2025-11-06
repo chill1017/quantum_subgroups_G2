@@ -46,14 +46,23 @@ Furthermore, the free fucntor
 is a monoidal embedding which is, as we will see later, not always full.
 Its right adjoint is the forgetful functor $\FF^\vee:\CC_A\to\CC$ 
 which acts as the identity on both objects and morphisms. 
+The following lemma, which is recreated from \cite{exactSequencesTensorCategories} will be of use.
+
+\begin{lemma}\label{lem:exact-functor}
+    Let $\FF:\CC\to\DD$ be a monoidal functor with faithful exact right adjoint $R$. 
+    If we define $A\coloneqq R(\unit)$, then there is an equivalence $\KK$ such that the diagram
+    \[
+    \xymatrix@C=60pt@R=45pt{
+    \CC \ar[r]^{\FF} \ar[dr]^{\FF_A} & \DD \ar[d]^{\KK} \\
+     & \CC_A
+     }
+    \]
+    commutes up to natural isomorphism.
+\end{lemma}
 
 
-\red{Need to be placed properly.
-
-and led into}
-
-
-\begin{lemma}
+\red{place properly.}
+\begin{lemma}\label{lem:simple-unit-unitary}
     Suppsoe $\CC$ has simple unit, $\DD$ is unitary, and $\FF:\CC\to \DD$ is a $\dagger$-functor.
     Then $\ol{\CC}$ is unitary, and $F$ descends to a $\dagger$-embedding $\ol{\FF}:\ol{\CC}\to \DD$ such that
     \[
@@ -63,19 +72,6 @@ and led into}
      }
     \]
 \end{lemma}
-
-\begin{lemma}\label{lem:exact-functor}
-    Let $\FF:\CC\to\DD$ be a monoidal functor with faithful exact right adjoint $R$. 
-    If we define $A\coloneqq R(\unit)$, then there is an isomorphism $K$ such that the diagram
-    \[
-    \xymatrix@C=60pt@R=45pt{
-    \CC \ar[r]^{\FF} \ar[dr]^{\FF_A} & \DD \ar[d]^{K} \\
-     & \CC_A
-     }
-    \]
-    commutes up to natural isomorphism.
-\end{lemma}
-
 
 
 

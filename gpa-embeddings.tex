@@ -134,61 +134,66 @@ In practice, we are relying on the fact that the free functor gives an embedding
 \[
     \ol{\Rep(U_{q_4}(\gg_2))} \hookrightarrow \ol{\Rep(U_{q_4}(\gg_2))}_{A_4}
 \]
-which takes a simple $\otimes$-generator to a simple $\otimes$-generator.
+which takes a simple $\otimes$-generator $X_4$ to a simple $\otimes$-generator $Y_4$.\footnote{
+    Simplicity of $Y_4$ may be easily checked using the $X_4$ fusion graph of $\ol{\Rep(U_{q_4}(\gg_2))}$. }
 Combine this with the facts that $\ol{\Rep(U_{q_4}(\gg_2))}_{A_4}$ contains a subcategory equivalent to $\Vecc{\Z_2}$,
 and that both of the grouplike simples are subobjects of the square of the $\otimes$-generator.
-One concludes that $\ol{\Rep(U_{q_4}(\gg_2))}_{A_4}$ contains a projection onto a $\Z_2$-like simple object 
+One concludes that $\Hom_{\ol{\Rep(U_{q_4}(\gg_2))}_{A_4}}(Y^{\otimes2}\to Y^{\otimes2})$ contains a projection onto a $\Z_2$-like simple object 
 which follows relations analogous to (Recouple) - (decBigon).
 Now, to enlarge our copy of $\GG_2(q_4)$ to a $\Z_2$-like extension, we must find 
 and element of $\Hom_{\GPA(\Gamma_4)}(2\to 2)$ which captures the behavior of 
 the idempotent whose role is played by $\skein{skein_figs/dec_tet_5}{0.08}$.
-To this end, we take a similar approach to the one of the previous subsection.
 
+To this end, we take an approach similar to the one of the previous subsection.
+We may identify $\GG_2(q_4)$ with the trivalent subcategory of $\DD_4$,
+and now view $F_4$ as a functor out of this subcategory.
+To extend the definition of $F_4$ to be a functor out of $\DD_4$, we must find
+the image
+\[
+    F_4\left( \skein{skein_figs/dec_tet_5}{0.08} \right)
+\]
+in $\Hom_{\GPA(\Gamma_4)}(2\to2)$ satisfying the defining relations of $\DD_4$.
+We follow a process similar to solving for the GPA embedding of $\skein{skein_figs/trivalent}{0.08}$, .....
+\red{We only start with (Recouple) - (decBigon).
+All other relations were discovered.}
 
 \begin{theorem}\label{thm:D4-GPA-emb}
-    There exists an element $P_4 \in\Hom_{\GPA(\Gamma_4)}(2\to 2)$ satisfying the relations (), (), (), (), and (), 
+    There exists an element $P_4 \in\Hom_{\GPA(\Gamma_4)}(2\to 2)$ satisfying the $\Z_2$-like extension relations, 
     with structure constants given by those in Definition~\ref{def:D4}.
 \end{theorem}
 \begin{proof}
     See the attahed Mathemaica notebooks for verification.
 \end{proof}
 
-\red{We only start with (Recouple) - (decBigon).
-All other relations were discovered.}
-
-\red{Give a table of nonzero coordinates like at level 3, in polynomial representation.}
 
 
-\red{ Lead into this. }
-\red{
-    We haven't referenced the representation theory going on.
-    Either remove refrences to $g$, or phrase alternately.
-}
-
-\blue{}
-Table~\ref{tab:lvl-4-proj-coefs} holds the values of the nonzero projection coordinates;
-in this table we set
-\begin{equation*}
-    \alpha = \frac{\sqrt{1+\sqrt{6-3 \sqrt{3}}}-\sqrt{\sqrt{2+\sqrt{3}}-1}}{\sqrt{2}}
-\end{equation*}
-
-\begin{equation*}
-    \beta_1 = \sqrt{\sqrt{2+\sqrt{3}}-1}
-\end{equation*}
-
-\begin{equation*}
-    \beta_2 = \sqrt{\sqrt{3}+\sqrt{2+\sqrt{3}}}
-\end{equation*}
-
-\begin{equation*}
-    \beta_3 = \sqrt{2+\sqrt{2}-\sqrt{6}}
-\end{equation*}
-
-\begin{equation*}
-    \lambda = 2 \sqrt{1+\sqrt{\frac{3}{2}}}
-\end{equation*}
 
 
+
+
+% ;
+% in this table we set
+% \begin{equation*}
+%     \alpha = \frac{\sqrt{1+\sqrt{6-3 \sqrt{3}}}-\sqrt{\sqrt{2+\sqrt{3}}-1}}{\sqrt{2}}
+% \end{equation*}
+
+% \begin{equation*}
+%     \beta_1 = \sqrt{\sqrt{2+\sqrt{3}}-1}
+% \end{equation*}
+
+% \begin{equation*}
+%     \beta_2 = \sqrt{\sqrt{3}+\sqrt{2+\sqrt{3}}}
+% \end{equation*}
+
+% \begin{equation*}
+%     \beta_3 = \sqrt{2+\sqrt{2}-\sqrt{6}}
+% \end{equation*}
+
+% \begin{equation*}
+%     \lambda = 2 \sqrt{1+\sqrt{\frac{3}{2}}}
+% \end{equation*}
+
+Table~\ref{tab:lvl-4-proj-coefs} holds numerical approximations of the nonzero projection coordinates
 There are blocks of nonzero coordinates of length 4 and 25. 
 These sizes, and the location of the nonzero real coordinates follow naturally when one considers Remark~\ref{rem:Pg-properties}.
 The only coordinates of the projection in the GPA which are nonzero are at those basis vectors 
@@ -234,8 +239,7 @@ With this ordering in mind, and recalling that the GPA's dagger operation swaps 
                 &  & --- & ---& --- & --- \\
                 &  & --- & ---& --- & --- \\ \hline
     \end{tabular}
-    \caption{Level 4 projection embedding coefficients.\\ 
-    \red{Change to polynomial representations, then give vars <-> vals correspondence.}}
+    \caption{Level 4 projection embedding coefficients.}
     \label{tab:lvl-4-proj-coefs}
 \end{table}
 
@@ -244,17 +248,28 @@ With this ordering in mind, and recalling that the GPA's dagger operation swaps 
 
 As an immediate consequence of Theorems~\ref{thm:G2-level4-GPA-emb} and \ref{thm:D4-GPA-emb} we have the following corollary.
 
-\begin{corollary}
-    The category $\DD_4$ is a nonzero category which is a $\Z_2$-like extension of $\GG_2(q_4)$.
-    Furthermore $\ol{\DD_4}$ is unitary.
+\begin{corollary}\label{cor:D4-unitary}
+    The category $\DD_4$ is a nontrivial $\Z_2$-like extension of $\GG_2(q_4)$, 
+    and the semisimple quotient $\ol{\DD_4}$ is unitary.
 \end{corollary}
 \begin{proof}
     We deduce $\DD_4$ is nonzero by its embedding into a nonzero subcategory of $\GPA(\Gamma_4)$.
-    Unitarity of its semisimple quotient follows from unitarity of $\GPA(\Gamma_4)$.
+    Unitarity of its semisimple quotient follows from noting the unitarity of $\GPA(\Gamma_4)$,
+    and applying Lemma~\ref{lem:simple-unit-unitary}.
 \end{proof}
 
 
-
+\begin{corollary}\label{cor:D4-dagger-emb}
+    The embedding $\GG_2(q_4) \hookrightarrow \DD_4$ descends to a 
+    $\dagger$-embedding $\ol{\GG_2(q_4)} \hookrightarrow \ol{\DD_4}$.
+\end{corollary}
+\begin{proof}
+    Use Lemma~\ref{lem:simple-unit-unitary} again, and compose the induced functor with the functor
+    \[
+        \DD_4 \onto \ol{\DD_4}
+    \]
+    onto the semisimple quotient.
+\end{proof}
 
 
 
@@ -313,10 +328,11 @@ As an immediate consequence of Theorems~\ref{thm:G2-level4-GPA-emb} and \ref{thm
 
 \subsection{Level 3}
 We now tell a similar story, but at level 3.
-However we use numerical approximations here, and relegate the actual numbers to the attached Mathematica files.
+However, for the trivalent coefficients we use numerical approximations here, 
+and relegate the actual numbers to the attached Mathematica files.
 We were unable to find presentable representations of the GPA-embedding coordinates or structure constants.
 The coordinates for the trivalent GPA embedding were algebraic numbers of degree 12 or 24.
-even worse, the structure constants for the relations (Change of Basis), (decTrigon), (decTetragon), and (decPentagon) 
+Even worse, the structure constants for the relations (Change of Basis), (decTrigon), (decTetragon), and (decPentagon) 
 are all of the form
 \[
     g_1 + g_2 \alpha^2 + g_3 q_3 + g_4 \alpha^2 q_3
@@ -440,7 +456,7 @@ One may use symmetry to find the rest of the coordinates.
 
 \subsection{Extension of level 3}
 \begin{theorem}\label{thm:D3-GPA-emb}
-    There exists an element $P_3  \in\Hom_{\GPA(\Gamma_3)}(2\to 2)$ satisfying the relations (), (), (), (), and (),
+    There exists an element $P_3  \in\Hom_{\GPA(\Gamma_3)}(2\to 2)$ satisfying the $\Z_2$-like extension relations, 
     with structure constants given in the attached Mathematica notebook.
 \end{theorem}
 \begin{proof}
@@ -451,13 +467,13 @@ One may use symmetry to find the rest of the coordinates.
 Similarly to the level 4 case, Theorems~\ref{thm:G2-level3-GPA-emb} and \ref{thm:D3-GPA-emb}
 imply nontriviality and unitarity of $\ol{\DD_3}$.
 
-\begin{corollary}
+\begin{corollary}\label{cor:D3-unitary}
     The category $\DD_3$ is a nontrivial $\Z_3$-like extension of $\GG_2(q_3)$, 
     and the semisimple quotient $\ol{\DD_3}$ is unitary.
 \end{corollary}
 
 
-\begin{corollary}
+\begin{corollary}\label{cor:D3-dagger-emb}
     The embedding $\GG_2(q_3) \hookrightarrow \DD_3$ descends to a 
     $\dagger$-embedding $\ol{\GG_2(q_3)} \hookrightarrow \ol{\DD_3}$.
 \end{corollary}

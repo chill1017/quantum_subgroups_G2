@@ -79,7 +79,7 @@ categories in this class are evaluable in general.
 \begin{definition}\label{def:zn-ext}
     Let $\CC = \left\langle \skein{/skein_figs/trivalent}{0.1} \right\rangle$ 
     be a trivalent category. 
-    Call $\DD$ a {\bf $\Z_n$-like extension} of $\CC$ if we have
+    Call $\DD$ a {\bf $\Z_n$-like extension} (or {\bf cyclic} when $n$ is understood) of $\CC$ if we have
     $\DD = \left\langle \skein{/skein_figs/trivalent}{0.1}, \skein{/skein_figs/dec_tet_5}{0.1} \right\rangle$,
     enjoying the following relations\footnote{Conditions from \cite{czenky}.}:
     \begin{equation*}\tag{Recouple}
@@ -139,6 +139,8 @@ categories in this class are evaluable in general.
         = \sum_{i=0}^5 \sum_{j=0}^4 w_{i,j} dec_i\left( r^j\left( \skein{/skein_figs/dec_pent_RHS1}{0.1} \right) \right) 
         + \sum_{i=0}^5 \sum_{j=0}^4 x_{i,j} dec_i\left( r^j\left( \skein{/skein_figs/dec_pent_RHS2}{0.1} \right) \right)
     \end{equation*}
+    We additionally enforce the condition that the diagrams $\skein{/skein_figs/triv_rightUp_i}{0.075}$ 
+    for $i=0,\dots,n-1$ are a basis for the $2\to1$ hom-space.
 \end{definition}
 
 
@@ -174,7 +176,7 @@ categories in this class are evaluable in general.
 
 \begin{remark}
     It is worth noting the following standard abuse of language. 
-    A diagrammatically presented category such as a $\Z_n$-like extension has hom-spaces which are formal spans of diagrams.
+    A diagrammatically presented category such as a cyclic extension has hom-spaces which are formal spans of diagrams.
     When applying a relation such as (decTrigon) locally, the result is clearly a {\it linear combination} of diagrams.
     Usually, though, this linear combination has some desirable quality, such as a smaller number of internal faces in each summand.
     In this instance, we prefer to say something along the lines of, 
@@ -187,7 +189,7 @@ categories in this class are evaluable in general.
 
 \begin{definition}\label{def:D4}
     Set $q_4 = e^{\frac{2\pi i}{48}}$ and deifne $\DD_4$ to be the 
-    $\Z_2$-like extension of $\GG_2(q_4)$ with structure constants\footnote{
+    cyclic extension of $\GG_2(q_4)$ with structure constants\footnote{
         We omit the (decPentagon) equation here for brevity. 
         It contains 44 nonzero summands, and can be found in the attached Matghematica notebooks.
     } 
