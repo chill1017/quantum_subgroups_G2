@@ -1,8 +1,8 @@
-\section{GPA Embeddings}
+\section{GPA Embeddings}\label{sec:gpa-emb}
 This section is devoted to discussing the details of our GPA embeddings.
-This will include a thorough discussion of the techniques used to solve the defining equations,
+This will include a discussion of the techniques used to solve the defining equations,
 along with a discussion of the coordinates these solutions define.
-Subsection~\ref{subsec:extend-level-4} discusses the representation theory which led us to 
+Subsection~\ref{subsec:extend-level-4} discusses some of the representation theory which led us to 
 search for $\Z_n$-like extensions in the first place;
 in this respect, we discuss only the details of level 4, but the story at level 3 is essentially the same.
 
@@ -47,6 +47,7 @@ The following result says that we hvae an embedding of $\GG_2(q_4)$ into the GPA
     There is a faithful monoidal functor $F_4:\ol{\GG_2(q_3)} \hookrightarrow \GPA(\Gamma_4)$.
 \end{theorem}
 \begin{proof}
+    We first construct a monoidal functor $\GG_2(q_3) \hookrightarrow \GPA(\Gamma_4)$, and then semisimplify.
     See the attached Mathematica notebooks for verification of the necessary equations.
 \end{proof}
 
@@ -58,8 +59,9 @@ Let
 \]
 be the defining basis for $\Hom_{\GPA(\Gamma)}(2\to1)$ ($M=88$ at level 4). Then it must be that 
 \[
-    F_4 \left( \skein{skein_figs/trivalent}{0.08} \right) = a_1(p_1,q_1)+\cdots+ a_M(p_M,q_M).
+    F_4 \left( \skein{skein_figs/trivalent}{0.08} \right) = a_1(p_1,q_1)+\cdots+ a_M(p_M,q_M)
 \]
+for some $a_1,\dots,a_M \in \C$.
 The \ref{eq:Bigon} relation, when sent through $F$, becomes the system
 \[
     \sum_{i=1}^M a_i(p_i,q_i) \circ \sum_{j=1}^M a_j(q_j,p_j) = k^2 \sum_{e\in E(\Gamma)} (e,e).
@@ -68,7 +70,8 @@ This system is quadratic in the $a_i$ since it involves up to two trivalent vert
 The \ref{eq:Lolli} and \ref{eq:Rotate} relations therefore determine a system of linear equations; 
 the others give cubic, quartic, and quintic equations. 
 It is often useful to solve the linear subsystem first and substitute the solution into the quadratic equations. 
-For example, when we apply this approach to the \ref{eq:Rotate} equations, we are able to isolate the following resulting equations:
+For example, when we substitute the linear solution into the (Bigon) and (Tetragon) equations, 
+we are able to isolate the following resulting equations:
 
 \begin{equation*}
     a_{8}^2+a_{85}^2 = 4-\sqrt{2}+2 \sqrt{3}-\sqrt{6} 
@@ -142,20 +145,26 @@ One concludes that $\Hom_{\ol{\Rep(U_{q_4}(\gg_2))}_{A_4}}(Y^{\otimes2}\to Y^{\o
 which follows relations analogous to (Recouple) - (decBigon).
 Now, to enlarge our copy of $\GG_2(q_4)$ to a $\Z_2$-like extension, we must find 
 and element of $\Hom_{\GPA(\Gamma_4)}(2\to 2)$ which captures the behavior of 
-the idempotent whose role is played by $\skein{skein_figs/dec_tet_5}{0.08}$.
+the idempotent; the role will be played by $\skein{skein_figs/dec_tet_5}{0.08}$.
 
 To this end, we take an approach similar to the one of the previous subsection.
 We may identify $\GG_2(q_4)$ with the trivalent subcategory of $\DD_4$,
 and now view $F_4$ as a functor out of this subcategory.
-To extend the definition of $F_4$ to be a functor out of $\DD_4$, we must find
+To finish the definition of $F_4$ to be a functor out of $\DD_4$, we must find
 the image
 \[
-    F_4\left( \skein{skein_figs/dec_tet_5}{0.08} \right)
+    F_4\left( \skein{skein_figs/dec_tet_5}{0.08} \right) \in \Hom_{\GPA(\Gamma_4)}(2\to2)
 \]
-in $\Hom_{\GPA(\Gamma_4)}(2\to2)$ satisfying the defining relations of $\DD_4$.
-We follow a process similar to solving for the GPA embedding of $\skein{skein_figs/trivalent}{0.08}$, .....
-\red{We only start with (Recouple) - (decBigon).
-All other relations were discovered.}
+satisfying the defining relations of $\DD_4$.
+We follow a process similar to solving for the image $F_4\left( \skein{skein_figs/trivalent}{0.08} \right)$.
+That is, we assume that for some $b_1,\dots,b_N \in \C$ we have
+\[
+    F_4\left( \skein{skein_figs/dec_tet_5}{0.08} \right) = \sum_{i=1}^N b_i (p'_i,q'_i).
+\]
+We may push the relations (Recouple) - (decBigon) through $F_4$, and obtain a set of equations 
+in the $b_i$.
+Solving these new equations gives us the coordinates of the projection $F_4\left( \skein{skein_figs/dec_tet_5}{0.08} \right)$.
+
 
 \begin{theorem}\label{thm:D4-GPA-emb}
     There exists an element $P_4 \in\Hom_{\GPA(\Gamma_4)}(2\to 2)$ satisfying the $\Z_2$-like extension relations, 
@@ -170,29 +179,7 @@ All other relations were discovered.}
 
 
 
-
-% ;
-% in this table we set
-% \begin{equation*}
-%     \alpha = \frac{\sqrt{1+\sqrt{6-3 \sqrt{3}}}-\sqrt{\sqrt{2+\sqrt{3}}-1}}{\sqrt{2}}
-% \end{equation*}
-
-% \begin{equation*}
-%     \beta_1 = \sqrt{\sqrt{2+\sqrt{3}}-1}
-% \end{equation*}
-
-% \begin{equation*}
-%     \beta_2 = \sqrt{\sqrt{3}+\sqrt{2+\sqrt{3}}}
-% \end{equation*}
-
-% \begin{equation*}
-%     \beta_3 = \sqrt{2+\sqrt{2}-\sqrt{6}}
-% \end{equation*}
-
-% \begin{equation*}
-%     \lambda = 2 \sqrt{1+\sqrt{\frac{3}{2}}}
-% \end{equation*}
-
+\red{
 Table~\ref{tab:lvl-4-proj-coefs} holds numerical approximations of the nonzero projection coordinates
 There are blocks of nonzero coordinates of length 4 and 25. 
 These sizes, and the location of the nonzero real coordinates follow naturally when one considers Remark~\ref{rem:Pg-properties}.
@@ -213,31 +200,52 @@ That is, the column labeled by $1\to\blank\to1$ shows the coordinates on the ord
     (1\to 3 \to1, 1\to 3 \to1) \\
 \end{align*}
 
+}
 With this ordering in mind, and recalling that the GPA's dagger operation swaps paths, the conjugate pairs appear where one would expect them.
-
-
 
 
 \begin{table}
     \centering
-    \begin{tabular}{|cccccc|} \hline
-        $1\to\blank\to1$ & $4\to\blank\to4$    &    $2\to\blank\to6$    &    $3\to\blank\to5$ &  $2\to\blank\to6$   &  $3\to\blank\to5$ \\ \hline\hline
-        $2.22$  & $2.22$  & ---   & ---& --- & --- \\
-        $-2.22$ & $-2.22$  & ---  & ---& --- & --- \\
-        $-2.22$ & $-2.22$  & ---  & ---& --- & --- \\
-        $2.22$  & $2.22$  & --- & ---& --- & --- \\
-                &  & --- & ---& --- & --- \\
-                &  & --- & ---& --- & --- \\
-                &  & --- & ---& --- & --- \\
-                &  & --- & ---& --- & --- \\
-                &  & --- & ---& --- & --- \\ 
-                &  & --- & ---& --- & --- \\
-                &  & --- & ---& --- & --- \\
-                &  & --- & ---& --- & --- \\
-                &  & --- & ---& --- & --- \\
-                &  & --- & ---& --- & --- \\
-                &  & --- & ---& --- & --- \\
-                &  & --- & ---& --- & --- \\ \hline
+    \begin{tabular}{|cc|} \hline
+        $1\to\blank\to1$ & $4\to\blank\to4$ \\ \hline\hline
+        $2.22$  & $2.22$ \\
+        $-2.22$ & $-2.22$ \\
+        $-2.22$ & $-2.22$ \\
+        $2.22$  & $2.22$ \\ \hline
+    \end{tabular}
+    \caption{\red{Some coefs}}
+\end{table}
+
+
+\begin{table}
+    \centering
+    \begin{tabular}{|cccc|} \hline
+        $2\to\blank\to6$                 & $3\to\blank\to5$         & $5\to\blank\to3$           & $6\to\blank\to2$ \\ \hline\hline
+        $0.44949$                        & $1$                      & $1$                        & $0.44949$ \\
+        $0.474073 - 0.474073 i$          & $0.825482 + 0.564429 i$  & $0.825482 - 0.564429 i$    & $0.474073 + 0.474073 i$ \\
+        $-0.123758 - 0.658919 i$         & $0.123758 + 0.658919 i$  & $0.123758 - 0.658919 i$    & $-0.123758 + 0.658919 i$ \\
+        $-0.123758 + 0.658919 i$         & -$0.564429 + 0.825482 i$ & -$0.564429 - 0.825482 i$   & $-0.123758 - 0.658919 i$ \\
+        $0.474073 + 0.474073 i$          & $0.931852 - 0.362839 i$  & $0.931852 + 0.362839 i$    & $0.474073 - 0.474073 i$ \\
+        $0.474073 + 0.474073 i$          & $0.825482 - 0.564429 i$  & $0.825482 + 0.564429 i$    & $0.474073 - 0.474073 i$ \\
+        $1$                              & $1$                      & $1$                        & 1 \\
+        $0.564429 - 0.825482 i$          & $0.474073 + 0.474073 i$  & $0.474073 - 0.474073 i$    & $0.564429 + 0.825482 i$ \\
+        $-0.825482 + 0.564429 i$         & $i$                      & $-i$                       & $-0.825482 - 0.564429 i$ \\ 
+        $i$                              & $0.564429 - 0.825482 i$  & $0.564429 + 0.825482 i$    & -i \\
+        $-0.123758 + 0.658919 i$         & $0.123758 - 0.658919 i$  & $0.123758 + 0.658919 i$    & $-0.123758 - 0.658919 i$ \\
+        $0.564429 + 0.825482 i$          & $0.474073 - 0.474073 i$  & $0.474073 + 0.474073 i$    & $0.564429 - 0.825482 i$ \\
+        $1$                              & $0.44949$                & $0.44949$                  & 1 \\
+        $-0.931852 - 0.362839 i$         & $0.474073 + 0.474073 i$  & $0.474073 - 0.474073 i$    & $-0.931852 + 0.362839 i$ \\
+        $-0.825482 + 0.564429 i$         & $-0.123758 - 0.658919 i$ & $-0.123758 + 0.658919 i$   & $-0.825482 - 0.564429 i$ \\
+        $-0.123758 - 0.658919 i$         & -$0.564429 - 0.825482 i$ & -$0.564429 + 0.825482 i$   & $-0.123758 + 0.658919 i$ \\ 
+        $-0.825482 - 0.564429 i$         & $-i$                     & $i$                        & $-0.825482 + 0.564429 i$ \\                 
+        $-0.931852 + 0.362839 i$         & $0.474073 - 0.474073 i$  & $0.474073 + 0.474073 i$    & $-0.931852 - 0.362839 i$ \\                 
+        $1$                              & $1$                      & $1$                        & $1$ \\                 
+        $0.564429 - 0.825482 i$          & $-0.825482 - 0.564429 i$ & $-0.825482 + 0.564429 i$   & $0.564429 + 0.825482 i$ \\                 
+        $0.474073 - 0.474073 i$          & $0.931852 + 0.362839 i$  & $0.931852 - 0.362839 i$    & $0.474073 + 0.474073 i$ \\                 
+        $-i$                             & $0.564429 + 0.825482 i$  & $0.564429 - 0.825482 i$    & $i$ \\                 
+        $-0.825482 - 0.564429 i$         & $-0.123758 + 0.658919 i$ & $-0.123758 - 0.658919 i$   & $-0.825482 + 0.564429 i$ \\                 
+        $0.564429 + 0.825482 i$          & $-0.825482 + 0.564429 i$ & $-0.825482 - 0.564429 i$   & $0.564429 - 0.825482 i$ \\                 
+        $1$                              & $1$                      & $1$                        & $1$ \\ \hline                 
     \end{tabular}
     \caption{Level 4 projection embedding coefficients.}
     \label{tab:lvl-4-proj-coefs}
@@ -482,9 +490,8 @@ imply nontriviality and unitarity of $\ol{\DD_3}$.
 
 
 
-
+\begin{center}
 \begin{table}
-    \centering
     \begin{tabular}{|cccc|} \hline
         $1\to\blank\to1$                    & $2\to\blank\to4$                  & $3\to\blank\to2$               & $4\to\blank\to3$ \\ \hline\hline
         $1.26376$              & $0.791288$                & $0.791288 $              & $0.791288$ \\
@@ -504,7 +511,47 @@ imply nontriviality and unitarity of $\ol{\DD_3}$.
                               & $-0.856735 - 0.515757 i$  & $0.0182917 + 0.999833 i$ & $0.5 + 0.866025 i$ \\
                               & $1$                       & $1$                      & $1$ \\ \hline
     \end{tabular}
-    \caption{Level 3 projection embedding coefficients.\\ 
-    \red{Change to polynomial representations, then give vars <-> vals correspondence.}}
+    \caption{Level 3 projection embedding coefficients.}
     \label{tab:lvl-3-proj-coefs}
 \end{table}
+\end{center}
+
+
+
+
+
+\subsection{New Relations}
+When finding GPA embeddings of $\DD_3$ and $\DD_4$, we did not use the relations 
+(Swap), (Change of Basis), (decTrigon), (decTetragon), or (decPentagon).
+In fact, the structure constants in these relations were unknown before exploring our GPA embedding.
+Instead, we used only the relations (Schur 0), (Schur 1), (decStick), and (Half-braid).
+This large number of linear equations was enough to pin down the images $F_k\left( \skein{skein_figs/dec_tet_5}{0.08} \right)$.
+
+Of primary importance were the (Half-braid) equations.
+These follow from Lemma~\ref{lem:general-half-braid}.
+We translate this lemma into the hypothesis that our projection $\skein{skein_figs/dec_tet_5}{0.08}$ satisfies the relation
+\begin{equation*}
+    \skein{/skein_figs/hb_top}{0.11} = \skein{/skein_figs/hb_bottom}{0.15}
+\end{equation*}
+where the unoriented colored strand indicates that the equation 
+holds whenever we pick the same orientation for the left and right sides.
+
+Now, in order to discover the new relations (Swap), (Change of Basis), (decTrigon), (decTetragon), and (decPentagon),
+we hypothesize the form such a relation should take, impose that form, and solve for the structure constants.
+For example, we would suppose based on representation theory, that an equation of the form
+\[
+    F_k\left( \skein{/skein_figs/swap_LHS}{0.15} \right) = \omega F_k\left( \skein{/skein_figs/swap_RHS}{0.15} \right)
+\]
+holds, for some $\omega$.
+
+With our explicit GPA embeddings of the projection in hand, discovering what $\omega$ is becomes a matter of solving
+a system of linear equations for one variable.
+Discovering the (decTrigon) structure constants is similarly reduced to solving a system of likear equations of the form
+\[
+F_k\left( \skein{/skein_figs/dec_trigon_LHS}{0.1} \right)= 
+        t_1 F_k\left( \skein{/skein_figs/trivalent}{0.1} \right) 
+        + t_2 F_k\left( \skein{/skein_figs/triv_rightUp}{0.1} \right)
+\]
+for $t_1$ and $t_2$.
+In practice, the hom-spaces in the GPAs we used were sufficiently large 
+making solving all of these equations fairly straightforward.
