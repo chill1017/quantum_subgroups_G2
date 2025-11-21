@@ -1,5 +1,5 @@
 \section{Preliminaries}\label{sec:prelim}
-Here we define the players in this game. 
+Here we define the tools we'll use. 
 This includes planar algebras, graph planar algebras, and internal algebra and module objects.
 We give only a few necessary results, and refer the reader to the definitive publications.
 For the general theory of tensor categories, see \cite{EGNO}.
@@ -28,25 +28,29 @@ Unless otherwise stated, we will be assuming the underlying tensor categories ar
 \end{definition}
 
 
-For an Etale algebra object $A$ of $\CC$, we denote by $\CC_A$ the collection of left $A$-modules internal to $\CC$.
-As decribed in \cite{cain_noah}, a braiding on $\CC$ induces a tesnor product on $\CC_A$.
+For an Etale algebra object $A$ of $\CC$, we denote by $\CC_A$ the collection of right $A$-modules internal to $\CC$.
+As described in \cite{cain_noah}, a braiding on $\CC$ induces a tensor product on $\CC_A$.
 Separability of $A$ implies semisimplicity of $\CC_A$, 
 and connectedness of $A$ implies the unit $\unit_{\CC_A}=A$ is simple in $\CC_A$ \cite{DMNO}.
 
-These are precisely the conditions required to perform the skein theory on $A$-modules 
+The Etale conditions are precisely those required to perform the skein theory on $A$-modules 
 to define the tensor product on $\CC_A$.
 Etale is the same thing as multiplication having a section, which means we can pop $A$-bigons.
 Connected means theres only one $A$-cap and one $A$-cup.
-This lets us wiggle enough to perfrom the proof that $M\otimes_A N$ is well-defined.
+This lets us wiggle enough to perform the proof that $M\otimes_A N$ is well-defined.
 
-Furthermore, the free fucntor 
+Furthermore, when $\CC$ is semisimple, the free functor 
 \[
     \FF_A: \CC \xhookrightarrow{X\mapsto A\otimes X} \CC_A
 \]
 is a monoidal embedding which is, as we will see later, not always full.
 Its right adjoint is the forgetful functor $\FF^\vee:\CC_A\to\CC$ 
-which acts as the identity on both objects and morphisms. 
-The following lemma, which is recreated from \cite{exactSequencesTensorCategories} will be of use.
+which acts on objects $(M,\mu_M)$ by dropping the multiplication map $\mu_M: M\otimes A\to M$
+and on morphisms as the identity.
+
+Beginning with the following lemma, which is recreated from \cite{exactSequencesTensorCategories},
+we now recall some facts that will help us along the way.
+These will consist of a few results, along with the basics of {\it conformal embeddings}.
 
 \begin{lemma}\label{lem:exact-functor}
     Let $\FF:\CC\to\DD$ be a monoidal functor with faithful exact right adjoint $R$. 
@@ -61,16 +65,16 @@ The following lemma, which is recreated from \cite{exactSequencesTensorCategorie
 \end{lemma}
 
 
-\red{place properly.}
 \begin{lemma}\label{lem:simple-unit-unitary}
-    Suppsoe $\CC$ has simple unit, $\DD$ is unitary, and $\FF:\CC\to \DD$ is a $\dagger$-functor.
+    Suppose $\CC$ has simple unit, $\DD$ is unitary, and $\FF:\CC\to \DD$ is a $\dagger$-functor.
     Then $\ol{\CC}$ is unitary, and $F$ descends to a $\dagger$-embedding $\ol{\FF}:\ol{\CC}\to \DD$ such that
     \[
     \xymatrix@C=60pt@R=45pt{
     \CC \ar[r]^{\FF} \ar@{->>}[d]^{} & \DD \\
-    \CC_A \ar@{^{(}->}[ur]^{\ol{\FF}} & 
+    \ol{\CC} \ar@{^{(}->}[ur]^{\ol{\FF}} & 
      }
     \]
+    commutes.
 \end{lemma}
 
 
@@ -79,16 +83,17 @@ The following lemma, which is recreated from \cite{exactSequencesTensorCategorie
 One result which will help immensely in arriving at GPA embeddings is the following,
 which is Lemma 2.4 of \cite{cain_noah}.
 Since the free functor $\FF_A$ gives an embedding $\CC \hookrightarrow \CC_A$, 
-the braid in $\CC$ is mapped to a braiding of the image of $\CC$ in $\CC_A$.
-Since the free functor is in general not full, we cannot extend this to a braidng on all of $\CC_A$,
+the braid $c_{X,Y}$ in $\CC$ is mapped to $\FF_A(c_{X,Y})$ which defines a braided structure
+for the subcategory $\FF_A(\CC)$ of $\CC_A$.
+Since the free functor is in general not full, we cannot extend this to a braiding on all of $\CC_A$,
 however, there is a half-braid for arbitrary morphisms between objects in the image of $\FF_A$.
 
-\begin{lemma}[Half-braid]\label{eq:general-half-braid}
-    Let $\CC$ be a braided tensor category, and $A$ an etale algebra object.
+\begin{lemma}[Half-braid]\label{lem:general-half-braid}
+    Let $\CC$ be a braided tensor category, and $A$ an Etale algebra object.
     For any $f\in\Hom_{\CC_A}( \FF_A(Y_1) \to \FF_A(Y_2) )$, the following relation holds:
-    \[
+    \begin{equation*}\tag{Half-braid}
         \skein{/skein_figs/arb_hb_top}{0.2} = \skein{/skein_figs/arb_hb_bottom}{0.2}
-    \]
+    \end{equation*}
 \end{lemma}
 
 Note that $f$ need not be in the image of the free functor.
@@ -99,12 +104,14 @@ Thus the half-braid relation will be key to our program, despite not being neces
 
 
 The source of our algebra objects will be conformal embeddings.
-We direct the reader to \cite{DMNO} a more complete treatment of conformal embeddings.
+We direct the reader to \cite{DMNO} a more complete treatment.
+\red{
 \begin{definition}
-    A containment $\VV(\gg,j) \subseteq \VV(\hh,k)$ of affine Lie algebras 
-    is said to be {\bf conformal} if the adjoint representation of $\VV(\hh,j)$ restricts to a finite
+    An inclusion $\VV(\gg,j) \subseteq \VV(\hh,k)$ of vertex operator algebras 
+    is said to be {\bf conformal} if the adjoint representation of $\VV(\hh,k)$ restricts to a finite
     direct sum of simple objects in $\CC(\gg,j) \coloneq \Rep(\VV(\gg,j))$.
 \end{definition}
+}
 
 Affine Lie algebras and conformal embeddings will only be used to obtain algebra objects 
 and module fusion graphs, so we briefly recall the correspondence 
@@ -116,6 +123,10 @@ of \cite{cain_autoequivalences}, where $k$ is the level and $q_k$ is given by
     q = e^{\frac{2\pi i}{3(4+k)}}.
 \]
 
+We recall the conformal embeddings which are of use to us:
+\begin{equation*}
+    \VV(\gg_2,3) \subseteq \VV(\ee_6,1) \quad\text{and}\quad \VV(\gg_2,4) \subseteq \VV(\dd_7,1).
+\end{equation*}
 At level 3 we have $q_3 = e^{\frac{2\pi i}{42}}$ and at level 4 we have $q_4 = e^{\frac{2\pi i}{48}}$.
 We obtain the algebra objects and fundamental graphs for GPAs from \cite{g2_graphs}:
 \begin{equation}\label{eq:alg-objetcs}
@@ -124,11 +135,13 @@ We obtain the algebra objects and fundamental graphs for GPAs from \cite{g2_grap
 at levels 3 and 4, respectively.
 
 Additionally at level 3 and 4, respectively, we have the existence of 
-grouplike simple objects 
-\[    
-    g_3 = ..., \quad\text{and}\quad g_4 = ...
-\]
-From \cite{g2_graphs} we see that at both levels $k=3,4$ we have
+$\Z_3$-like and $\Z_2$-like simple objects $g_3$ and $g_4$ \cite{DMNO}.
+% grouplike simple objects 
+% \[    
+%     g_3 = V_{2\Lambda_1}, \quad\text{and}\quad g_4 = ...
+% \]
+From \cite{g2_graphs}
+we see that at both levels $k=3,4$ we have
 \[
     \dim\Hom_{ \ol{\Rep(U_{q_k}(\gg_2))}_{A_k} }(\FF_{A_k}(V_{\Lambda_1})^{\otimes2} \to g_k) = 1.
 \]
@@ -152,12 +165,10 @@ From \cite{g2_graphs} we see that at both levels $k=3,4$ we have
 
 \subsection{Unoriented Planar Algebras}
 Recall the theory of {\bf rigid} monoidal categories detailed in \cite{KW}. 
-To put it succintly, rigid monoidal categories have duals. 
-Duals, and the associated evaluation and coevaluation maps, 
-giving us the cups and caps ubiquitous in skein theory. 
-A rigidity assumption gives us the ability to isotope diagrams. 
+To put it succinctly, rigid monoidal categories have duals. 
+Duals, and the associated evaluation and coevaluation maps, give us cups and caps. 
+We also assume pivotality throughout, which gives us the ability to isotope diagrams. 
 The generators we will use for our planar algebras will be symmetrically self-dual.
-We also assume pivotality throughout.
 
 Let $X$ be a (symmetrically self-dual) {\bf tensor generator} for the tensor category $\CC$; 
 that is, every object of $\CC$ is isomorphic to a subobject of some tensor power $X^{\otimes n}$. 
@@ -211,23 +222,23 @@ Up to a rescaling by a factor of $\kappa = \sqrt{[7]-1}$ we use the same skein t
 Our use of planar algebras will depend entirely on the construction of the Cauchy completion,
 which we sketch here.
 See \cite{cain_noah} for more details and \cite{tuba_wenzl} for a full treatment of the topic.
-Recall that the {\bf idempotent competion} of a pivotal tensor category $\CC$ consists of pairs $(Z,p)$,
+Recall that the {\bf idempotent completion} of a pivotal tensor category $\CC$ consists of pairs $(Z,p)$,
 where $p\in\End_\CC(Z)$ is an idempotent.
 We denote the idempotent completion of $\CC$ as $\Idemp(\CC)$.
-Furhter, we define the {\bf additive envelope} of a pivotal, $\C$-linear tensor category $\CC$
+Further, we define the {\bf additive envelope} of a pivotal, $\C$-linear tensor category $\CC$
 to have objects formal direct sums $\bigoplus_j Z_j$ for objects $Z_j$ of $\CC$.
 The {\bf Cauchy completion} of $\CC$ is defined by 
 \[
     \Ab(\CC) \coloneq \Add(\Idemp(\CC)).
 \]
 
-If we again assume $X$ tensor generates $\CC$, it follows that $\CC \cong \Ab(\PP_{X;\CC})$ \cite[Theorem3.4]{tuba_wenzl}
+If we again assume $X$ tensor generates $\CC$, it follows that $\CC \cong \Ab(\PP_{X;\CC})$ \cite[Theorem3.4]{tuba_wenzl}.
 The universal property of $\Ab(\PP_{X;\CC})$ therefore implies 
 that studying $\PP_{X;\CC}$ is sufficient to understand $\CC$. 
 
-The category $\GG_2(q)$ is a {\bf presentation} for the category $\cat{q}$ in the sense that
+By \cite[Corollary 2.20]{bodish_triple_clasp_g2} and \cite[Corollary 6.7]{reconstructing_g2}, the category $\GG_2(q)$ is a {\bf presentation} for the category $\cat{q}$ in the sense that
 \[
-\ol{\Rep(U_q(\gg_2))} \cong \ol{\Kar(\GG_2(q))}.
+\ol{\Rep(U_q(\gg_2))} \cong \Ab(\ol{\GG_2(q)}).
 \]
 
 
@@ -327,11 +338,11 @@ We will study the quantum subgroups of type $G_2$ by embedding their skein theor
 This serves two purposes:
 \begin{itemize}
     \item Giving us solid ground on which to do computations, allowing us to uncover relations by finding them in the GPA hom-spaces, and
-    \item Implying some nice general properties for the quantum subgroups (i.e., unitarity)
+    \item Implying unitarity for the skein theories,
 \end{itemize}
 GPAs are an invention of Vaughan Jones \cite{jones_GPA}.
 In this work we have no use for less specialized GPAs, such as the {\it oriented} \cite{Cain_Dan} 
-or {\it multi-color} GPA \cite{emily}, so we consider only the unoriented case. 
+or {\it multi-color} GPA \cite{}, so we consider only the unoriented case. 
 
 \begin{definition}\label{def:GPA}
     Let $\Gamma=(V,E)$ be a finite graph. 
@@ -347,17 +358,16 @@ or {\it multi-color} GPA \cite{emily}, so we consider only the unoriented case.
     \]
     and rigidity maps
     \[
-        ev = \sum_e \sqrt{ \frac{\lambda_{t(e)}}{\lambda_{s(e)}} } \langle e\ol{e},s(e) \rangle, \quad coev = \sum_e \sqrt{ \frac{\lambda_{t(e)}}{\lambda_{s(e)}} } \langle s(e) e\ol{e} \rangle. 
+        ev = \sum_e \sqrt{ \frac{\lambda_{t(e)}}{\lambda_{s(e)}} } \langle e\ol{e},s(e) \rangle, 
+        \quad coev = \sum_e \sqrt{ \frac{\lambda_{t(e)}}{\lambda_{s(e)}} } \langle s(e) e\ol{e} \rangle
     \]
+    where $\lambda$ is the Frobenius-Perron eigenvector of the adjacency matrix of $\Gamma$.
     Monoidal product on objects is addition, and for morphisms is defined by 
     \[
         (p,q)\otimes(p',q')\coloneqq \delta_{s(p')=t(p)} (pp',qq').
     \]
 \end{definition}
 
-
-We will be finding GPA embeddings of certain planar algebras. 
-Unitarity of GPAs implies unitarity of these planar algebras.
 
 
 
@@ -370,7 +380,7 @@ Unitarity of GPAs implies unitarity of these planar algebras.
 \begin{comment}
 Monoidal functors interact with algebra objects in the ways we would hope.
 \begin{proposition}
-    Let $\FF:\CC\to\DD$ be a lax-monoidal fucntor, and let $A$ be an algebra object of $\CC$. 
+    Let $\FF:\CC\to\DD$ be a lax-monoidal functor, and let $A$ be an algebra object of $\CC$. 
     Then $\FF A$ has algebra structure induced by $\FF$. 
     If $M$ is a right $A$-module object of $\CC$ then $\FF M$ has a right $\FF A$-moudle structure induced by $\FF$.
 \end{proposition}
