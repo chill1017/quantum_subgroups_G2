@@ -51,7 +51,7 @@ The following result says that we hvae an embedding of $\GG_2(q_4)$ into the GPA
     See the attached Mathematica notebooks for verification of the necessary equations.
 \end{proof}
 
-A proof of the above result amounts to a verification of a system of linear, quadratic, cubic, quartic, and quintiuc equations.
+A proof of the above result amounts to a verification of a system of linear, quadratic, cubic, quartic, and quintic equations.
 Let 
 \[
     (p_1,q_1),\dots,(p_M,q_M)
@@ -171,7 +171,7 @@ Solving these new equations gives us the coordinates of the projection $F_4\left
     with structure constants given by those in Definition~\ref{def:D4}.
 \end{theorem}
 \begin{proof}
-    See the attahed Mathemaica notebooks for verification.
+    See the attached Mathemaica notebooks for verification.
 \end{proof}
 
 
@@ -179,8 +179,8 @@ Solving these new equations gives us the coordinates of the projection $F_4\left
 
 
 
-\red{
-Table~\ref{tab:lvl-4-proj-coefs} holds numerical approximations of the nonzero projection coordinates
+Tables~\ref{tab:lvl-4-proj-coefs-1} and \ref{tab:lvl-4-proj-coefs-2} hold numerical approximations 
+of the nonzero projection coordinates.
 There are blocks of nonzero coordinates of length 4 and 25. 
 These sizes, and the location of the nonzero real coordinates follow naturally when one considers Remark~\ref{rem:Pg-properties}.
 The only coordinates of the projection in the GPA which are nonzero are at those basis vectors 
@@ -190,7 +190,8 @@ The only coordinates of the projection in the GPA which are nonzero are at those
 where $i\to j$ is a directed edge of the $g$-fusion graph. 
 For $i=j=1,4$ there are two possible values for $\blank$; pairing them gives 4 pairs. 
 For $i,j\neq 1,4$ there are five possible values for $\blank$; pairing them gives 25 pairs. 
-The columns of Table~\ref{tab:lvl-3-proj-coefs} give the values of the coordinates of the projection, 
+The columns of Tables~\ref{tab:lvl-4-proj-coefs-1} and \ref{tab:lvl-4-proj-coefs-2} give the 
+values of the coordinates of the projection, 
 with dictionary ordering on the pairs of $\blank$ values. 
 That is, the column labeled by $1\to\blank\to1$ shows the coordinates on the ordered basis
 \begin{align*}
@@ -200,7 +201,6 @@ That is, the column labeled by $1\to\blank\to1$ shows the coordinates on the ord
     (1\to 3 \to1, 1\to 3 \to1) \\
 \end{align*}
 
-}
 With this ordering in mind, and recalling that the GPA's dagger operation swaps paths, the conjugate pairs appear where one would expect them.
 
 
@@ -213,12 +213,13 @@ With this ordering in mind, and recalling that the GPA's dagger operation swaps 
         $-2.22$ & $-2.22$ \\
         $2.22$  & $2.22$ \\ \hline
     \end{tabular}
-    \caption{\red{Some coefs}}
+    \caption{The size 4 blocks of nonzero projection coordinates.}
+    \label{tab:lvl-4-proj-coefs-1}
 \end{table}
 
 
 \begin{table}
-    \centering
+    \noindent\makebox[\textwidth]{
     \begin{tabular}{|cccc|} \hline
         $2\to\blank\to6$                 & $3\to\blank\to5$         & $5\to\blank\to3$           & $6\to\blank\to2$ \\ \hline\hline
         $0.44949$                        & $1$                      & $1$                        & $0.44949$ \\
@@ -247,8 +248,9 @@ With this ordering in mind, and recalling that the GPA's dagger operation swaps 
         $0.564429 + 0.825482 i$          & $-0.825482 + 0.564429 i$ & $-0.825482 - 0.564429 i$   & $0.564429 - 0.825482 i$ \\                 
         $1$                              & $1$                      & $1$                        & $1$ \\ \hline                 
     \end{tabular}
-    \caption{Level 4 projection embedding coefficients.}
-    \label{tab:lvl-4-proj-coefs}
+    }
+    \caption{The size 25 blocks of nonzero projection coordinates.}
+    \label{tab:lvl-4-proj-coefs-2}
 \end{table}
 
 
@@ -489,9 +491,8 @@ imply nontriviality and unitarity of $\ol{\DD_3}$.
 
 
 
-
-\begin{center}
 \begin{table}
+    \noindent\makebox[\textwidth]{
     \begin{tabular}{|cccc|} \hline
         $1\to\blank\to1$                    & $2\to\blank\to4$                  & $3\to\blank\to2$               & $4\to\blank\to3$ \\ \hline\hline
         $1.26376$              & $0.791288$                & $0.791288 $              & $0.791288$ \\
@@ -511,10 +512,10 @@ imply nontriviality and unitarity of $\ol{\DD_3}$.
                               & $-0.856735 - 0.515757 i$  & $0.0182917 + 0.999833 i$ & $0.5 + 0.866025 i$ \\
                               & $1$                       & $1$                      & $1$ \\ \hline
     \end{tabular}
+    }
     \caption{Level 3 projection embedding coefficients.}
     \label{tab:lvl-3-proj-coefs}
 \end{table}
-\end{center}
 
 
 
