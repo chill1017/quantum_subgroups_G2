@@ -1,7 +1,5 @@
 \section{GPA Embeddings}\label{sec:gpa-emb}
 
-\tableofcontents
-
 This section is devoted to discussing the details of our GPA embeddings.
 This will include a discussion of the techniques used to solve the defining equations,
 along with a discussion of the coordinates these solutions define.
@@ -10,7 +8,114 @@ search for $\Z_n$-like extensions in the first place;
 in this respect, we discuss only the details of level 4, but the story at level 3 is essentially the same.
 
 We find our fusion graphs by orbifolding the graphs in Figures 18b and 21b of \cite{g2_graphs}.
-These graphs are shown in Figures~\ref{fig:new-graphs-lvl4} and \ref{fig:new-graphs-lvl3}.
+These graphs are shown in Figure~\ref{fig:new-graphs}.
+
+\begin{figure}
+    \noindent\makebox[\textwidth]{
+    \begin{tikzpicture}[scale=1.0]
+        \node[shape=circle,draw=black] (A) at (0,1.5) {1};
+        \node[shape=circle,draw=black] (B) at (1.25,3) {2};
+        \node[shape=circle,draw=black] (C) at (4.25,3) {3};
+        \node[shape=circle,draw=black] (D) at (5.5,1.5) {4};
+        \node[shape=circle,draw=black] (E) at (4.25,0) {5};
+        \node[shape=circle,draw=black] (F) at (1.25,0) {6};
+
+        % module fusion graph
+        \path (B) edge [loop, in=45, out=135, looseness=8] node {} (B);
+        \path (C) edge [loop, in=45, out=135, looseness=8] node {} (C);
+        \path (E) edge [loop, in=225, out=315, looseness=8] node {} (E);
+        \path (F) edge [loop, in=225, out=315, looseness=8] node {} (F);
+
+        \path [-] (A) edge node {} (B);
+        \path [-] (A) edge node {} (F);
+
+        \path [-] (B) edge node {} (C);
+        \path [-] (B) edge node {} (E);
+        \path [-] (B) edge node {} (F);
+
+        \path [-] (C) edge node {} (D);
+        \path [-] (C) edge node {} (E);
+        \path [-] (C) edge node {} (F);
+
+        \path [-] (D) edge node {} (E);
+
+        \path [-] (E) edge node {} (F);
+
+        % g fusion graph
+        \path [->, draw=orange] (A) edge [loop, in=135, out=225, looseness=8] node {} (A);
+        \path [->, draw=orange] (D) edge [loop, in=45, out=-45, looseness=8] node {} (D);
+
+        \path [->, draw=orange] (B) edge [bend right] node  {} (F);
+        \path [->, draw=orange] (F) edge [bend right] node {} (B);
+
+        \path [->, draw=orange] (C) edge [bend right] node {} (E);
+        \path [->, draw=orange] (E) edge [bend right] node {} (C);
+    \end{tikzpicture}
+    \begin{tikzpicture}[scale=1.0]
+        \node[shape=circle,draw=black] (A) at (1.5,1.66) {1};
+        \node[shape=circle,draw=black] (B) at (0,3) {2};
+        \node[shape=circle,draw=black] (C) at (3,3) {3};
+        \node[shape=circle,draw=black] (D) at (1.5,0) {4};
+        
+        % module fusion graph
+        \path (B) edge [loop, in=120, out=180, looseness=10] node {} (B);
+        \path (C) edge [loop, in=0, out=60, looseness=10] node {} (C);
+        \path (D) edge [loop, in=240, out=300, looseness=10] node {} (D);
+        
+        \path [-] (D) edge node {} (B);
+        \path [-] (B) edge node {} (C);
+        \path [-] (C) edge node {} (D);
+
+        \path [-] (A) edge node {} (B);
+        \path [-] (A) edge node {} (C);
+        \path [-] (A) edge node {} (D);
+
+        % g fusion graph
+        \path [->, draw=orange] (B) edge [bend left] node {} (C);
+        \path [->, draw=orange] (C) edge [bend left] node {} (D);
+        \path [->, draw=orange] (D) edge [bend left] node {} (B);
+        \path [->, draw=orange] (A) edge [loop] node {} (A);
+    \end{tikzpicture}
+    }
+    \caption{
+        Fusion graphs at level 4 and 3 for $Y_4$ and $Y_3$ (black) and $g_4$ and $g_3$ (orange), respectively. 
+        See Figures 21b and 18b, respectively, of \cite{g2_graphs}.
+        }
+    \label{fig:new-graphs}
+\end{figure}
+
+
+% \begin{figure}
+%     \centering
+%     \begin{tikzpicture}[scale=1.25]
+%         \node[shape=circle,draw=black] (A) at (1.5,1.66) {1};
+%         \node[shape=circle,draw=black] (B) at (0,3) {2};
+%         \node[shape=circle,draw=black] (C) at (3,3) {3};
+%         \node[shape=circle,draw=black] (D) at (1.5,0) {4};
+        
+%         % module fusion graph
+%         \path (B) edge [loop, in=120, out=180, looseness=10] node {} (B);
+%         \path (C) edge [loop, in=0, out=60, looseness=10] node {} (C);
+%         \path (D) edge [loop, in=240, out=300, looseness=10] node {} (D);
+        
+%         \path [-] (D) edge node {} (B);
+%         \path [-] (B) edge node {} (C);
+%         \path [-] (C) edge node {} (D);
+
+%         \path [-] (A) edge node {} (B);
+%         \path [-] (A) edge node {} (C);
+%         \path [-] (A) edge node {} (D);
+
+%         % g fusion graph
+%         \path [->, draw=orange] (B) edge [bend left] node {} (C);
+%         \path [->, draw=orange] (C) edge [bend left] node {} (D);
+%         \path [->, draw=orange] (D) edge [bend left] node {} (B);
+%         \path [->, draw=orange] (A) edge [loop] node {} (A);
+%     \end{tikzpicture}
+%     \caption{Fusion graphs at level 3 for $Y$ (black) and $g$ (orange). See \cite[Figure 18b]{g2_graphs}.}
+%     \label{fig:new-graphs-lvl3}
+% \end{figure}
+
 
 One may give a monoidal functor $F:\GG_2(q_k) \to \GPA(\Gamma)$ by specifying the image of the morphism 
 \[
@@ -42,25 +147,33 @@ Let us discuss our examples.
 
 \subsection{Level 4 Trivalent Embedding}
 We will begin with level 4.
-Let $\Gamma_4$ be the graph given in Figure~\ref{fig:new-graphs-lvl4}.
+Let $\Gamma_4$ be the graph on the left side of  Figure~\ref{fig:new-graphs}.
 Set $q_4 \coloneq e^{2\pi i/48}$.
-The following result says that we hvae an embedding of $\GG_2(q_4)$ into the GPA on $\Gamma_4$.
+The following theorem says that we have an embedding of $\ol{\GG_2(q_4)}$ into the GPA on $\Gamma_4$.
+A proof of the theorem is extremely straightforward; one must verify some equations.
+Why this verification amounts to a proof requires some explanation, and is discussed in detail 
+below the theorem.
 
 \begin{theorem}\label{thm:G2-level4-GPA-emb}
-    There is a faithful monoidal functor $F_4:\ol{\GG_2(q_3)} \hookrightarrow \GPA(\Gamma_4)$.
+    There is a faithful monoidal functor $\ol{F_4}:\ol{\GG_2(q_3)} \hookrightarrow \GPA(\Gamma_4)$.
 \end{theorem}
 \begin{proof}
-    We first construct a monoidal functor $\GG_2(q_3) \hookrightarrow \GPA(\Gamma_4)$, and then semisimplify.
-    See the attached Mathematica notebooks for verification of the necessary equations.
+    We first construct a monoidal functor $F_4: \GG_2(q_3) \hookrightarrow \GPA(\Gamma_4)$, and then 
+    apply Lemma~\ref{lem:simple-unit-unitary}.
+    See the attached Mathematica notebooks for a definition of $F_4$
+    and verification of the necessary equations.
 \end{proof}
 
-A proof of the above result amounts to a verification of a system of linear, quadratic, cubic, quartic, and quintic equations.
+Let us now explain why a proof of the above result amounts to a verification of a system of 
+% linear, quadratic, cubic, quartic, and quintic 
+equations.
 Let 
 \[
     (p_1,q_1),\dots,(p_M,q_M)
-    \footnote{ See the attached Mathematica files for the specific ordering chosen. }
 \]
-be the defining basis for $\Hom_{\GPA(\Gamma)}(2\to1)$ ($M=88$ at level 4). Then it must be that 
+be the defining basis\footnote{ 
+    See the attached Mathematica files for the specific ordering chosen. } 
+for $\Hom_{\GPA(\Gamma)}(2\to1)$ ($M=88$ at level 4). Then it must be that 
 \[
     F_4 \left( \skein{skein_figs/trivalent}{0.08} \right) = a_1(p_1,q_1)+\cdots+ a_M(p_M,q_M)
 \]
@@ -117,7 +230,6 @@ For instance,
 \[
     a_{10} = \frac{1}{2} \left(\sqrt{1+\sqrt{6-3 \sqrt{3}}}+\sqrt{\sqrt{2+\sqrt{3}}-1}\right).
 \]
-
 Up to sign, the coordinates of $F_4 \left( \skein{skein_figs/trivalent}{0.08} \right)$ 
 take on the following values:
 \begin{align*}
@@ -129,8 +241,12 @@ take on the following values:
     \alpha_6 & = \sqrt{\frac{1}{2} \left(\sqrt{3}+\sqrt{2+\sqrt{3}}\right)} \\
     \alpha_7 & = \sqrt{1-\sqrt{\frac{3}{2}}+\frac{1}{\sqrt{2}}}  \\
     \alpha_8 & = \frac{1}{2} \left(\sqrt{1+\sqrt{6-3 \sqrt{3}}}-\sqrt{\sqrt{2+\sqrt{3}}-1}\right) \\
-    \alpha_9 & = \frac{1}{2} \left(\sqrt{1+\sqrt{6-3 \sqrt{3}}}+\sqrt{\sqrt{2+\sqrt{3}}-1}\right) \\
+    \alpha_9 & = \frac{1}{2} \left(\sqrt{1+\sqrt{6-3 \sqrt{3}}}+\sqrt{\sqrt{2+\sqrt{3}}-1}\right). \\
 \end{align*}
+These coordinates of $F_4 \left( \skein{skein_figs/trivalent}{0.08} \right)$ give us a definition of $F_4$.
+To show $F_4$ is a monoidal functor amounts to showing that all defining relations of $\GG_2(q)$ are satisfied 
+by $F_4 \left( \skein{skein_figs/trivalent}{0.08} \right)$.
+This is verified in the attached Mathematica notebooks.
 
 
 \subsection{Extension of level 4}\label{subsec:extend-level-4}
@@ -140,11 +256,12 @@ In practice, we are relying on the fact that the free functor gives an embedding
 \[
     \ol{\Rep(U_{q_4}(\gg_2))} \hookrightarrow \ol{\Rep(U_{q_4}(\gg_2))}_{A_4}
 \]
-which takes a simple $\otimes$-generator $X_4$ to a simple $\otimes$-generator $Y_4$.\footnote{
+which takes the simple $\otimes$-generator $X_4$ to a simple $\otimes$-generator which we denote by $Y_4$.\footnote{
     Simplicity of $Y_4$ may be easily checked using the $X_4$ fusion graph of $\ol{\Rep(U_{q_4}(\gg_2))}$. }
 Combine this with the facts that $\ol{\Rep(U_{q_4}(\gg_2))}_{A_4}$ contains a subcategory equivalent to $\Vecc{\Z_2}$,
-and that both of the grouplike simples are subobjects of the square of the $\otimes$-generator.
-One concludes that $\Hom_{\ol{\Rep(U_{q_4}(\gg_2))}_{A_4}}(Y^{\otimes2}\to Y^{\otimes2})$ contains a projection onto a $\Z_2$-like simple object 
+and that both of the grouplike simples are subobjects of the square of the $\otimes$-generator $Y_4$.
+One concludes that $\Hom_{\ol{\Rep(U_{q_4}(\gg_2))}_{A_4}}(Y_4^{\otimes2}\to Y_4^{\otimes2})$ 
+contains a projection onto a $\Z_2$-like simple object 
 which follows relations analogous to (Recouple) - (decBigon).
 Now, to enlarge our copy of $\GG_2(q_4)$ to a $\Z_2$-like extension, we must find 
 and element of $\Hom_{\GPA(\Gamma_4)}(2\to 2)$ which captures the behavior of 
@@ -289,54 +406,14 @@ As an immediate consequence of Theorems~\ref{thm:G2-level4-GPA-emb} and \ref{thm
     \]
     onto the semisimple quotient.
 \end{proof}
+Later, we will take the Karoubi completion of this embedding.
+For now, we turn to a discussion of how we obtain the $\DD_4$ structure constants.
 
 
 
 
 
-\begin{figure}
-    \begin{tikzpicture}[scale=1.25]
-        \node[shape=circle,draw=black] (A) at (0,1.5) {1};
-        \node[shape=circle,draw=black] (B) at (1.25,3) {2};
-        \node[shape=circle,draw=black] (C) at (4.25,3) {3};
-        \node[shape=circle,draw=black] (D) at (5.5,1.5) {4};
-        \node[shape=circle,draw=black] (E) at (4.25,0) {5};
-        \node[shape=circle,draw=black] (F) at (1.25,0) {6};
 
-        % module fusion graph
-        \path (B) edge [loop, in=45, out=135, looseness=8] node {} (B);
-        \path (C) edge [loop, in=45, out=135, looseness=8] node {} (C);
-        \path (E) edge [loop, in=225, out=315, looseness=8] node {} (E);
-        \path (F) edge [loop, in=225, out=315, looseness=8] node {} (F);
-
-        \path [-] (A) edge node {} (B);
-        \path [-] (A) edge node {} (F);
-
-        \path [-] (B) edge node {} (C);
-        \path [-] (B) edge node {} (E);
-        \path [-] (B) edge node {} (F);
-
-        \path [-] (C) edge node {} (D);
-        \path [-] (C) edge node {} (E);
-        \path [-] (C) edge node {} (F);
-
-        \path [-] (D) edge node {} (E);
-
-        \path [-] (E) edge node {} (F);
-
-        % g fusion graph
-        \path [->, draw=orange] (A) edge [loop, in=135, out=225, looseness=8] node {} (A);
-        \path [->, draw=orange] (D) edge [loop, in=45, out=-45, looseness=8] node {} (D);
-
-        \path [->, draw=orange] (B) edge [bend right] node  {} (F);
-        \path [->, draw=orange] (F) edge [bend right] node {} (B);
-
-        \path [->, draw=orange] (C) edge [bend right] node {} (E);
-        \path [->, draw=orange] (E) edge [bend right] node {} (C);
-    \end{tikzpicture}
-    \caption{Fusion graphs at level 4 for $Y$ (black) and $g$ (orange). See \cite[Figure 21b]{g2_graphs}.}
-    \label{fig:new-graphs-lvl4}
-\end{figure}
 
 
 
@@ -402,18 +479,19 @@ whose numerators have one or two digits.
 For (decTetrgon), the numerators and denominators of the power basis coordinates of the $g_i$ have around 10 digits on average.
 In the (decPentagon) relation, this digit count explodes to around 135.
 
-Let $\Gamma_3$ be the graph given in Figure~\ref{fig:new-graphs-lvl3}.
+Let $\Gamma_3$ be the graph given in the right side of Figure~\ref{fig:new-graphs}.
 Set $q_3 \coloneq e^{2\pi i/42}$.
-The following result gives us a GPA embedding of $\GG_2(q_3)$.
+The following result gives us a GPA embedding of $\ol{\GG_2(q_3)}$.
 
 \begin{theorem}\label{thm:G2-level3-GPA-emb}
-    There is a faithful monoidal functor $F_3: \ol{\GG_2(q_3)} \to \GPA(\Gamma_3)$.
+    There is a faithful monoidal functor $\ol{F_3}: \ol{\GG_2(q_3)} \to \GPA(\Gamma_3)$.
 \end{theorem}
 \begin{proof}
+    Similar to Theorem~\ref{thm:G2-level4-GPA-emb}.
     See the attached Mathematica notebooks for verification of the necessary equations.
 \end{proof}
 
-Despite the more difficult numbers, we are able to recover some of the strutcure of the fusion graph in the GPA coordinates.
+Despite the more difficult numbers, we are able to recover some of the structure of the fusion graph in the GPA coordinates.
 Recall that the defining bases for the spaces 
 \[
     \Hom_{\GPA(\Gamma)}(m\to n)
@@ -457,7 +535,7 @@ The nine paths whose coordinates have absolute value $0.155691$ are:
 \[
     (2,3,3),\hspace{0.2em} (3,3,2),\hspace{0.2em} (3,2,3),\hspace{0.2em} (2,4,2),\hspace{0.2em} (4,3,4),\hspace{0.2em} (2,2,4),\hspace{0.2em} (3,4,4),\hspace{0.2em} (4,2,2),\hspace{0.2em} (4,4,3) 
 \]
-One may use symmetry to find the rest of the coordinates.
+One may use the symmetry $2 \xleftrightarrow{} 4$ to find the rest of the coordinates.
 
 
 
@@ -477,37 +555,6 @@ One may use symmetry to find the rest of the coordinates.
     \caption{Level 3 trivalent embedding coefficients.}
     \label{tab:lvl-3-triv-coefs}
 \end{table}
-
-\begin{figure}
-    \centering
-    \begin{tikzpicture}[scale=1.25]
-        \node[shape=circle,draw=black] (A) at (1.5,1.66) {1};
-        \node[shape=circle,draw=black] (B) at (0,3) {2};
-        \node[shape=circle,draw=black] (C) at (3,3) {3};
-        \node[shape=circle,draw=black] (D) at (1.5,0) {4};
-        
-        % module fusion graph
-        \path (B) edge [loop, in=120, out=180, looseness=10] node {} (B);
-        \path (C) edge [loop, in=0, out=60, looseness=10] node {} (C);
-        \path (D) edge [loop, in=240, out=300, looseness=10] node {} (D);
-        
-        \path [-] (D) edge node {} (B);
-        \path [-] (B) edge node {} (C);
-        \path [-] (C) edge node {} (D);
-
-        \path [-] (A) edge node {} (B);
-        \path [-] (A) edge node {} (C);
-        \path [-] (A) edge node {} (D);
-
-        % g fusion graph
-        \path [->, draw=orange] (B) edge [bend left] node {} (C);
-        \path [->, draw=orange] (C) edge [bend left] node {} (D);
-        \path [->, draw=orange] (D) edge [bend left] node {} (B);
-        \path [->, draw=orange] (A) edge [loop] node {} (A);
-    \end{tikzpicture}
-    \caption{Fusion graphs at level 3 for $Y$ (black) and $g$ (orange). See \cite[Figure 18b]{g2_graphs}.}
-    \label{fig:new-graphs-lvl3}
-\end{figure}
 
 
 
