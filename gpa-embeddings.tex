@@ -1,4 +1,7 @@
 \section{GPA Embeddings}\label{sec:gpa-emb}
+
+\tableofcontents
+
 This section is devoted to discussing the details of our GPA embeddings.
 This will include a discussion of the techniques used to solve the defining equations,
 along with a discussion of the coordinates these solutions define.
@@ -37,7 +40,7 @@ Let us discuss our examples.
 
 
 
-\subsection{Level 4}
+\subsection{Level 4 Trivalent Embedding}
 We will begin with level 4.
 Let $\Gamma_4$ be the graph given in Figure~\ref{fig:new-graphs-lvl4}.
 Set $q_4 \coloneq e^{2\pi i/48}$.
@@ -157,12 +160,20 @@ the image
 \]
 satisfying the defining relations of $\DD_4$.
 We follow a process similar to solving for the image $F_4\left( \skein{skein_figs/trivalent}{0.08} \right)$.
-That is, we assume that for some $b_1,\dots,b_N \in \C$ we have
+That is, we assume that for some $b_1,\dots,b_N \in \C$ where $N \coloneq \tr(\Gamma^2 \cdot \Gamma^2)$, we have
 \[
     F_4\left( \skein{skein_figs/dec_tet_5}{0.08} \right) = \sum_{i=1}^N b_i (p'_i,q'_i).
 \]
-We may push the relations (Recouple) - (decBigon) through $F_4$, and obtain a set of equations 
+We may push the relations (Schur 0), (Schur 1), and (decStick) through $F_4$, and obtain a set of equations 
 in the $b_i$.
+We additionally obtain a large linear system which follows from Lemma~\ref{lem:general-half-braid}.
+In the present context, this lemma states that our projection $\skein{skein_figs/dec_tet_5}{0.08}$ 
+satisfies the relation
+\begin{equation*}
+    \skein{/skein_figs/hb_top}{0.11} = \skein{/skein_figs/hb_bottom}{0.15}
+\end{equation*}
+where the unoriented red strand indicates that the equation 
+holds whenever we pick the same orientation for the left and right sides.
 Solving these new equations gives us the coordinates of the projection $F_4\left( \skein{skein_figs/dec_tet_5}{0.08} \right)$.
 
 
@@ -173,8 +184,6 @@ Solving these new equations gives us the coordinates of the projection $F_4\left
 \begin{proof}
     See the attached Mathemaica notebooks for verification.
 \end{proof}
-
-
 
 
 
@@ -285,10 +294,6 @@ As an immediate consequence of Theorems~\ref{thm:G2-level4-GPA-emb} and \ref{thm
 
 
 
-
-
-
-
 \begin{figure}
     \begin{tikzpicture}[scale=1.25]
         \node[shape=circle,draw=black] (A) at (0,1.5) {1};
@@ -336,7 +341,49 @@ As an immediate consequence of Theorems~\ref{thm:G2-level4-GPA-emb} and \ref{thm
 
 
 
-\subsection{Level 3}
+
+
+
+
+\subsection{New Relations at Level 4}
+When finding GPA embedding of $\DD_4$, we did not use the relations 
+(Swap), (Change of Basis), (decTrigon), (decTetragon), or (decPentagon).
+That is, the structure constants in these relations were unknown before exploring our GPA embedding.
+
+In order to discover these new relations,
+we hypothesize the form such a relation should take, impose that form, and solve for the structure constants.
+For example we would suppose, based the simplicity of $Y_4$ and the invertibility of $g_4$, that an equation of the form
+\[
+    F_k\left( \skein{/skein_figs/swap_LHS}{0.15} \right) = \omega F_k\left( \skein{/skein_figs/swap_RHS}{0.15} \right)
+\]
+holds, for some $\omega$.
+With our explicit GPA embeddings of the projection in hand, discovering what $\omega$ is becomes a matter of solving
+a system of linear equations for one variable.
+
+Discovering the (decTrigon) structure constants is similarly reduced to solving a system of linear equations of the form
+\[
+F_k\left( \skein{/skein_figs/dec_trigon_LHS}{0.1} \right)= 
+        t_1 F_k\left( \skein{/skein_figs/trivalent}{0.1} \right) 
+        + t_2 F_k\left( \skein{/skein_figs/triv_rightUp}{0.1} \right)
+\]
+for $t_1$ and $t_2$.
+In practice, the hom-spaces in the GPAs we used were sufficiently large 
+making solving all of these equations fairly straightforward.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{Level 3 Trivalent Embedding}
 We now tell a similar story, but at level 3.
 However, for the trivalent coefficients we use numerical approximations here, 
 and relegate the actual numbers to the attached Mathematica files.
@@ -521,38 +568,3 @@ imply nontriviality and unitarity of $\ol{\DD_3}$.
 
 
 
-\subsection{New Relations}
-When finding GPA embeddings of $\DD_3$ and $\DD_4$, we did not use the relations 
-(Swap), (Change of Basis), (decTrigon), (decTetragon), or (decPentagon).
-In fact, the structure constants in these relations were unknown before exploring our GPA embedding.
-Instead, we used only the relations (Schur 0), (Schur 1), (decStick), and (Half-braid).
-This large number of linear equations was enough to pin down the images $F_k\left( \skein{skein_figs/dec_tet_5}{0.08} \right)$.
-
-Of primary importance were the (Half-braid) equations.
-These follow from Lemma~\ref{lem:general-half-braid}.
-We translate this lemma into the hypothesis that our projection $\skein{skein_figs/dec_tet_5}{0.08}$ satisfies the relation
-\begin{equation*}
-    \skein{/skein_figs/hb_top}{0.11} = \skein{/skein_figs/hb_bottom}{0.15}
-\end{equation*}
-where the unoriented colored strand indicates that the equation 
-holds whenever we pick the same orientation for the left and right sides.
-
-Now, in order to discover the new relations (Swap), (Change of Basis), (decTrigon), (decTetragon), and (decPentagon),
-we hypothesize the form such a relation should take, impose that form, and solve for the structure constants.
-For example, we would suppose based on representation theory, that an equation of the form
-\[
-    F_k\left( \skein{/skein_figs/swap_LHS}{0.15} \right) = \omega F_k\left( \skein{/skein_figs/swap_RHS}{0.15} \right)
-\]
-holds, for some $\omega$.
-
-With our explicit GPA embeddings of the projection in hand, discovering what $\omega$ is becomes a matter of solving
-a system of linear equations for one variable.
-Discovering the (decTrigon) structure constants is similarly reduced to solving a system of likear equations of the form
-\[
-F_k\left( \skein{/skein_figs/dec_trigon_LHS}{0.1} \right)= 
-        t_1 F_k\left( \skein{/skein_figs/trivalent}{0.1} \right) 
-        + t_2 F_k\left( \skein{/skein_figs/triv_rightUp}{0.1} \right)
-\]
-for $t_1$ and $t_2$.
-In practice, the hom-spaces in the GPAs we used were sufficiently large 
-making solving all of these equations fairly straightforward.
