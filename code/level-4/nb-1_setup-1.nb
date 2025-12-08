@@ -1,0 +1,1313 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     48700,       1305]
+NotebookOptionsPosition[     48129,       1287]
+NotebookOutlinePosition[     48524,       1303]
+CellTagsIndexPosition[     48481,       1300]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[StyleBox["RUN THIS:",
+ FontSize->36,
+ FontWeight->"Bold"]], "Text",
+ CellChangeTimes->{{3.967204692133567*^9, 
+  3.967204700544057*^9}},ExpressionUUID->"027016fa-35d1-4d5f-94cc-\
+5d1c56549c0f"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"b5", " ", "=", " ", 
+   SqrtBox[
+    RowBox[{
+     RowBox[{"-", "1"}], "+", 
+     SqrtBox[
+      RowBox[{"2", "+", 
+       SqrtBox["3"]}]]}]]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"b6", " ", "=", " ", 
+   SqrtBox[
+    RowBox[{
+     SqrtBox["3"], "+", 
+     SqrtBox[
+      RowBox[{"2", "+", 
+       SqrtBox["3"]}]]}]]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"b7", " ", "=", " ", 
+   SqrtBox[
+    RowBox[{"2", "+", 
+     SqrtBox["2"], "-", 
+     SqrtBox["6"]}]]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"a5", " ", "=", " ", 
+   FractionBox[
+    RowBox[{
+     SqrtBox[
+      RowBox[{"1", "+", 
+       SqrtBox[
+        RowBox[{"6", "-", 
+         RowBox[{"3", " ", 
+          SqrtBox["3"]}]}]]}]], "-", 
+     SqrtBox[
+      RowBox[{
+       RowBox[{"-", "1"}], "+", 
+       SqrtBox[
+        RowBox[{"2", "+", 
+         SqrtBox["3"]}]]}]]}], 
+    SqrtBox["2"]]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"c1", " ", "=", " ", 
+   RowBox[{"2", 
+    SqrtBox[
+     RowBox[{"1", "+", 
+      SqrtBox[
+       FractionBox["3", "2"]]}]]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"q", " ", "=", " ", 
+   RowBox[{
+    RowBox[{
+     FractionBox["1", "2"], " ", 
+     SqrtBox[
+      RowBox[{"2", "+", 
+       SqrtBox[
+        RowBox[{"2", "+", 
+         SqrtBox["3"]}]]}]]}], " ", "+", " ", 
+    RowBox[{"I", 
+     FractionBox["1", "2"], " ", 
+     SqrtBox[
+      RowBox[{"2", "-", 
+       SqrtBox[
+        RowBox[{"2", "+", 
+         SqrtBox["3"]}]]}]]}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"gen", " ", "=", " ", 
+   SqrtBox[
+    RowBox[{"2", "+", 
+     SqrtBox["3"]}]]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"vals", " ", "=", " ", 
+    RowBox[{"{", 
+     RowBox[{"q", ",", "a5", ",", "b7", ",", "b6", ",", "b5", ",", "c1"}], 
+     "}"}]}], ";"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Clear", "[", 
+  RowBox[{
+  "\[Eta]", ",", "\[Alpha]", ",", "\[Beta]1", ",", "\[Beta]2", ",", 
+   "\[Beta]3", ",", "\[Lambda]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"poly\[Beta]1", " ", "=", " ", 
+    RowBox[{
+     InterpretationBox[
+      TemplateBox[{"AlgebraicNumber", 
+        InterpretationBox[
+         StyleBox[
+          TemplateBox[{"\"0.932\"", 
+            DynamicBox[
+             FEPrivate`FrontEndResource[
+             "FEExpressions", "NumericalApproximationElider"]]}, 
+           "RowDefault"], ShowStringCharacters -> False], 
+         0.93185165257813662442742952407570555806`15.954589770191003, 
+         Editable -> False], 
+        TagBox[
+         RowBox[{"AlgebraicNumber", "[", 
+           RowBox[{
+             RowBox[{"Root", "[", 
+               RowBox[{
+                 RowBox[{
+                   RowBox[{"1", "-", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["#1", "2"]}], "+", 
+                    SuperscriptBox["#1", "4"]}], "&"}], ",", "4"}], "]"}], 
+             ",", 
+             RowBox[{"{", 
+               RowBox[{
+                 RowBox[{"-", "1"}], ",", "1", ",", "0", ",", "0"}], "}"}]}], 
+           "]"}], Short[#, 7]& ], 0.9318516525781366},
+       "NumericalApproximation"],
+      AlgebraicNumber[
+       Root[1 - 4 #^2 + #^4& , 4, 0], {-1, 1, 0, 0}]], "-", 
+     SuperscriptBox["\[Beta]1", "2"]}]}], ";"}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{"=", " ", 
+    RowBox[{"b5", " ", "=", " ", 
+     SqrtBox[
+      RowBox[{
+       RowBox[{"-", "1"}], "+", 
+       SqrtBox[
+        RowBox[{"2", "+", 
+         SqrtBox["3"]}]]}]]}]}], "  ", "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"poly\[Beta]2", " ", "=", " ", 
+    RowBox[{
+     InterpretationBox[
+      TemplateBox[{"AlgebraicNumber", 
+        InterpretationBox[
+         StyleBox[
+          TemplateBox[{"\"3.66\"", 
+            DynamicBox[
+             FEPrivate`FrontEndResource[
+             "FEExpressions", "NumericalApproximationElider"]]}, 
+           "RowDefault"], ShowStringCharacters -> False], 
+         3.66390246014701403964863857254385948181`15.954589770191003, 
+         Editable -> False], 
+        TagBox[
+         RowBox[{"AlgebraicNumber", "[", 
+           RowBox[{
+             RowBox[{"Root", "[", 
+               RowBox[{
+                 RowBox[{
+                   RowBox[{"1", "-", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["#1", "2"]}], "+", 
+                    SuperscriptBox["#1", "4"]}], "&"}], ",", "4"}], "]"}], 
+             ",", 
+             RowBox[{"{", 
+               RowBox[{
+                 RowBox[{"-", "2"}], ",", "1", ",", "1", ",", "0"}], "}"}]}], 
+           "]"}], Short[#, 7]& ], 3.663902460147014},
+       "NumericalApproximation"],
+      AlgebraicNumber[
+       Root[1 - 4 #^2 + #^4& , 4, 0], {-2, 1, 1, 0}]], "-", 
+     SuperscriptBox["\[Beta]2", "2"]}]}], ";"}], "  ", 
+  RowBox[{"(*", " ", 
+   RowBox[{"=", " ", 
+    RowBox[{"b6", " ", "=", " ", 
+     SqrtBox[
+      RowBox[{
+       SqrtBox["3"], "+", 
+       SqrtBox[
+        RowBox[{"2", "+", 
+         SqrtBox["3"]}]]}]]}]}], "  ", "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"poly\[Beta]3", " ", "=", " ", 
+    RowBox[{
+     InterpretationBox[
+      TemplateBox[{"AlgebraicNumber", 
+        InterpretationBox[
+         StyleBox[
+          TemplateBox[{"\"0.965\"", 
+            DynamicBox[
+             FEPrivate`FrontEndResource[
+             "FEExpressions", "NumericalApproximationElider"]]}, 
+           "RowDefault"], ShowStringCharacters -> False], 
+         0.96472381958991770822819944442017003894`15.954589770191003, 
+         Editable -> False], 
+        TagBox[
+         RowBox[{"AlgebraicNumber", "[", 
+           RowBox[{
+             RowBox[{"Root", "[", 
+               RowBox[{
+                 RowBox[{
+                   RowBox[{"1", "-", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["#1", "2"]}], "+", 
+                    SuperscriptBox["#1", "4"]}], "&"}], ",", "4"}], "]"}], 
+             ",", 
+             RowBox[{"{", 
+               RowBox[{"2", ",", 
+                 RowBox[{"-", "8"}], ",", "0", ",", "2"}], "}"}]}], "]"}], 
+         Short[#, 7]& ], 0.9647238195899177},
+       "NumericalApproximation"],
+      AlgebraicNumber[
+       Root[1 - 4 #^2 + #^4& , 4, 0], {2, -8, 0, 2}]], "-", 
+     SuperscriptBox["\[Beta]3", "2"]}]}], ";"}], "  ", 
+  RowBox[{"(*", " ", 
+   RowBox[{"=", " ", 
+    RowBox[{"b7", " ", "=", " ", 
+     SqrtBox[
+      RowBox[{"2", "+", 
+       SqrtBox["2"], "-", 
+       SqrtBox["6"]}]]}]}], "  ", "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"poly\[Alpha]", " ", "=", " ", 
+    RowBox[{
+     InterpretationBox[
+      TemplateBox[{"AlgebraicNumber", 
+        InterpretationBox[
+         StyleBox[
+          TemplateBox[{"\"-0.233\"", 
+            DynamicBox[
+             FEPrivate`FrontEndResource[
+             "FEExpressions", "NumericalApproximationElider"]]}, 
+           "RowDefault"], ShowStringCharacters -> 
+          False], -0.23267301202104018198468793343636207283`15.\
+954589770191003, Editable -> False], 
+        TagBox[
+         RowBox[{"AlgebraicNumber", "[", 
+           RowBox[{
+             RowBox[{"Root", "[", 
+               RowBox[{
+                 RowBox[{
+                   RowBox[{"1", "-", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["#1", "2"]}], "+", 
+                    SuperscriptBox["#1", "4"]}], "&"}], ",", "4"}], "]"}], 
+             ",", 
+             RowBox[{"{", 
+               RowBox[{
+                 RowBox[{"-", "5"}], ",", "8", ",", "1", ",", 
+                 RowBox[{"-", "2"}]}], "}"}]}], "]"}], 
+         Short[#, 7]& ], -0.23267301202104018`},
+       "NumericalApproximation"],
+      AlgebraicNumber[
+       Root[1 - 4 #^2 + #^4& , 4, 0], {-5, 8, 1, -2}]], "+", 
+     RowBox[{
+      InterpretationBox[
+       TemplateBox[{"AlgebraicNumber", 
+         InterpretationBox[
+          StyleBox[
+           TemplateBox[{"\"2.83\"", 
+             DynamicBox[
+              FEPrivate`FrontEndResource[
+              "FEExpressions", "NumericalApproximationElider"]]}, 
+            "RowDefault"], ShowStringCharacters -> False], 
+          2.82842712474619073503845356754027307034`15.954589770191003, 
+          Editable -> False], 
+         TagBox[
+          RowBox[{"AlgebraicNumber", "[", 
+            RowBox[{
+              RowBox[{"Root", "[", 
+                RowBox[{
+                  RowBox[{
+                    RowBox[{"1", "-", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["#1", "2"]}], "+", 
+                    SuperscriptBox["#1", "4"]}], "&"}], ",", "4"}], "]"}], 
+              ",", 
+              RowBox[{"{", 
+                RowBox[{"0", ",", 
+                  RowBox[{"-", "6"}], ",", "0", ",", "2"}], "}"}]}], "]"}], 
+          Short[#, 7]& ], 2.8284271247461907`},
+        "NumericalApproximation"],
+       AlgebraicNumber[
+        Root[1 - 4 #^2 + #^4& , 4, 0], {0, -6, 0, 2}]], " ", 
+      SuperscriptBox["\[Alpha]", "2"]}], "-", 
+     SuperscriptBox["\[Alpha]", "4"]}]}], ";"}], "  ", 
+  RowBox[{"(*", " ", 
+   RowBox[{"=", " ", 
+    RowBox[{"a5", " ", "=", " ", 
+     FractionBox[
+      RowBox[{
+       SqrtBox[
+        RowBox[{"1", "+", 
+         SqrtBox[
+          RowBox[{"6", "-", 
+           RowBox[{"3", " ", 
+            SqrtBox["3"]}]}]]}]], "-", 
+       SqrtBox[
+        RowBox[{
+         RowBox[{"-", "1"}], "+", 
+         SqrtBox[
+          RowBox[{"2", "+", 
+           SqrtBox["3"]}]]}]]}], 
+      SqrtBox["2"]]}]}], "  ", "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"poly\[Lambda]", " ", "=", 
+    RowBox[{
+     InterpretationBox[
+      TemplateBox[{"AlgebraicNumber", 
+        InterpretationBox[
+         StyleBox[
+          TemplateBox[{"\"-8.90\"", 
+            DynamicBox[
+             FEPrivate`FrontEndResource[
+             "FEExpressions", "NumericalApproximationElider"]]}, 
+           "RowDefault"], ShowStringCharacters -> 
+          False], -8.89897948556635576267126452876254916191`15.\
+954589770191003, Editable -> False], 
+        TagBox[
+         RowBox[{"AlgebraicNumber", "[", 
+           RowBox[{
+             RowBox[{"Root", "[", 
+               RowBox[{
+                 RowBox[{
+                   RowBox[{"1", "-", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["#1", "2"]}], "+", 
+                    SuperscriptBox["#1", "4"]}], "&"}], ",", "4"}], "]"}], 
+             ",", 
+             RowBox[{"{", 
+               RowBox[{
+                 RowBox[{"-", "4"}], ",", 
+                 RowBox[{"-", "10"}], ",", "0", ",", "2"}], "}"}]}], "]"}], 
+         Short[#, 7]& ], -8.898979485566356},
+       "NumericalApproximation"],
+      AlgebraicNumber[
+       Root[1 - 4 #^2 + #^4& , 4, 0], {-4, -10, 0, 2}]], "+", " ", 
+     SuperscriptBox["\[Lambda]", "2"]}]}], ";"}], "      ", 
+  RowBox[{"(*", " ", 
+   RowBox[{"=", " ", 
+    RowBox[{"l1", " ", "=", " ", 
+     SqrtBox[
+      RowBox[{"1", "+", 
+       SqrtBox[
+        FractionBox["3", "2"]]}]]}]}], "  ", "*)"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"poly\[Eta]", " ", "=", " ", 
+    RowBox[{
+     RowBox[{"-", "1"}], "+", 
+     RowBox[{
+      InterpretationBox[
+       TemplateBox[{"AlgebraicNumber", 
+         InterpretationBox[
+          StyleBox[
+           TemplateBox[{"\"1.93\"", 
+             DynamicBox[
+              FEPrivate`FrontEndResource[
+              "FEExpressions", "NumericalApproximationElider"]]}, 
+            "RowDefault"], ShowStringCharacters -> False], 
+          1.93185165257813662442742952407570555806`15.954589770191003, 
+          Editable -> False], 
+         TagBox[
+          RowBox[{"AlgebraicNumber", "[", 
+            RowBox[{
+              RowBox[{"Root", "[", 
+                RowBox[{
+                  RowBox[{
+                    RowBox[{"1", "-", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["#1", "2"]}], "+", 
+                    SuperscriptBox["#1", "4"]}], "&"}], ",", "4"}], "]"}], 
+              ",", 
+              RowBox[{"{", 
+                RowBox[{"0", ",", "1", ",", "0", ",", "0"}], "}"}]}], "]"}], 
+          Short[#, 7]& ], 1.9318516525781366`},
+        "NumericalApproximation"],
+       AlgebraicNumber[
+        Root[1 - 4 #^2 + #^4& , 4, 0], {0, 1, 0, 0}]], " ", 
+      SuperscriptBox["\[Eta]", "2"]}], "-", 
+     SuperscriptBox["\[Eta]", "4"]}]}], ";"}], 
+  RowBox[{"(*", " ", 
+   RowBox[{"=", " ", 
+    RowBox[{"q", " ", "=", " ", 
+     RowBox[{
+      RowBox[{
+       FractionBox["1", "2"], 
+       SqrtBox[
+        RowBox[{"2", "+", 
+         SqrtBox[
+          RowBox[{"2", "+", 
+           SqrtBox["3"]}]]}]]}], " ", "+", " ", 
+      RowBox[{"I", 
+       FractionBox["1", "2"], " ", 
+       SqrtBox[
+        RowBox[{"2", "-", 
+         SqrtBox[
+          RowBox[{"2", "+", 
+           SqrtBox["3"]}]]}]]}]}]}]}], "  ", 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{"vars", " ", "=", " ", 
+  RowBox[{"{", 
+   RowBox[{
+   "\[Eta]", ",", "\[Alpha]", ",", "\[Beta]3", ",", "\[Beta]2", ",", 
+    "\[Beta]1", ",", "\[Lambda]"}], "}"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"minPolys", " ", "=", " ", 
+    RowBox[{"{", 
+     RowBox[{
+     "poly\[Eta]", ",", " ", "poly\[Alpha]", ",", "poly\[Beta]3", ",", " ", 
+      "poly\[Beta]2", ",", "poly\[Beta]1", ",", "poly\[Lambda]"}], "}"}]}], 
+   ";"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"qn3", " ", "=", " ", 
+   RowBox[{"\[Eta]", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      InterpretationBox[
+       TemplateBox[{"AlgebraicNumber", 
+         InterpretationBox[
+          StyleBox[
+           TemplateBox[{"\"2.73\"", 
+             DynamicBox[
+              FEPrivate`FrontEndResource[
+              "FEExpressions", "NumericalApproximationElider"]]}, 
+            "RowDefault"], ShowStringCharacters -> False], 
+          2.73205080756887763726581397349946200848`15.954589770191003, 
+          Editable -> False], 
+         TagBox[
+          RowBox[{"AlgebraicNumber", "[", 
+            RowBox[{
+              RowBox[{"Root", "[", 
+                RowBox[{
+                  RowBox[{
+                    RowBox[{"1", "-", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["#1", "2"]}], "+", 
+                    SuperscriptBox["#1", "4"]}], "&"}], ",", "4"}], "]"}], 
+              ",", 
+              RowBox[{"{", 
+                RowBox[{
+                  RowBox[{"-", "1"}], ",", "0", ",", "1", ",", "0"}], "}"}]}],
+             "]"}], Short[#, 7]& ], 2.7320508075688776`},
+        "NumericalApproximation"],
+       AlgebraicNumber[
+        Root[1 - 4 #^2 + #^4& , 4, 0], {-1, 0, 1, 0}]], "+", 
+      RowBox[{
+       SuperscriptBox["\[Eta]", "2"], " ", 
+       InterpretationBox[
+        TemplateBox[{"AlgebraicNumber", 
+          InterpretationBox[
+           StyleBox[
+            TemplateBox[{"\"-1.93\"", 
+              DynamicBox[
+               FEPrivate`FrontEndResource[
+               "FEExpressions", "NumericalApproximationElider"]]}, 
+             "RowDefault"], ShowStringCharacters -> 
+            False], -1.93185165257813662442742952407570555806`15.\
+954589770191003, Editable -> False], 
+          TagBox[
+           RowBox[{"AlgebraicNumber", "[", 
+             RowBox[{
+               RowBox[{"Root", "[", 
+                 RowBox[{
+                   RowBox[{
+                    RowBox[{"1", "-", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["#1", "2"]}], "+", 
+                    SuperscriptBox["#1", "4"]}], "&"}], ",", "4"}], "]"}], 
+               ",", 
+               RowBox[{"{", 
+                 RowBox[{"0", ",", 
+                   RowBox[{"-", "1"}], ",", "0", ",", "0"}], "}"}]}], "]"}], 
+           Short[#, 7]& ], -1.9318516525781366`},
+         "NumericalApproximation"],
+        AlgebraicNumber[
+         Root[1 - 4 #^2 + #^4& , 4, 0], {0, -1, 0, 0}]]}]}], ")"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"qn1", " ", "=", " ", 
+   RowBox[{
+    RowBox[{"-", "\[Eta]"}], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      SuperscriptBox["\[Eta]", "2"], "+", 
+      InterpretationBox[
+       TemplateBox[{"AlgebraicNumber", 
+         InterpretationBox[
+          StyleBox[
+           TemplateBox[{"\"-1.93\"", 
+             DynamicBox[
+              FEPrivate`FrontEndResource[
+              "FEExpressions", "NumericalApproximationElider"]]}, 
+            "RowDefault"], ShowStringCharacters -> 
+           False], -1.93185165257813662442742952407570555806`15.\
+954589770191003, Editable -> False], 
+         TagBox[
+          RowBox[{"AlgebraicNumber", "[", 
+            RowBox[{
+              RowBox[{"Root", "[", 
+                RowBox[{
+                  RowBox[{
+                    RowBox[{"1", "-", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["#1", "2"]}], "+", 
+                    SuperscriptBox["#1", "4"]}], "&"}], ",", "4"}], "]"}], 
+              ",", 
+              RowBox[{"{", 
+                RowBox[{"0", ",", 
+                  RowBox[{"-", "1"}], ",", "0", ",", "0"}], "}"}]}], "]"}], 
+          Short[#, 7]& ], -1.9318516525781366`},
+        "NumericalApproximation"],
+       AlgebraicNumber[
+        Root[1 - 4 #^2 + #^4& , 4, 0], {0, -1, 0, 0}]]}], ")"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"d", " ", "=", " ", 
+    RowBox[{"\[Eta]", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        SuperscriptBox["\[Eta]", "2"], " ", 
+        InterpretationBox[
+         TemplateBox[{"AlgebraicNumber", 
+           InterpretationBox[
+            StyleBox[
+             TemplateBox[{"\"-0.254\"", 
+               DynamicBox[
+                FEPrivate`FrontEndResource[
+                "FEExpressions", "NumericalApproximationElider"]]}, 
+              "RowDefault"], ShowStringCharacters -> 
+             False], -0.25433309503024964515205397219688165933`15.\
+954589770191003, Editable -> False], 
+           TagBox[
+            RowBox[{"AlgebraicNumber", "[", 
+              RowBox[{
+                RowBox[{"Root", "[", 
+                  RowBox[{
+                    RowBox[{
+                    RowBox[{"1", "-", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["#1", "2"]}], "+", 
+                    SuperscriptBox["#1", "4"]}], "&"}], ",", "4"}], "]"}], 
+                ",", 
+                RowBox[{"{", 
+                  RowBox[{"0", ",", "0", ",", 
+                    RowBox[{"-", "2"}], ",", "1"}], "}"}]}], "]"}], 
+            Short[#, 7]& ], -0.25433309503024965`},
+          "NumericalApproximation"],
+         AlgebraicNumber[
+          Root[1 - 4 #^2 + #^4& , 4, 0], {0, 0, -2, 1}]]}], "+", 
+       InterpretationBox[
+        TemplateBox[{"AlgebraicNumber", 
+          InterpretationBox[
+           StyleBox[
+            TemplateBox[{"\"0.746\"", 
+              DynamicBox[
+               FEPrivate`FrontEndResource[
+               "FEExpressions", "NumericalApproximationElider"]]}, 
+             "RowDefault"], ShowStringCharacters -> False], 
+           0.74566690496975041035909725906094536185`15.954589770191003, 
+           Editable -> False], 
+          TagBox[
+           RowBox[{"AlgebraicNumber", "[", 
+             RowBox[{
+               RowBox[{"Root", "[", 
+                 RowBox[{
+                   RowBox[{
+                    RowBox[{"1", "-", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["#1", "2"]}], "+", 
+                    SuperscriptBox["#1", "4"]}], "&"}], ",", "4"}], "]"}], 
+               ",", 
+               RowBox[{"{", 
+                 RowBox[{"1", ",", "0", ",", 
+                   RowBox[{"-", "2"}], ",", "1"}], "}"}]}], "]"}], 
+           Short[#, 7]& ], 0.7456669049697504},
+         "NumericalApproximation"],
+        AlgebraicNumber[
+         Root[1 - 4 #^2 + #^4& , 4, 0], {1, 0, -2, 1}]]}], ")"}]}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"invRules", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      FractionBox["1", "\[Beta]1"], "->", 
+      FractionBox["\[Beta]1", 
+       InterpretationBox[
+        TemplateBox[{"AlgebraicNumber", 
+          InterpretationBox[
+           StyleBox[
+            TemplateBox[{"\"0.932\"", 
+              DynamicBox[
+               FEPrivate`FrontEndResource[
+               "FEExpressions", "NumericalApproximationElider"]]}, 
+             "RowDefault"], ShowStringCharacters -> False], 
+           0.93185165257813662442742952407570555806`15.954589770191003, 
+           Editable -> False], 
+          TagBox[
+           RowBox[{"AlgebraicNumber", "[", 
+             RowBox[{
+               RowBox[{"Root", "[", 
+                 RowBox[{
+                   RowBox[{
+                    RowBox[{"1", "-", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["#1", "2"]}], "+", 
+                    SuperscriptBox["#1", "4"]}], "&"}], ",", "4"}], "]"}], 
+               ",", 
+               RowBox[{"{", 
+                 RowBox[{
+                   RowBox[{"-", "1"}], ",", "1", ",", "0", ",", "0"}], 
+                 "}"}]}], "]"}], Short[#, 7]& ], 0.9318516525781366},
+         "NumericalApproximation"],
+        AlgebraicNumber[
+         Root[1 - 4 #^2 + #^4& , 4, 0], {-1, 1, 0, 0}]]]}], ",", " ", 
+     RowBox[{
+      FractionBox["1", "\[Beta]2"], "->", 
+      FractionBox["\[Beta]2", 
+       InterpretationBox[
+        TemplateBox[{"AlgebraicNumber", 
+          InterpretationBox[
+           StyleBox[
+            TemplateBox[{"\"3.66\"", 
+              DynamicBox[
+               FEPrivate`FrontEndResource[
+               "FEExpressions", "NumericalApproximationElider"]]}, 
+             "RowDefault"], ShowStringCharacters -> False], 
+           3.66390246014701403964863857254385948181`15.954589770191003, 
+           Editable -> False], 
+          TagBox[
+           RowBox[{"AlgebraicNumber", "[", 
+             RowBox[{
+               RowBox[{"Root", "[", 
+                 RowBox[{
+                   RowBox[{
+                    RowBox[{"1", "-", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["#1", "2"]}], "+", 
+                    SuperscriptBox["#1", "4"]}], "&"}], ",", "4"}], "]"}], 
+               ",", 
+               RowBox[{"{", 
+                 RowBox[{
+                   RowBox[{"-", "2"}], ",", "1", ",", "1", ",", "0"}], 
+                 "}"}]}], "]"}], Short[#, 7]& ], 3.663902460147014},
+         "NumericalApproximation"],
+        AlgebraicNumber[
+         Root[1 - 4 #^2 + #^4& , 4, 0], {-2, 1, 1, 0}]]]}], ",", 
+     RowBox[{
+      FractionBox["1", 
+       SuperscriptBox["\[Beta]2", "2"]], "->", 
+      FractionBox["1", 
+       InterpretationBox[
+        TemplateBox[{"AlgebraicNumber", 
+          InterpretationBox[
+           StyleBox[
+            TemplateBox[{"\"3.66\"", 
+              DynamicBox[
+               FEPrivate`FrontEndResource[
+               "FEExpressions", "NumericalApproximationElider"]]}, 
+             "RowDefault"], ShowStringCharacters -> False], 
+           3.66390246014701403964863857254385948181`15.954589770191003, 
+           Editable -> False], 
+          TagBox[
+           RowBox[{"AlgebraicNumber", "[", 
+             RowBox[{
+               RowBox[{"Root", "[", 
+                 RowBox[{
+                   RowBox[{
+                    RowBox[{"1", "-", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["#1", "2"]}], "+", 
+                    SuperscriptBox["#1", "4"]}], "&"}], ",", "4"}], "]"}], 
+               ",", 
+               RowBox[{"{", 
+                 RowBox[{
+                   RowBox[{"-", "2"}], ",", "1", ",", "1", ",", "0"}], 
+                 "}"}]}], "]"}], Short[#, 7]& ], 3.663902460147014},
+         "NumericalApproximation"],
+        AlgebraicNumber[
+         Root[1 - 4 #^2 + #^4& , 4, 0], {-2, 1, 1, 0}]]]}], ",", 
+     RowBox[{
+      FractionBox["1", "\[Beta]3"], "->", 
+      FractionBox["\[Beta]3", 
+       InterpretationBox[
+        TemplateBox[{"AlgebraicNumber", 
+          InterpretationBox[
+           StyleBox[
+            TemplateBox[{"\"0.965\"", 
+              DynamicBox[
+               FEPrivate`FrontEndResource[
+               "FEExpressions", "NumericalApproximationElider"]]}, 
+             "RowDefault"], ShowStringCharacters -> False], 
+           0.96472381958991770822819944442017003894`15.954589770191003, 
+           Editable -> False], 
+          TagBox[
+           RowBox[{"AlgebraicNumber", "[", 
+             RowBox[{
+               RowBox[{"Root", "[", 
+                 RowBox[{
+                   RowBox[{
+                    RowBox[{"1", "-", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["#1", "2"]}], "+", 
+                    SuperscriptBox["#1", "4"]}], "&"}], ",", "4"}], "]"}], 
+               ",", 
+               RowBox[{"{", 
+                 RowBox[{"2", ",", 
+                   RowBox[{"-", "8"}], ",", "0", ",", "2"}], "}"}]}], "]"}], 
+           Short[#, 7]& ], 0.9647238195899177},
+         "NumericalApproximation"],
+        AlgebraicNumber[
+         Root[1 - 4 #^2 + #^4& , 4, 0], {2, -8, 0, 2}]]]}], ",", " ", 
+     RowBox[{
+      FractionBox["1", "\[Lambda]"], "->", 
+      FractionBox["\[Lambda]", 
+       RowBox[{"-", 
+        InterpretationBox[
+         TemplateBox[{"AlgebraicNumber", 
+           InterpretationBox[
+            StyleBox[
+             TemplateBox[{"\"-8.90\"", 
+               DynamicBox[
+                FEPrivate`FrontEndResource[
+                "FEExpressions", "NumericalApproximationElider"]]}, 
+              "RowDefault"], ShowStringCharacters -> 
+             False], -8.89897948556635576267126452876254916191`15.\
+954589770191003, Editable -> False], 
+           TagBox[
+            RowBox[{"AlgebraicNumber", "[", 
+              RowBox[{
+                RowBox[{"Root", "[", 
+                  RowBox[{
+                    RowBox[{
+                    RowBox[{"1", "-", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["#1", "2"]}], "+", 
+                    SuperscriptBox["#1", "4"]}], "&"}], ",", "4"}], "]"}], 
+                ",", 
+                RowBox[{"{", 
+                  RowBox[{
+                    RowBox[{"-", "4"}], ",", 
+                    RowBox[{"-", "10"}], ",", "0", ",", "2"}], "}"}]}], "]"}],
+             Short[#, 7]& ], -8.898979485566356},
+          "NumericalApproximation"],
+         AlgebraicNumber[
+          Root[1 - 4 #^2 + #^4& , 4, 0], {-4, -10, 0, 2}]]}]]}], ",", 
+     RowBox[{
+      FractionBox["1", "\[Alpha]"], "->", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"-", 
+          FractionBox[
+           InterpretationBox[
+            TemplateBox[{"AlgebraicNumber", 
+              InterpretationBox[
+               StyleBox[
+                TemplateBox[{"\"2.83\"", 
+                  DynamicBox[
+                   FEPrivate`FrontEndResource[
+                   "FEExpressions", "NumericalApproximationElider"]]}, 
+                 "RowDefault"], ShowStringCharacters -> False], 
+               2.82842712474619073503845356754027307034`15.954589770191003, 
+               Editable -> False], 
+              TagBox[
+               RowBox[{"AlgebraicNumber", "[", 
+                 RowBox[{
+                   RowBox[{"Root", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"1", "-", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["#1", "2"]}], "+", 
+                    SuperscriptBox["#1", "4"]}], "&"}], ",", "4"}], "]"}], 
+                   ",", 
+                   RowBox[{"{", 
+                    RowBox[{"0", ",", 
+                    RowBox[{"-", "6"}], ",", "0", ",", "2"}], "}"}]}], "]"}], 
+               Short[#, 7]& ], 2.8284271247461907`},
+             "NumericalApproximation"],
+            AlgebraicNumber[
+             Root[1 - 4 #^2 + #^4& , 4, 0], {0, -6, 0, 2}]], 
+           InterpretationBox[
+            TemplateBox[{"AlgebraicNumber", 
+              InterpretationBox[
+               StyleBox[
+                TemplateBox[{"\"-0.233\"", 
+                  DynamicBox[
+                   FEPrivate`FrontEndResource[
+                   "FEExpressions", "NumericalApproximationElider"]]}, 
+                 "RowDefault"], ShowStringCharacters -> 
+                False], \
+-0.23267301202104018198468793343636207283`15.954589770191003, Editable -> 
+               False], 
+              TagBox[
+               RowBox[{"AlgebraicNumber", "[", 
+                 RowBox[{
+                   RowBox[{"Root", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"1", "-", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["#1", "2"]}], "+", 
+                    SuperscriptBox["#1", "4"]}], "&"}], ",", "4"}], "]"}], 
+                   ",", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "5"}], ",", "8", ",", "1", ",", 
+                    RowBox[{"-", "2"}]}], "}"}]}], "]"}], 
+               Short[#, 7]& ], -0.23267301202104018`},
+             "NumericalApproximation"],
+            AlgebraicNumber[
+             Root[1 - 4 #^2 + #^4& , 4, 0], {-5, 8, 1, -2}]]]}], ")"}], 
+        "\[Alpha]"}], "+", 
+       RowBox[{
+        FractionBox["1", 
+         InterpretationBox[
+          TemplateBox[{"AlgebraicNumber", 
+            InterpretationBox[
+             StyleBox[
+              TemplateBox[{"\"-0.233\"", 
+                DynamicBox[
+                 FEPrivate`FrontEndResource[
+                 "FEExpressions", "NumericalApproximationElider"]]}, 
+               "RowDefault"], ShowStringCharacters -> 
+              False], -0.23267301202104018198468793343636207283`15.\
+954589770191003, Editable -> False], 
+            TagBox[
+             RowBox[{"AlgebraicNumber", "[", 
+               RowBox[{
+                 RowBox[{"Root", "[", 
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{"1", "-", 
+                    RowBox[{"4", " ", 
+                    SuperscriptBox["#1", "2"]}], "+", 
+                    SuperscriptBox["#1", "4"]}], "&"}], ",", "4"}], "]"}], 
+                 ",", 
+                 RowBox[{"{", 
+                   RowBox[{
+                    RowBox[{"-", "5"}], ",", "8", ",", "1", ",", 
+                    RowBox[{"-", "2"}]}], "}"}]}], "]"}], 
+             Short[#, 7]& ], -0.23267301202104018`},
+           "NumericalApproximation"],
+          AlgebraicNumber[
+           Root[1 - 4 #^2 + #^4& , 4, 0], {-5, 8, 1, -2}]]], 
+        SuperscriptBox["\[Alpha]", "3"]}]}]}]}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ReplaceInverses", "[", "expr_", "]"}], ":=", 
+  RowBox[{"expr", "/.", " ", "invRules"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"ApplyRelns", "[", "expr_", "]"}], ":=", " ", 
+   RowBox[{"Simplify", "[", 
+    RowBox[{
+     RowBox[{"PolynomialMod", "[", 
+      RowBox[{"expr", ",", "minPolys"}], "]"}], ",", 
+     RowBox[{"Assumptions", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"\[Eta]", "!=", "0"}], ",", 
+        RowBox[{"\[Alpha]", "!=", "0"}], ",", 
+        RowBox[{"\[Beta]3", "!=", "0"}], ",", 
+        RowBox[{"\[Beta]2", "!=", "0"}], ",", 
+        RowBox[{"\[Beta]1", "!=", "0"}], ",", 
+        RowBox[{"\[Lambda]", "!=", "0"}]}], "}"}]}]}], "]"}]}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "generalized", " ", "to", " ", "work", " ", "for", " ", "\[Eta]", " ", 
+    "or", " ", "\[Alpha]"}], " ", "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"evenDeg4Inv", "[", 
+   RowBox[{"expr_", ",", " ", "var_"}], "]"}], ":=", " ", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"ddd", ",", "eee", ",", "sol"}], "}"}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Clear", "[", 
+      RowBox[{"ddd", ",", "eee"}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"sol", " ", "=", " ", 
+      RowBox[{
+       RowBox[{"Solve", "[", 
+        RowBox[{
+         RowBox[{"{", "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"Coefficient", "[", 
+             RowBox[{
+              RowBox[{"Collect", "[", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"expr", 
+                  RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"ddd", " ", 
+                    SuperscriptBox["var", "2"]}], "+", "eee"}], ")"}]}], "//",
+                  "ApplyRelns"}], ",", "var"}], "]"}], ",", 
+              SuperscriptBox["var", "2"]}], "]"}], "==", "0"}], ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"expr", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"ddd", " ", 
+                    SuperscriptBox["var", "2"]}], "+", "eee"}], ")"}]}], "//",
+                 "ApplyRelns"}], ")"}], "/.", 
+              RowBox[{"var", "->", "0"}]}], ")"}], "==", "1"}]}], 
+          "\[IndentingNewLine]", "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"ddd", ",", "eee"}], "}"}]}], "]"}], "[", 
+       RowBox[{"[", "1", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Return", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"ddd", " ", 
+         SuperscriptBox["var", "2"]}], "+", "eee"}], "/.", "sol"}], "]"}]}]}],
+    "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"doubleEvenInv", "[", "expr_", "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"ssol", ",", "aa", ",", "bb", ",", "cc", ",", "dd"}], "}"}], ",",
+     "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"ssol", " ", "=", " ", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"{", "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"ApplyRelns", "[", 
+               RowBox[{
+                RowBox[{"(", "expr", ")"}], 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{
+                   SuperscriptBox["\[Eta]", "2"], " ", "aa"}], "+", 
+                  RowBox[{
+                   SuperscriptBox["\[Alpha]", "2"], " ", 
+                   SuperscriptBox["\[Eta]", "2"], " ", "bb"}], "+", 
+                  RowBox[{
+                   SuperscriptBox["\[Alpha]", "2"], " ", "cc"}], "+", "dd"}], 
+                 ")"}]}], "]"}], "/.", 
+              RowBox[{"Thread", "[", 
+               RowBox[{"vars", "->", 
+                RowBox[{"{", 
+                 RowBox[{
+                 "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0"}], 
+                 "}"}]}], "]"}]}], ")"}], "==", "1"}], ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"Coefficient", "[", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"(", "expr", ")"}], 
+                  RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{
+                    SuperscriptBox["\[Eta]", "2"], " ", "aa"}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[Alpha]", "2"], " ", 
+                    SuperscriptBox["\[Eta]", "2"], " ", "bb"}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[Alpha]", "2"], " ", "cc"}], "+", "dd"}],
+                    ")"}]}], "//", "ApplyRelns"}], ",", 
+                SuperscriptBox["\[Eta]", "2"]}], "]"}], "/.", 
+              RowBox[{"Thread", "[", 
+               RowBox[{"vars", "->", 
+                RowBox[{"{", 
+                 RowBox[{
+                 "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0"}], 
+                 "}"}]}], "]"}]}], ")"}], "==", "0"}], ",", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"Coefficient", "[", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"(", "expr", ")"}], 
+                  RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{
+                    SuperscriptBox["\[Eta]", "2"], " ", "aa"}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[Alpha]", "2"], " ", 
+                    SuperscriptBox["\[Eta]", "2"], " ", "bb"}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[Alpha]", "2"], " ", "cc"}], "+", "dd"}],
+                    ")"}]}], "//", "ApplyRelns"}], ",", 
+                RowBox[{
+                 SuperscriptBox["\[Alpha]", "2"], " ", 
+                 SuperscriptBox["\[Eta]", "2"]}]}], "]"}], "/.", 
+              RowBox[{"Thread", "[", 
+               RowBox[{"vars", "->", 
+                RowBox[{"{", 
+                 RowBox[{
+                 "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0"}], 
+                 "}"}]}], "]"}]}], ")"}], "==", "0"}], ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"Coefficient", "[", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"(", "expr", ")"}], 
+                  RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{
+                    SuperscriptBox["\[Eta]", "2"], " ", "aa"}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[Alpha]", "2"], " ", 
+                    SuperscriptBox["\[Eta]", "2"], " ", "bb"}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[Alpha]", "2"], " ", "cc"}], "+", "dd"}],
+                    ")"}]}], "//", "ApplyRelns"}], ",", 
+                SuperscriptBox["\[Alpha]", "2"]}], " ", "]"}], "/.", 
+              RowBox[{"Thread", "[", 
+               RowBox[{"vars", "->", 
+                RowBox[{"{", 
+                 RowBox[{
+                 "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0"}], 
+                 "}"}]}], "]"}]}], ")"}], "==", "0"}]}], "}"}], "//", 
+         RowBox[{
+          RowBox[{"Solve", "[", 
+           RowBox[{"#", ",", 
+            RowBox[{"{", 
+             RowBox[{"aa", ",", "bb", ",", "cc", ",", "dd"}], "}"}]}], "]"}], 
+          "&"}]}], ")"}], "[", 
+       RowBox[{"[", "1", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Return", "[", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          SuperscriptBox["\[Eta]", "2"], " ", "aa"}], "+", 
+         RowBox[{
+          SuperscriptBox["\[Alpha]", "2"], " ", 
+          SuperscriptBox["\[Eta]", "2"], " ", "bb"}], "+", 
+         RowBox[{
+          SuperscriptBox["\[Alpha]", "2"], " ", "cc"}], "+", "dd"}], ")"}], "/.",
+        "ssol"}], "]"}]}]}], "\[IndentingNewLine]", 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"BB", " ", "=", " ", 
+   RowBox[{
+    RowBox[{"Table", "[", 
+     RowBox[{
+      RowBox[{
+       SuperscriptBox["\[Eta]", "i"], " ", 
+       SuperscriptBox["\[Alpha]", "j"], " ", 
+       SuperscriptBox["\[Beta]3", "k"], " ", 
+       SuperscriptBox["\[Beta]2", "l"], " ", 
+       SuperscriptBox["\[Beta]1", "m"], 
+       SuperscriptBox["\[Lambda]", "n"]}], ",", 
+      RowBox[{"{", 
+       RowBox[{"i", ",", "0", ",", "3"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"j", ",", "0", ",", "3"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"k", ",", "0", ",", "1"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"l", ",", "0", ",", "1"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"m", ",", "0", ",", "1"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"n", ",", "0", ",", "1"}], "}"}]}], "]"}], "//", "Flatten"}]}],
+   ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"BBpos", " ", "=", " ", 
+   RowBox[{"Select", "[", 
+    RowBox[{"BB", ",", 
+     RowBox[{
+      RowBox[{"!", 
+       RowBox[{"(", 
+        RowBox[{"#", "===", "1"}], ")"}]}], "&"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"arbInv", "[", "expr_", "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+     "tVar", ",", " ", "ssol", ",", "symbInv", ",", " ", "con", ",", " ", 
+      "nonCon", ",", "mon", ",", " ", "eqs"}], "}"}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"tVar", " ", "=", " ", 
+      RowBox[{"Table", "[", 
+       RowBox[{
+        RowBox[{"Symbol", "[", 
+         RowBox[{"\"\<t\>\"", "<>", 
+          RowBox[{"ToString", "[", "ind", "]"}]}], "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"ind", ",", "1", ",", "255"}], "}"}]}], "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"symbInv", " ", "=", " ", 
+      RowBox[{"tVar", ".", "BBpos"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"con", " ", "=", " ", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"ApplyRelns", "[", 
+           RowBox[{
+            RowBox[{"(", "expr", ")"}], 
+            RowBox[{"(", "symbInv", ")"}]}], "]"}], "/.", 
+          RowBox[{"Thread", "[", 
+           RowBox[{"vars", "->", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0"}], 
+             "}"}]}], "]"}]}], ")"}], "==", "1"}], "}"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"nonCon", " ", "=", " ", 
+      RowBox[{"Table", "[", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Coefficient", "[", 
+            RowBox[{
+             RowBox[{
+              RowBox[{
+               RowBox[{"(", "expr", ")"}], 
+               RowBox[{"(", "symbInv", ")"}]}], "//", "ApplyRelns"}], ",", 
+             "mon"}], "]"}], "/.", 
+           RowBox[{"Thread", "[", 
+            RowBox[{"vars", "->", 
+             RowBox[{"{", 
+              RowBox[{"0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0"}],
+               "}"}]}], "]"}]}], ")"}], "==", "0"}], ",", " ", 
+        "\[IndentingNewLine]", 
+        RowBox[{"{", 
+         RowBox[{"mon", ",", "BBpos"}], "}"}]}], "\[IndentingNewLine]", 
+       "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"eqs", " ", "=", " ", 
+      RowBox[{
+       RowBox[{"Join", "[", 
+        RowBox[{"con", ",", " ", "nonCon"}], "]"}], "//", "Simplify"}]}], ";",
+      "\[IndentingNewLine]", 
+     RowBox[{"ssol", " ", "=", " ", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Solve", "[", 
+         RowBox[{"eqs", ",", "tVar"}], "]"}], "[", 
+        RowBox[{"[", "1", "]"}], "]"}], "//", "Simplify"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Return", "[", 
+      RowBox[{"symbInv", "/.", "ssol"}], "]"}]}]}], "\[IndentingNewLine]", 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"what", "[", "expr_", "]"}], ":=", 
+  RowBox[{"expr", "/.", 
+   RowBox[{"Thread", "[", 
+    RowBox[{"vars", "->", "vals"}], "]"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"SetEqualZero", "[", "exprs_", "]"}], ":=", 
+  RowBox[{"Map", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Equal", "[", 
+      RowBox[{"#", ",", "0"}], "]"}], "&"}], ",", "exprs"}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"RuleSimplify", "[", "rls_List", "]"}], ":=", 
+   RowBox[{"MapAt", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Collect", "[", 
+       RowBox[{
+        RowBox[{"ApplyRelns", "[", "#", "]"}], ",", "pVar"}], "]"}], "&"}], 
+     ",", "rls", ",", 
+     RowBox[{"{", 
+      RowBox[{"All", ",", "2"}], "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"given", ":", " ", 
+     RowBox[{"algebraic", " ", "number"}]}], ",", " ", "symbol", ",", " ", 
+    RowBox[{"polynomial", " ", "relations", "\[IndentingNewLine]", 
+     RowBox[{"return", ":", " ", 
+      RowBox[{
+      "polynomial", " ", "in", " ", "the", " ", "symbol", " ", "reduced", " ",
+        "modulo", " ", "the", " ", "relations"}]}]}]}], "\[IndentingNewLine]",
+    "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"algNumToPoly", "[", 
+   RowBox[{"num_", ",", "a_Symbol"}], "]"}], ":=", 
+  RowBox[{"If", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Head", "[", "num", "]"}], "===", "Integer"}], ",", "num", ",", 
+    RowBox[{"ApplyRelns", "[", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"num", "[", 
+        RowBox[{"[", "2", "]"}], "]"}], ")"}], ".", " ", 
+      RowBox[{"Table", "[", 
+       RowBox[{
+        SuperscriptBox["a", "ind"], ",", 
+        RowBox[{"{", 
+         RowBox[{"ind", ",", "0", ",", 
+          RowBox[{
+           RowBox[{"Length", "[", 
+            RowBox[{"num", "[", 
+             RowBox[{"[", "2", "]"}], "]"}], "]"}], "-", "1"}]}], "}"}]}], 
+       "]"}]}], "]"}]}], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.9663400575227747`*^9, 3.9663401242346277`*^9}, {
+   3.9663401656243763`*^9, 3.966340220957333*^9}, {3.9663402597260933`*^9, 
+   3.9663402818964567`*^9}, {3.966340358435574*^9, 3.966340362922283*^9}, {
+   3.966341012465106*^9, 3.9663410915502977`*^9}, {3.9663412756177387`*^9, 
+   3.9663413156077223`*^9}, {3.966413991902425*^9, 3.966414016376437*^9}, {
+   3.9664171759144497`*^9, 3.966417185420265*^9}, {3.96642350722484*^9, 
+   3.966423590304037*^9}, {3.966513770149362*^9, 3.9665138537100277`*^9}, {
+   3.9665139531551743`*^9, 3.9665139650080338`*^9}, {3.966515102246684*^9, 
+   3.966515132789485*^9}, 3.9665900248399897`*^9, 3.966590386129612*^9, {
+   3.966592550189568*^9, 3.966592553758191*^9}, 3.966600958821919*^9, 
+   3.9666011034551773`*^9, {3.967122596762178*^9, 3.9671226590545273`*^9}, {
+   3.96712344551011*^9, 3.9671234459852867`*^9}, {3.967201455871838*^9, 
+   3.967201461908567*^9}, {3.967201517763114*^9, 3.967201521191348*^9}, {
+   3.9672015760652523`*^9, 3.967201597522746*^9}, {3.967201729831406*^9, 
+   3.967201757067399*^9}, {3.967201807577479*^9, 3.967201857926573*^9}, {
+   3.9672021281764097`*^9, 3.967202182376964*^9}, {3.967204633297827*^9, 
+   3.96720463714415*^9}, {3.967204751817482*^9, 3.96720476776877*^9}, {
+   3.967207319150222*^9, 3.967207324607462*^9}, {3.968157366229814*^9, 
+   3.968157367200206*^9}, {3.968411225147708*^9, 3.96841125198105*^9}, {
+   3.968411871200144*^9, 3.968412004697941*^9}, {3.968412038987739*^9, 
+   3.968412064113832*^9}, {3.968412103265835*^9, 3.968412105809518*^9}, {
+   3.968472174569325*^9, 3.968472179560665*^9}, {3.9687420478964663`*^9, 
+   3.968742048016029*^9}, {3.9687646604197083`*^9, 3.96876473339856*^9}, {
+   3.968767031256034*^9, 3.968767050769066*^9}, {3.9689195424094954`*^9, 
+   3.96891955598556*^9}, {3.968919618023193*^9, 3.968919622209633*^9}, {
+   3.9690140553876877`*^9, 3.969014055572062*^9}, {3.969017103475189*^9, 
+   3.9690171044078083`*^9}, {3.969095906257792*^9, 3.969095949008686*^9}, {
+   3.969097179556592*^9, 3.969097273230279*^9}, {3.9690973421171*^9, 
+   3.969097365562213*^9}, 3.972555679204074*^9},
+ CellLabel->"In[1]:=",ExpressionUUID->"5636ba90-c1cb-48e3-9321-e4192f214765"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "\[Eta]", ",", "\[Alpha]", ",", "\[Beta]3", ",", "\[Beta]2", ",", 
+   "\[Beta]1", ",", "\[Lambda]"}], "}"}]], "Output",
+ CellChangeTimes->{3.972555682172902*^9, 3.97385001725178*^9, 
+  3.974203135142811*^9},
+ CellLabel->"Out[16]=",ExpressionUUID->"a2f2bf7d-2013-477e-9366-947cb06d62a4"]
+}, Open  ]]
+},
+WindowSize->{1439, 767},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+FrontEndVersion->"13.0 for Mac OS X ARM (64-bit) (February 4, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"cff19de5-14f4-480f-83fc-016e35025782"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 207, 5, 61, "Text",ExpressionUUID->"027016fa-35d1-4d5f-94cc-5d1c56549c0f"],
+Cell[CellGroupData[{
+Cell[790, 29, 46992, 1246, 1750, "Input",ExpressionUUID->"5636ba90-c1cb-48e3-9321-e4192f214765"],
+Cell[47785, 1277, 328, 7, 34, "Output",ExpressionUUID->"a2f2bf7d-2013-477e-9366-947cb06d62a4"]
+}, Open  ]]
+}
+]
+*)
+
