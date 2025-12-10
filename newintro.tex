@@ -18,7 +18,7 @@ On the other hand, one may start with a known category $\CC$ compute an embeddin
 \]
 for $\DD$ some category in which explicit calculations are more easily performed by computers.
 One option for $\DD$ is the graph planar algebra $\GPA(\Gamma)$ for some graph $\Gamma$.
-By the GPA Embedding Theorem \cite[Theorem~\red{TODO}]{extended_haagerup}, an embedding
+By the GPA Embedding Theorem \cite{extended_haagerup}, an embedding
 \[
     \CC \hookrightarrow \GPA(\Gamma)
 \]
@@ -55,10 +55,11 @@ We perform this process of extending GPA embeddings for the two conformal embedd
 By \ref{gannon2025_exotic_q_subgroups_extensions} there are no other integer levels 
 at which $\ol{\Rep(U_{q_k}(\gg_s))}$ admits conformal embeddings.
 
-Now we begin by introducing some notation for a skein theory involving an oriented, colored strand 
+Now we begin by introducing some notation for a skein theory involving an oriented, red strand 
 in addition to unoriented black strands.
-A diagram which consists of black unoriented strands as well as colored oriented strands will be
-referred to as a {\bf decoration} of the diagram given by dropping all colored strands.
+A diagram which consists of black unoriented strands as well as red oriented strands will be
+referred to as a {\bf decoration} of the diagram given by dropping all red strands;
+such a diagram is called {\bf decorated}.
 \begin{definition}
     For a diagram $\EE$ the notation $\rho^i(\EE)$ means an $i$-click right rotation. 
     For instance, 
@@ -84,7 +85,7 @@ referred to as a {\bf decoration} of the diagram given by dropping all colored s
     We adopt the convention that $dec_0 (\EE) = \EE$.
 \end{definition}
 
-Both of the categories studied in this paper are extensions of trivalent categories by a colored, directed, $\Z_n$-like strand. 
+Both of the categories studied in this paper are extensions of trivalent categories by a red, directed, $\Z_n$-like strand. 
 We define the class of categories we will be working with.
 Later we will show that, with a relatively tame assumption on the underlying skein theory, 
 categories in this class are evaluable in general.
@@ -99,8 +100,8 @@ categories in this class are evaluable in general.
         = c \skein{/skein_figs/recouple_RHS}{0.1}
     \end{equation*}
 
-    \begin{equation*}\tag{\red{Reverse}}
-        \skein{/skein_figs/recouple_LHS}{0.1} 
+    \begin{equation*}\tag{Reverse}
+        \skein{/skein_figs/down_n-1}{0.1} 
         = c \skein{/skein_figs/recouple_RHS}{0.1}
     \end{equation*}
 
