@@ -10,14 +10,16 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    550602,      12985]
-NotebookOptionsPosition[    550241,      12971]
-NotebookOutlinePosition[    550643,      12987]
-CellTagsIndexPosition[    550600,      12984]
+NotebookDataLength[    559365,      13223]
+NotebookOptionsPosition[    557981,      13197]
+NotebookOutlinePosition[    558383,      13213]
+CellTagsIndexPosition[    558340,      13210]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+
+Cell[CellGroupData[{
 Cell[BoxData[{
  RowBox[{
   RowBox[{
@@ -12740,54 +12742,52 @@ Cell[BoxData[{
         RowBox[{"\"\<s\>\"", "\[Rule]", "4"}], ",", 
         RowBox[{"\"\<t\>\"", "\[Rule]", "4"}]}], "\[RightAssociation]"}]}], 
      "\[IndentingNewLine]", "}"}]}], ";"}], "\[IndentingNewLine]", 
-  "\[IndentingNewLine]", "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", "Now", \
+"\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{
-   RowBox[{"sPgs", " ", "=", " ", 
-    RowBox[{"CombineLikeTerms", "[", 
-     RowBox[{"Tens", "[", 
-      RowBox[{"{", 
-       RowBox[{"Stick", ",", "PgPoly", ",", "Stick"}], "}"}], "]"}], "]"}]}], 
-   ";"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+  RowBox[{"sPgs", " ", "=", " ", 
+   RowBox[{"CombineLikeTerms", "[", 
+    RowBox[{"Tens", "[", 
+     RowBox[{"{", 
+      RowBox[{"Stick", ",", "PgPoly", ",", "Stick"}], "}"}], "]"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", "Now", "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{
-   RowBox[{"bottomRight", " ", "=", " ", 
-    RowBox[{"InTermsOf", "[", 
-     RowBox[{
-      RowBox[{"Comp", "[", 
-       RowBox[{"{", "\[IndentingNewLine]", 
-        RowBox[{
-         RowBox[{"Tens", "[", 
-          RowBox[{"{", 
-           RowBox[{"Cup", ",", "DoubleStick"}], "}"}], "]"}], ",", 
-         "\[IndentingNewLine]", "sPgs", ",", "\[IndentingNewLine]", 
-         RowBox[{"Tens", "[", 
-          RowBox[{"{", 
-           RowBox[{"trivPoly", ",", "Cap"}], "}"}], "]"}]}], 
-        "\[IndentingNewLine]", "}"}], "]"}], ",", "Hom2to1"}], "]"}]}], ";"}],
-   "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+  RowBox[{"bottomRight", " ", "=", " ", 
+   RowBox[{"InTermsOf", "[", 
+    RowBox[{
+     RowBox[{"Comp", "[", 
+      RowBox[{"{", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Tens", "[", 
+         RowBox[{"{", 
+          RowBox[{"Cup", ",", "DoubleStick"}], "}"}], "]"}], ",", 
+        "\[IndentingNewLine]", "sPgs", ",", "\[IndentingNewLine]", 
+        RowBox[{"Tens", "[", 
+         RowBox[{"{", 
+          RowBox[{"trivPoly", ",", "Cap"}], "}"}], "]"}]}], 
+       "\[IndentingNewLine]", "}"}], "]"}], ",", "Hom2to1"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", "Now", "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{
-   RowBox[{"rightUp", " ", "=", "  ", 
-    RowBox[{"InTermsOf", "[", 
-     RowBox[{
-      RowBox[{"Comp", "[", 
-       RowBox[{"{", "\[IndentingNewLine]", 
-        RowBox[{
-         RowBox[{"Tens", "[", 
-          RowBox[{"{", 
-           RowBox[{
-            RowBox[{"trivPoly", "//", "RealDagger"}], ",", "Stick"}], "}"}], 
-          "]"}], ",", "\[IndentingNewLine]", 
-         RowBox[{"Tens", "[", 
-          RowBox[{"{", 
-           RowBox[{"Stick", ",", " ", "PgPoly"}], "}"}], "]"}], ",", 
-         "\[IndentingNewLine]", 
-         RowBox[{"Tens", "[", 
-          RowBox[{"{", 
-           RowBox[{"Cap", ",", "Stick"}], "}"}], "]"}]}], 
-        "\[IndentingNewLine]", "}"}], "]"}], ",", "Hom2to1"}], "]"}]}], ";"}],
-   "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+  RowBox[{"rightUp", " ", "=", "  ", 
+   RowBox[{"InTermsOf", "[", 
+    RowBox[{
+     RowBox[{"Comp", "[", 
+      RowBox[{"{", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Tens", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"trivPoly", "//", "RealDagger"}], ",", "Stick"}], "}"}], 
+         "]"}], ",", "\[IndentingNewLine]", 
+        RowBox[{"Tens", "[", 
+         RowBox[{"{", 
+          RowBox[{"Stick", ",", " ", "PgPoly"}], "}"}], "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Tens", "[", 
+         RowBox[{"{", 
+          RowBox[{"Cap", ",", "Stick"}], "}"}], "]"}]}], 
+       "\[IndentingNewLine]", "}"}], "]"}], ",", "Hom2to1"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", "Now", "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
    RowBox[{"leftUp", " ", "=", "  ", 
@@ -12811,111 +12811,105 @@ Cell[BoxData[{
         "\[IndentingNewLine]", "}"}], "]"}], ",", "Hom2to1"}], "]"}]}], ";"}],
    "\[IndentingNewLine]", "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{
-   RowBox[{"hRight", " ", "=", " ", 
-    RowBox[{"InTermsOf", "[", 
-     RowBox[{
-      RowBox[{"Comp", "[", 
-       RowBox[{"{", "\[IndentingNewLine]", 
-        RowBox[{
-         RowBox[{"Tens", "[", 
-          RowBox[{"{", 
-           RowBox[{"Cup", ",", "DoubleStick"}], "}"}], "]"}], ",", 
-         "\[IndentingNewLine]", "sPgs", ",", "\[IndentingNewLine]", 
-         RowBox[{"Tens", "[", 
-          RowBox[{"{", 
-           RowBox[{"DoubleStick", ",", "Cap"}], "}"}], "]"}]}], 
-        "\[IndentingNewLine]", "}"}], "]"}], ",", "Hom2to2"}], "]"}]}], ";"}],
-   "\[IndentingNewLine]", "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+  RowBox[{"hRight", " ", "=", " ", 
+   RowBox[{"InTermsOf", "[", 
+    RowBox[{
+     RowBox[{"Comp", "[", 
+      RowBox[{"{", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Tens", "[", 
+         RowBox[{"{", 
+          RowBox[{"Cup", ",", "DoubleStick"}], "}"}], "]"}], ",", 
+        "\[IndentingNewLine]", "sPgs", ",", "\[IndentingNewLine]", 
+        RowBox[{"Tens", "[", 
+         RowBox[{"{", 
+          RowBox[{"DoubleStick", ",", "Cap"}], "}"}], "]"}]}], 
+       "\[IndentingNewLine]", "}"}], "]"}], ",", "Hom2to2"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", "Now", "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{
-   RowBox[{"PgRevPoly", " ", "=", " ", 
-    RowBox[{"InTermsOf", "[", 
-     RowBox[{
-      RowBox[{"Comp", "[", 
-       RowBox[{"{", "\[IndentingNewLine]", 
-        RowBox[{
+  RowBox[{"PgRevPoly", " ", "=", " ", 
+   RowBox[{"InTermsOf", "[", 
+    RowBox[{
+     RowBox[{"Comp", "[", 
+      RowBox[{"{", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Tens", "[", 
+         RowBox[{"{", 
+          RowBox[{"Cup", ",", "DoubleStick"}], "}"}], "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"CombineLikeTerms", "[", 
          RowBox[{"Tens", "[", 
           RowBox[{"{", 
-           RowBox[{"Cup", ",", "DoubleStick"}], "}"}], "]"}], ",", 
-         "\[IndentingNewLine]", 
-         RowBox[{"CombineLikeTerms", "[", 
-          RowBox[{"Tens", "[", 
-           RowBox[{"{", 
-            RowBox[{"Stick", ",", "hRight", ",", "Stick"}], "}"}], "]"}], 
-          "]"}], ",", "\[IndentingNewLine]", 
-         RowBox[{"Tens", "[", 
-          RowBox[{"{", 
-           RowBox[{"DoubleStick", ",", "Cap"}], "}"}], "]"}]}], 
-        "\[IndentingNewLine]", "}"}], "]"}], ",", "Hom2to2"}], "]"}]}], ";"}],
-   "\[IndentingNewLine]", "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+           RowBox[{"Stick", ",", "hRight", ",", "Stick"}], "}"}], "]"}], 
+         "]"}], ",", "\[IndentingNewLine]", 
+        RowBox[{"Tens", "[", 
+         RowBox[{"{", 
+          RowBox[{"DoubleStick", ",", "Cap"}], "}"}], "]"}]}], 
+       "\[IndentingNewLine]", "}"}], "]"}], ",", "Hom2to2"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", "Now", "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{
-   RowBox[{"hLeft", " ", "=", " ", 
-    RowBox[{"InTermsOf", "[", 
-     RowBox[{
-      RowBox[{"Comp", "[", 
-       RowBox[{"{", "\[IndentingNewLine]", 
-        RowBox[{
+  RowBox[{"hLeft", " ", "=", " ", 
+   RowBox[{"InTermsOf", "[", 
+    RowBox[{
+     RowBox[{"Comp", "[", 
+      RowBox[{"{", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Tens", "[", 
+         RowBox[{"{", 
+          RowBox[{"Cup", ",", "DoubleStick"}], "}"}], "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"CombineLikeTerms", "[", 
          RowBox[{"Tens", "[", 
           RowBox[{"{", 
-           RowBox[{"Cup", ",", "DoubleStick"}], "}"}], "]"}], ",", 
-         "\[IndentingNewLine]", 
-         RowBox[{"CombineLikeTerms", "[", 
-          RowBox[{"Tens", "[", 
-           RowBox[{"{", 
-            RowBox[{"Stick", ",", "PgRevPoly", ",", "Stick"}], "}"}], "]"}], 
-          "]"}], ",", "\[IndentingNewLine]", 
-         RowBox[{"Tens", "[", 
-          RowBox[{"{", 
-           RowBox[{"DoubleStick", ",", "Cap"}], "}"}], "]"}]}], 
-        "\[IndentingNewLine]", "}"}], "]"}], ",", "Hom2to2"}], "]"}]}], ";"}],
-   "\[IndentingNewLine]", "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+           RowBox[{"Stick", ",", "PgRevPoly", ",", "Stick"}], "}"}], "]"}], 
+         "]"}], ",", "\[IndentingNewLine]", 
+        RowBox[{"Tens", "[", 
+         RowBox[{"{", 
+          RowBox[{"DoubleStick", ",", "Cap"}], "}"}], "]"}]}], 
+       "\[IndentingNewLine]", "}"}], "]"}], ",", "Hom2to2"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", "Now", "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{
-   RowBox[{"leftDown", " ", "=", "  ", 
-    RowBox[{"InTermsOf", "[", 
-     RowBox[{
-      RowBox[{"Comp", "[", 
-       RowBox[{"{", "\[IndentingNewLine]", 
-        RowBox[{
-         RowBox[{"Tens", "[", 
-          RowBox[{"{", 
-           RowBox[{"Stick", ",", 
-            RowBox[{"trivPoly", "//", "RealDagger"}]}], "}"}], "]"}], ",", 
-         "\[IndentingNewLine]", 
-         RowBox[{"Tens", "[", 
-          RowBox[{"{", 
-           RowBox[{"PgRevPoly", ",", "Stick"}], "}"}], "]"}], ",", 
-         "\[IndentingNewLine]", 
-         RowBox[{"Tens", "[", 
-          RowBox[{"{", 
-           RowBox[{"Stick", ",", "Cap"}], "}"}], "]"}]}], 
-        "\[IndentingNewLine]", "}"}], "]"}], ",", "Hom2to1"}], "]"}]}], ";"}],
-   "\[IndentingNewLine]", "\[IndentingNewLine]", 
-  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+  RowBox[{"leftDown", " ", "=", "  ", 
+   RowBox[{"InTermsOf", "[", 
+    RowBox[{
+     RowBox[{"Comp", "[", 
+      RowBox[{"{", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Tens", "[", 
+         RowBox[{"{", 
+          RowBox[{"Stick", ",", 
+           RowBox[{"trivPoly", "//", "RealDagger"}]}], "}"}], "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Tens", "[", 
+         RowBox[{"{", 
+          RowBox[{"PgRevPoly", ",", "Stick"}], "}"}], "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Tens", "[", 
+         RowBox[{"{", 
+          RowBox[{"Stick", ",", "Cap"}], "}"}], "]"}]}], 
+       "\[IndentingNewLine]", "}"}], "]"}], ",", "Hom2to1"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", "Now", "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{
-   RowBox[{"bottomLeft", " ", "=", " ", 
-    RowBox[{"InTermsOf", "[", 
-     RowBox[{
-      RowBox[{"Comp", "[", 
-       RowBox[{"{", "\[IndentingNewLine]", 
-        RowBox[{
+  RowBox[{"bottomLeft", " ", "=", " ", 
+   RowBox[{"InTermsOf", "[", 
+    RowBox[{
+     RowBox[{"Comp", "[", 
+      RowBox[{"{", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Tens", "[", 
+         RowBox[{"{", 
+          RowBox[{"Cup", ",", "DoubleStick"}], "}"}], "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"CombineLikeTerms", "[", 
          RowBox[{"Tens", "[", 
           RowBox[{"{", 
-           RowBox[{"Cup", ",", "DoubleStick"}], "}"}], "]"}], ",", 
-         "\[IndentingNewLine]", 
-         RowBox[{"CombineLikeTerms", "[", 
-          RowBox[{"Tens", "[", 
-           RowBox[{"{", 
-            RowBox[{"Stick", ",", "PgRevPoly", ",", "Stick"}], "}"}], "]"}], 
-          "]"}], ",", "\[IndentingNewLine]", 
-         RowBox[{"Tens", "[", 
-          RowBox[{"{", 
-           RowBox[{"trivPoly", ",", "Cap"}], "}"}], "]"}]}], 
-        "\[IndentingNewLine]", "}"}], "]"}], ",", "Hom2to1"}], "]"}]}], ";"}],
-   "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+           RowBox[{"Stick", ",", "PgRevPoly", ",", "Stick"}], "}"}], "]"}], 
+         "]"}], ",", "\[IndentingNewLine]", 
+        RowBox[{"Tens", "[", 
+         RowBox[{"{", 
+          RowBox[{"trivPoly", ",", "Cap"}], "}"}], "]"}]}], 
+       "\[IndentingNewLine]", "}"}], "]"}], ",", "Hom2to1"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", "Now", "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"rightDown", " ", "=", "  ", 
    RowBox[{"InTermsOf", "[", 
@@ -12936,7 +12930,7 @@ Cell[BoxData[{
          RowBox[{"{", 
           RowBox[{"Cap", ",", "Stick"}], "}"}], "]"}]}], 
        "\[IndentingNewLine]", "}"}], "]"}], ",", "Hom2to1"}], "]"}]}], 
-  ";"}], "\[IndentingNewLine]"}], "Input",
+  ";"}], "\[IndentingNewLine]", "Now"}], "Input",
  CellChangeTimes->{{3.966423661079405*^9, 3.966423666791481*^9}, 
    3.9664244166178293`*^9, {3.967204536447803*^9, 3.967204601738501*^9}, {
    3.967815188259213*^9, 3.967815221584058*^9}, {3.96812646386264*^9, 
@@ -12965,9 +12959,241 @@ Cell[BoxData[{
    3.9697847551579113`*^9}, {3.969972929629874*^9, 3.9699729703832273`*^9}, {
    3.969973449373188*^9, 3.969973475963826*^9}, {3.969973522844954*^9, 
    3.96997353408316*^9}, {3.970045290837111*^9, 3.9700452963576717`*^9}, {
-   3.973850337707693*^9, 
-   3.973850341265192*^9}},ExpressionUUID->"18c33ddd-b176-48ff-b206-\
-60ecba709e4e"]
+   3.973850337707693*^9, 3.973850341265192*^9}, {3.9743775951935787`*^9, 
+   3.974377614075283*^9}},
+ CellLabel->
+  "In[199]:=",ExpressionUUID->"18c33ddd-b176-48ff-b206-60ecba709e4e"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Wed 10 Dec 2025 12:50:16\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "10", ",", "12", ",", "50", ",", 
+           "16.842551`7.978982855885787"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974377587786489*^9, 3.9743776184513597`*^9, 
+  3.9743778168437443`*^9},
+ CellLabel->
+  "Out[223]=",ExpressionUUID->"02411d86-e2e5-4cc1-abcf-b9e59b04ffd4"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Wed 10 Dec 2025 12:50:21\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "10", ",", "12", ",", "50", ",", 
+           "21.347055`8.081912952466757"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974377587786489*^9, 3.9743776184513597`*^9, 
+  3.9743778213484163`*^9},
+ CellLabel->
+  "Out[225]=",ExpressionUUID->"d821694a-d101-489c-a1a5-419c7dbe861e"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Wed 10 Dec 2025 12:50:23\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "10", ",", "12", ",", "50", ",", 
+           "23.974674`8.132327693371103"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974377587786489*^9, 3.9743776184513597`*^9, 
+  3.974377823976199*^9},
+ CellLabel->
+  "Out[227]=",ExpressionUUID->"10d8cef4-ed00-464c-94ca-94673f1310fa"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Wed 10 Dec 2025 12:50:25\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "10", ",", "12", ",", "50", ",", 
+           "25.61544`8.161076802554696"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974377587786489*^9, 3.9743776184513597`*^9, 
+  3.974377825616646*^9},
+ CellLabel->
+  "Out[229]=",ExpressionUUID->"67357382-074a-4476-a9d5-3fb4e2600f16"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Wed 10 Dec 2025 12:50:29\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "10", ",", "12", ",", "50", ",", 
+           "29.920449`8.228543087713904"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974377587786489*^9, 3.9743776184513597`*^9, 
+  3.97437782992159*^9},
+ CellLabel->
+  "Out[232]=",ExpressionUUID->"3db79782-879c-4293-ae06-c8ba032f39c9"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Wed 10 Dec 2025 12:50:36\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "10", ",", "12", ",", "50", ",", 
+           "36.844531`8.318948012030074"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974377587786489*^9, 3.9743776184513597`*^9, 
+  3.974377836845667*^9},
+ CellLabel->
+  "Out[234]=",ExpressionUUID->"8fea679e-6a59-4eff-a6ba-6ac5703d8bc1"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Wed 10 Dec 2025 12:50:44\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "10", ",", "12", ",", "50", ",", 
+           "44.352796`8.399495980111151"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974377587786489*^9, 3.9743776184513597`*^9, 
+  3.974377844353952*^9},
+ CellLabel->
+  "Out[236]=",ExpressionUUID->"3fb03704-29ef-4e6c-b8fd-4d54d10b1a4f"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Wed 10 Dec 2025 12:50:45\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "10", ",", "12", ",", "50", ",", 
+           "45.915874`8.4145378323313"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974377587786489*^9, 3.9743776184513597`*^9, 
+  3.9743778459170723`*^9},
+ CellLabel->
+  "Out[238]=",ExpressionUUID->"d40e7ac2-512f-40aa-afe2-15d1f3af5fd7"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Wed 10 Dec 2025 12:50:53\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "10", ",", "12", ",", "50", ",", 
+           "53.179955`8.478322940206931"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974377587786489*^9, 3.9743776184513597`*^9, 
+  3.974377853181074*^9},
+ CellLabel->
+  "Out[240]=",ExpressionUUID->"35c96225-03b8-4194-954f-1ad4bd6af317"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Wed 10 Dec 2025 12:50:54\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "10", ",", "12", ",", "50", ",", 
+           "54.69985`8.490561109827583"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974377587786489*^9, 3.9743776184513597`*^9, 
+  3.974377854700921*^9},
+ CellLabel->
+  "Out[242]=",ExpressionUUID->"fe1d9b91-fbf1-409c-b062-5d069c89f9c6"]
+}, Open  ]]
 },
 WindowSize->{1265, 698},
 WindowMargins->{{Automatic, -1461}, {Automatic, -848}},
@@ -12986,7 +13212,19 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 549679, 12949, 4779, "Input",ExpressionUUID->"18c33ddd-b176-48ff-b206-60ecba709e4e"]
+Cell[CellGroupData[{
+Cell[580, 22, 549474, 12942, 4674, "Input",ExpressionUUID->"18c33ddd-b176-48ff-b206-60ecba709e4e"],
+Cell[550057, 12966, 790, 21, 42, "Output",ExpressionUUID->"02411d86-e2e5-4cc1-abcf-b9e59b04ffd4"],
+Cell[550850, 12989, 790, 21, 42, "Output",ExpressionUUID->"d821694a-d101-489c-a1a5-419c7dbe861e"],
+Cell[551643, 13012, 788, 21, 42, "Output",ExpressionUUID->"10d8cef4-ed00-464c-94ca-94673f1310fa"],
+Cell[552434, 13035, 787, 21, 42, "Output",ExpressionUUID->"67357382-074a-4476-a9d5-3fb4e2600f16"],
+Cell[553224, 13058, 787, 21, 42, "Output",ExpressionUUID->"3db79782-879c-4293-ae06-c8ba032f39c9"],
+Cell[554014, 13081, 788, 21, 42, "Output",ExpressionUUID->"8fea679e-6a59-4eff-a6ba-6ac5703d8bc1"],
+Cell[554805, 13104, 788, 21, 42, "Output",ExpressionUUID->"3fb03704-29ef-4e6c-b8fd-4d54d10b1a4f"],
+Cell[555596, 13127, 788, 21, 42, "Output",ExpressionUUID->"d40e7ac2-512f-40aa-afe2-15d1f3af5fd7"],
+Cell[556387, 13150, 788, 21, 42, "Output",ExpressionUUID->"35c96225-03b8-4194-954f-1ad4bd6af317"],
+Cell[557178, 13173, 787, 21, 42, "Output",ExpressionUUID->"fe1d9b91-fbf1-409c-b062-5d069c89f9c6"]
+}, Open  ]]
 }
 ]
 *)
