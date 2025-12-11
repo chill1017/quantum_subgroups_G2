@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     48722,       1305]
-NotebookOptionsPosition[     48151,       1287]
-NotebookOutlinePosition[     48546,       1303]
-CellTagsIndexPosition[     48503,       1300]
+NotebookDataLength[     48769,       1306]
+NotebookOptionsPosition[     48198,       1288]
+NotebookOutlinePosition[     48593,       1304]
+CellTagsIndexPosition[     48550,       1301]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1281,8 +1281,9 @@ Cell[BoxData[
   "\[Eta]", ",", "\[Alpha]", ",", "\[Beta]3", ",", "\[Beta]2", ",", 
    "\[Beta]1", ",", "\[Lambda]"}], "}"}]], "Output",
  CellChangeTimes->{3.972555682172902*^9, 3.97385001725178*^9, 
-  3.974203135142811*^9, 3.974209630295295*^9},
- CellLabel->"Out[16]=",ExpressionUUID->"c3deb4ff-e604-40eb-bee0-85ca451d6937"]
+  3.974203135142811*^9, 3.974209630295295*^9, 3.974363919476385*^9, 
+  3.974450933248217*^9},
+ CellLabel->"Out[16]=",ExpressionUUID->"fa95d642-0e53-4d8e-9b55-264b27fea417"]
 }, Open  ]]
 },
 WindowSize->{1439, 767},
@@ -1305,7 +1306,7 @@ Notebook[{
 Cell[558, 20, 207, 5, 61, "Text",ExpressionUUID->"027016fa-35d1-4d5f-94cc-5d1c56549c0f"],
 Cell[CellGroupData[{
 Cell[790, 29, 46992, 1246, 1750, "Input",ExpressionUUID->"5636ba90-c1cb-48e3-9321-e4192f214765"],
-Cell[47785, 1277, 350, 7, 34, "Output",ExpressionUUID->"c3deb4ff-e604-40eb-bee0-85ca451d6937"]
+Cell[47785, 1277, 397, 8, 34, "Output",ExpressionUUID->"fa95d642-0e53-4d8e-9b55-264b27fea417"]
 }, Open  ]]
 }
 ]

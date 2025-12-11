@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    513247,      12946]
-NotebookOptionsPosition[    511771,      12919]
-NotebookOutlinePosition[    512166,      12935]
-CellTagsIndexPosition[    512123,      12932]
+NotebookDataLength[    513789,      12957]
+NotebookOptionsPosition[    512313,      12930]
+NotebookOutlinePosition[    512708,      12946]
+CellTagsIndexPosition[    512665,      12943]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -12672,11 +12672,11 @@ Cell[BoxData[{
    3.973850509005857*^9}, {3.9742090046008873`*^9, 3.974209033998206*^9}, {
    3.97420969359389*^9, 3.974209706535109*^9}},
  CellLabel->
-  "In[177]:=",ExpressionUUID->"7164b7e4-1fb4-46d1-944f-a4d93516c59d"],
+  "In[119]:=",ExpressionUUID->"7164b7e4-1fb4-46d1-944f-a4d93516c59d"],
 
 Cell[BoxData[
  TemplateBox[{
-   RowBox[{"\"Mon 8 Dec 2025 14:09:04\"", 
+   RowBox[{"\"Thu 11 Dec 2025 09:10:13\"", 
      StyleBox[
       RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
         StyleBox[
@@ -12686,19 +12686,20 @@ Cell[BoxData[
      RowBox[{
        RowBox[{"{", 
          RowBox[{
-          "2025", ",", "12", ",", "8", ",", "14", ",", "9", ",", 
-           "4.734143`7.427816360202972"}], "}"}], ",", "\"Instant\"", ",", 
+          "2025", ",", "12", ",", "11", ",", "9", ",", "10", ",", 
+           "13.651794`7.887764711943718"}], "}"}], ",", "\"Instant\"", ",", 
        "\"Gregorian\"", ",", 
        RowBox[{"-", "5.`"}]}], "]"}]},
   "DateObject",
   Editable->False]], "Output",
- CellChangeTimes->{3.974209675909719*^9, 3.9742097447353907`*^9},
+ CellChangeTimes->{3.974209675909719*^9, 3.9742097447353907`*^9, 
+  3.974363989852537*^9, 3.974451013656823*^9},
  CellLabel->
-  "Out[203]=",ExpressionUUID->"7252a0cd-85fe-47b5-8a54-1c9f0cf328da"],
+  "Out[145]=",ExpressionUUID->"f8d0b47a-6098-45e0-b131-9b3a3cf88e32"],
 
 Cell[BoxData[
  TemplateBox[{
-   RowBox[{"\"Mon 8 Dec 2025 14:09:18\"", 
+   RowBox[{"\"Thu 11 Dec 2025 09:10:27\"", 
      StyleBox[
       RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
         StyleBox[
@@ -12708,19 +12709,20 @@ Cell[BoxData[
      RowBox[{
        RowBox[{"{", 
          RowBox[{
-          "2025", ",", "12", ",", "8", ",", "14", ",", "9", ",", 
-           "18.110202`8.010498278683512"}], "}"}], ",", "\"Instant\"", ",", 
+          "2025", ",", "12", ",", "11", ",", "9", ",", "10", ",", 
+           "27.252141`8.187975609067369"}], "}"}], ",", "\"Instant\"", ",", 
        "\"Gregorian\"", ",", 
        RowBox[{"-", "5.`"}]}], "]"}]},
   "DateObject",
   Editable->False]], "Output",
- CellChangeTimes->{3.974209675909719*^9, 3.9742097581112013`*^9},
+ CellChangeTimes->{3.974209675909719*^9, 3.9742097447353907`*^9, 
+  3.974363989852537*^9, 3.974451027253631*^9},
  CellLabel->
-  "Out[205]=",ExpressionUUID->"b1c5d40c-210b-4a34-ab22-0ecbc930f722"],
+  "Out[147]=",ExpressionUUID->"ddc04a33-9ef4-4012-8910-166bde0043b3"],
 
 Cell[BoxData[
  TemplateBox[{
-   RowBox[{"\"Mon 8 Dec 2025 14:09:31\"", 
+   RowBox[{"\"Thu 11 Dec 2025 09:10:41\"", 
      StyleBox[
       RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
         StyleBox[
@@ -12730,19 +12732,20 @@ Cell[BoxData[
      RowBox[{
        RowBox[{"{", 
          RowBox[{
-          "2025", ",", "12", ",", "8", ",", "14", ",", "9", ",", 
-           "31.515491`8.251099058370576"}], "}"}], ",", "\"Instant\"", ",", 
+          "2025", ",", "12", ",", "11", ",", "9", ",", "10", ",", 
+           "41.04235`8.365807197595787"}], "}"}], ",", "\"Instant\"", ",", 
        "\"Gregorian\"", ",", 
        RowBox[{"-", "5.`"}]}], "]"}]},
   "DateObject",
   Editable->False]], "Output",
- CellChangeTimes->{3.974209675909719*^9, 3.9742097715164833`*^9},
+ CellChangeTimes->{3.974209675909719*^9, 3.9742097447353907`*^9, 
+  3.974363989852537*^9, 3.974451041043818*^9},
  CellLabel->
-  "Out[207]=",ExpressionUUID->"873b5c46-b848-4029-9769-f151f1fdf03d"],
+  "Out[149]=",ExpressionUUID->"c48f8b7b-3584-4e1d-8b44-62bade4e35ae"],
 
 Cell[BoxData[
  TemplateBox[{
-   RowBox[{"\"Mon 8 Dec 2025 14:09:53\"", 
+   RowBox[{"\"Thu 11 Dec 2025 09:11:03\"", 
      StyleBox[
       RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
         StyleBox[
@@ -12752,19 +12755,20 @@ Cell[BoxData[
      RowBox[{
        RowBox[{"{", 
          RowBox[{
-          "2025", ",", "12", ",", "8", ",", "14", ",", "9", ",", 
-           "53.398701`8.480105667024855"}], "}"}], ",", "\"Instant\"", ",", 
+          "2025", ",", "12", ",", "11", ",", "9", ",", "11", ",", 
+           "3.206854`7.258654176384349"}], "}"}], ",", "\"Instant\"", ",", 
        "\"Gregorian\"", ",", 
        RowBox[{"-", "5.`"}]}], "]"}]},
   "DateObject",
   Editable->False]], "Output",
- CellChangeTimes->{3.974209675909719*^9, 3.974209793399678*^9},
+ CellChangeTimes->{3.974209675909719*^9, 3.9742097447353907`*^9, 
+  3.974363989852537*^9, 3.97445106320821*^9},
  CellLabel->
-  "Out[209]=",ExpressionUUID->"04fc2ffa-87cf-4757-8cd1-cbee0cabc96a"],
+  "Out[151]=",ExpressionUUID->"dbe23e17-18aa-4f86-8fab-fb999b521a87"],
 
 Cell[BoxData[
  TemplateBox[{
-   RowBox[{"\"Mon 8 Dec 2025 14:10:20\"", 
+   RowBox[{"\"Thu 11 Dec 2025 09:11:30\"", 
      StyleBox[
       RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
         StyleBox[
@@ -12774,19 +12778,20 @@ Cell[BoxData[
      RowBox[{
        RowBox[{"{", 
          RowBox[{
-          "2025", ",", "12", ",", "8", ",", "14", ",", "10", ",", 
-           "20.691102`8.068358605340855"}], "}"}], ",", "\"Instant\"", ",", 
+          "2025", ",", "12", ",", "11", ",", "9", ",", "11", ",", 
+           "30.581561`8.238034630673148"}], "}"}], ",", "\"Instant\"", ",", 
        "\"Gregorian\"", ",", 
        RowBox[{"-", "5.`"}]}], "]"}]},
   "DateObject",
   Editable->False]], "Output",
- CellChangeTimes->{3.974209675909719*^9, 3.974209820692357*^9},
+ CellChangeTimes->{3.974209675909719*^9, 3.9742097447353907`*^9, 
+  3.974363989852537*^9, 3.9744510905826283`*^9},
  CellLabel->
-  "Out[211]=",ExpressionUUID->"bb5bd937-b2cd-4f4d-815f-8ffd4ca66bd5"],
+  "Out[153]=",ExpressionUUID->"af9c5228-e152-4d55-85fa-90e8b5825dc3"],
 
 Cell[BoxData[
  TemplateBox[{
-   RowBox[{"\"Mon 8 Dec 2025 14:10:33\"", 
+   RowBox[{"\"Thu 11 Dec 2025 09:11:43\"", 
      StyleBox[
       RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
         StyleBox[
@@ -12796,19 +12801,20 @@ Cell[BoxData[
      RowBox[{
        RowBox[{"{", 
          RowBox[{
-          "2025", ",", "12", ",", "8", ",", "14", ",", "10", ",", 
-           "33.953513`8.283459695376072"}], "}"}], ",", "\"Instant\"", ",", 
+          "2025", ",", "12", ",", "11", ",", "9", ",", "11", ",", 
+           "43.893233`8.39497254784933"}], "}"}], ",", "\"Instant\"", ",", 
        "\"Gregorian\"", ",", 
        RowBox[{"-", "5.`"}]}], "]"}]},
   "DateObject",
   Editable->False]], "Output",
- CellChangeTimes->{3.974209675909719*^9, 3.974209833954447*^9},
+ CellChangeTimes->{3.974209675909719*^9, 3.9742097447353907`*^9, 
+  3.974363989852537*^9, 3.974451104728833*^9},
  CellLabel->
-  "Out[213]=",ExpressionUUID->"17faf4ae-9c95-4ec4-a98d-4c7440c583c3"],
+  "Out[155]=",ExpressionUUID->"39f49566-6bff-42a5-9b5a-00fc3cd6cd96"],
 
 Cell[BoxData[
  TemplateBox[{
-   RowBox[{"\"Mon 8 Dec 2025 14:10:39\"", 
+   RowBox[{"\"Thu 11 Dec 2025 09:11:49\"", 
      StyleBox[
       RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
         StyleBox[
@@ -12818,19 +12824,20 @@ Cell[BoxData[
      RowBox[{
        RowBox[{"{", 
          RowBox[{
-          "2025", ",", "12", ",", "8", ",", "14", ",", "10", ",", 
-           "39.013921`8.34379457874695"}], "}"}], ",", "\"Instant\"", ",", 
+          "2025", ",", "12", ",", "11", ",", "9", ",", "11", ",", 
+           "49.125462`8.4438816235166"}], "}"}], ",", "\"Instant\"", ",", 
        "\"Gregorian\"", ",", 
        RowBox[{"-", "5.`"}]}], "]"}]},
   "DateObject",
   Editable->False]], "Output",
- CellChangeTimes->{3.974209675909719*^9, 3.9742098390149393`*^9},
+ CellChangeTimes->{3.974209675909719*^9, 3.9742097447353907`*^9, 
+  3.974363989852537*^9, 3.97445110912652*^9},
  CellLabel->
-  "Out[215]=",ExpressionUUID->"0f871ba2-35cd-4c21-93ba-4fd036ac5381"],
+  "Out[157]=",ExpressionUUID->"0db0aaea-6090-4b5f-8118-ee67df56c360"],
 
 Cell[BoxData[
  TemplateBox[{
-   RowBox[{"\"Mon 8 Dec 2025 14:10:43\"", 
+   RowBox[{"\"Thu 11 Dec 2025 09:11:53\"", 
      StyleBox[
       RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
         StyleBox[
@@ -12840,19 +12847,20 @@ Cell[BoxData[
      RowBox[{
        RowBox[{"{", 
          RowBox[{
-          "2025", ",", "12", ",", "8", ",", "14", ",", "10", ",", 
-           "43.37072`8.389771609389683"}], "}"}], ",", "\"Instant\"", ",", 
+          "2025", ",", "12", ",", "11", ",", "9", ",", "11", ",", 
+           "53.365685`8.479837063090363"}], "}"}], ",", "\"Instant\"", ",", 
        "\"Gregorian\"", ",", 
        RowBox[{"-", "5.`"}]}], "]"}]},
   "DateObject",
   Editable->False]], "Output",
- CellChangeTimes->{3.974209675909719*^9, 3.974209843371748*^9},
+ CellChangeTimes->{3.974209675909719*^9, 3.9742097447353907`*^9, 
+  3.974363989852537*^9, 3.974451113366766*^9},
  CellLabel->
-  "Out[217]=",ExpressionUUID->"6b3ba568-c6da-47c2-9480-6816b444b287"],
+  "Out[159]=",ExpressionUUID->"14daced0-b5fc-40e2-b710-2585cda92f91"],
 
 Cell[BoxData[
  TemplateBox[{
-   RowBox[{"\"Mon 8 Dec 2025 14:10:47\"", 
+   RowBox[{"\"Thu 11 Dec 2025 09:11:57\"", 
      StyleBox[
       RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
         StyleBox[
@@ -12862,19 +12870,20 @@ Cell[BoxData[
      RowBox[{
        RowBox[{"{", 
          RowBox[{
-          "2025", ",", "12", ",", "8", ",", "14", ",", "10", ",", 
-           "47.497401`8.429244822549865"}], "}"}], ",", "\"Instant\"", ",", 
+          "2025", ",", "12", ",", "11", ",", "9", ",", "11", ",", 
+           "57.448784`8.511855814162503"}], "}"}], ",", "\"Instant\"", ",", 
        "\"Gregorian\"", ",", 
        RowBox[{"-", "5.`"}]}], "]"}]},
   "DateObject",
   Editable->False]], "Output",
- CellChangeTimes->{3.974209675909719*^9, 3.974209847498705*^9},
+ CellChangeTimes->{3.974209675909719*^9, 3.9742097447353907`*^9, 
+  3.974363989852537*^9, 3.97445111744987*^9},
  CellLabel->
-  "Out[219]=",ExpressionUUID->"288225ff-79a5-4e25-9d0d-326a38e99bd6"],
+  "Out[161]=",ExpressionUUID->"b9fcb345-3eb9-46b6-9095-bc577f49b01a"],
 
 Cell[BoxData[
  TemplateBox[{
-   RowBox[{"\"Mon 8 Dec 2025 14:11:13\"", 
+   RowBox[{"\"Thu 11 Dec 2025 09:12:24\"", 
      StyleBox[
       RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
         StyleBox[
@@ -12884,19 +12893,20 @@ Cell[BoxData[
      RowBox[{
        RowBox[{"{", 
          RowBox[{
-          "2025", ",", "12", ",", "8", ",", "14", ",", "11", ",", 
-           "13.913973`7.896026141890187"}], "}"}], ",", "\"Instant\"", ",", 
+          "2025", ",", "12", ",", "11", ",", "9", ",", "12", ",", 
+           "24.126676`8.135072474671968"}], "}"}], ",", "\"Instant\"", ",", 
        "\"Gregorian\"", ",", 
        RowBox[{"-", "5.`"}]}], "]"}]},
   "DateObject",
   Editable->False]], "Output",
- CellChangeTimes->{3.974209675909719*^9, 3.9742098739149837`*^9},
+ CellChangeTimes->{3.974209675909719*^9, 3.9742097447353907`*^9, 
+  3.974363989852537*^9, 3.974451144128398*^9},
  CellLabel->
-  "Out[221]=",ExpressionUUID->"3d599aa1-b179-46a8-8d95-62ed35e35214"],
+  "Out[163]=",ExpressionUUID->"77152b7b-9661-4268-9ff6-da2d2baf50ee"],
 
 Cell[BoxData[
  TemplateBox[{
-   RowBox[{"\"Mon 8 Dec 2025 14:11:18\"", 
+   RowBox[{"\"Thu 11 Dec 2025 09:12:28\"", 
      StyleBox[
       RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
         StyleBox[
@@ -12906,15 +12916,16 @@ Cell[BoxData[
      RowBox[{
        RowBox[{"{", 
          RowBox[{
-          "2025", ",", "12", ",", "8", ",", "14", ",", "11", ",", 
-           "18.018644`8.00829708912452"}], "}"}], ",", "\"Instant\"", ",", 
+          "2025", ",", "12", ",", "11", ",", "9", ",", "12", ",", 
+           "28.295911`8.204298662331908"}], "}"}], ",", "\"Instant\"", ",", 
        "\"Gregorian\"", ",", 
        RowBox[{"-", "5.`"}]}], "]"}]},
   "DateObject",
   Editable->False]], "Output",
- CellChangeTimes->{3.974209675909719*^9, 3.974209878019595*^9},
+ CellChangeTimes->{3.974209675909719*^9, 3.9742097447353907`*^9, 
+  3.974363989852537*^9, 3.974451148333145*^9},
  CellLabel->
-  "Out[223]=",ExpressionUUID->"6a68ff44-0e08-4ef8-8e0d-8f36cf08bc92"]
+  "Out[165]=",ExpressionUUID->"bdfdd1cd-3e1e-4292-a870-0629ac50de6a"]
 }, Open  ]]
 },
 WindowSize->{1265, 698},
@@ -12936,17 +12947,17 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 502791, 12652, 5967, "Input",ExpressionUUID->"7164b7e4-1fb4-46d1-944f-a4d93516c59d"],
-Cell[503374, 12676, 759, 20, 42, "Output",ExpressionUUID->"7252a0cd-85fe-47b5-8a54-1c9f0cf328da"],
-Cell[504136, 12698, 760, 20, 42, "Output",ExpressionUUID->"b1c5d40c-210b-4a34-ab22-0ecbc930f722"],
-Cell[504899, 12720, 760, 20, 42, "Output",ExpressionUUID->"873b5c46-b848-4029-9769-f151f1fdf03d"],
-Cell[505662, 12742, 758, 20, 42, "Output",ExpressionUUID->"04fc2ffa-87cf-4757-8cd1-cbee0cabc96a"],
-Cell[506423, 12764, 759, 20, 42, "Output",ExpressionUUID->"bb5bd937-b2cd-4f4d-815f-8ffd4ca66bd5"],
-Cell[507185, 12786, 759, 20, 42, "Output",ExpressionUUID->"17faf4ae-9c95-4ec4-a98d-4c7440c583c3"],
-Cell[507947, 12808, 760, 20, 42, "Output",ExpressionUUID->"0f871ba2-35cd-4c21-93ba-4fd036ac5381"],
-Cell[508710, 12830, 758, 20, 42, "Output",ExpressionUUID->"6b3ba568-c6da-47c2-9480-6816b444b287"],
-Cell[509471, 12852, 759, 20, 42, "Output",ExpressionUUID->"288225ff-79a5-4e25-9d0d-326a38e99bd6"],
-Cell[510233, 12874, 761, 20, 42, "Output",ExpressionUUID->"3d599aa1-b179-46a8-8d95-62ed35e35214"],
-Cell[510997, 12896, 758, 20, 42, "Output",ExpressionUUID->"6a68ff44-0e08-4ef8-8e0d-8f36cf08bc92"]
+Cell[503374, 12676, 809, 21, 42, "Output",ExpressionUUID->"f8d0b47a-6098-45e0-b131-9b3a3cf88e32"],
+Cell[504186, 12699, 809, 21, 42, "Output",ExpressionUUID->"ddc04a33-9ef4-4012-8910-166bde0043b3"],
+Cell[504998, 12722, 808, 21, 42, "Output",ExpressionUUID->"c48f8b7b-3584-4e1d-8b44-62bade4e35ae"],
+Cell[505809, 12745, 807, 21, 42, "Output",ExpressionUUID->"dbe23e17-18aa-4f86-8fab-fb999b521a87"],
+Cell[506619, 12768, 811, 21, 42, "Output",ExpressionUUID->"af9c5228-e152-4d55-85fa-90e8b5825dc3"],
+Cell[507433, 12791, 808, 21, 42, "Output",ExpressionUUID->"39f49566-6bff-42a5-9b5a-00fc3cd6cd96"],
+Cell[508244, 12814, 806, 21, 42, "Output",ExpressionUUID->"0db0aaea-6090-4b5f-8118-ee67df56c360"],
+Cell[509053, 12837, 809, 21, 42, "Output",ExpressionUUID->"14daced0-b5fc-40e2-b710-2585cda92f91"],
+Cell[509865, 12860, 808, 21, 42, "Output",ExpressionUUID->"b9fcb345-3eb9-46b6-9095-bc577f49b01a"],
+Cell[510676, 12883, 809, 21, 42, "Output",ExpressionUUID->"77152b7b-9661-4268-9ff6-da2d2baf50ee"],
+Cell[511488, 12906, 809, 21, 42, "Output",ExpressionUUID->"bdfdd1cd-3e1e-4292-a870-0629ac50de6a"]
 }, Open  ]]
 }
 ]
