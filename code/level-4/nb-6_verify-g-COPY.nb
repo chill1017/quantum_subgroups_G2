@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    230431,       5867]
-NotebookOptionsPosition[    222151,       5747]
-NotebookOutlinePosition[    222554,       5763]
-CellTagsIndexPosition[    222511,       5760]
+NotebookDataLength[    283177,       7322]
+NotebookOptionsPosition[    269279,       7143]
+NotebookOutlinePosition[    269680,       7159]
+CellTagsIndexPosition[    269637,       7156]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1897,9 +1897,9 @@ Cell[BoxData[{
    3.957429109538994*^9}, {3.957429201194934*^9, 3.957429201805018*^9}, {
    3.957429615434062*^9, 3.957429615607481*^9}, {3.968412365095117*^9, 
    3.96841236531437*^9}, {3.968413119986315*^9, 3.96841312168876*^9}, {
-   3.974464143654632*^9, 
-   3.974464151863041*^9}},ExpressionUUID->"a10850e0-f634-42d2-aeeb-\
-b8d28728782d"],
+   3.974464143654632*^9, 3.974464151863041*^9}},
+ CellLabel->
+  "In[166]:=",ExpressionUUID->"a10850e0-f634-42d2-aeeb-b8d28728782d"],
 
 Cell[CellGroupData[{
 
@@ -1945,55 +1945,58 @@ Cell[BoxData[{"Now", "\[IndentingNewLine]",
    3.953109050865806*^9}, {3.957428033034905*^9, 3.9574280343649187`*^9}, {
    3.9574283456697273`*^9, 3.957428347354336*^9}, {3.9682231632512093`*^9, 
    3.968223164623919*^9}, {3.968412390099959*^9, 3.9684124011801033`*^9}, 
-   3.974464130716467*^9},ExpressionUUID->"b15d1bac-9134-4524-a574-\
-71ba244c3f45"],
+   3.974464130716467*^9},
+ CellLabel->
+  "In[170]:=",ExpressionUUID->"b15d1bac-9134-4524-a574-71ba244c3f45"],
 
 Cell[BoxData[
  TemplateBox[{
-   RowBox[{"\"Fri 3 Oct 2025 07:12:30\"", 
+   RowBox[{"\"Sat 13 Dec 2025 07:50:27\"", 
      StyleBox[
       RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
         StyleBox[
-         RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> False]}], 
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
       FontColor -> GrayLevel[0.5]]}], 
    RowBox[{"DateObject", "[", 
      RowBox[{
        RowBox[{"{", 
          RowBox[{
-          "2025", ",", "10", ",", "3", ",", "7", ",", "12", ",", 
-           "30.146144`8.23180675030198"}], "}"}], ",", "\"Instant\"", ",", 
+          "2025", ",", "12", ",", "13", ",", "7", ",", "50", ",", 
+           "27.733654`8.1955820748676"}], "}"}], ",", "\"Instant\"", ",", 
        "\"Gregorian\"", ",", 
-       RowBox[{"-", "4.`"}]}], "]"}]},
+       RowBox[{"-", "5.`"}]}], "]"}]},
   "DateObject",
   Editable->False]], "Output",
  CellChangeTimes->{3.95742967205462*^9, 3.9684718897918987`*^9, 
-  3.968478750155655*^9},
+  3.968478750155655*^9, 3.974619027742787*^9},
  CellLabel->
-  "Out[242]=",ExpressionUUID->"6c80b84c-07bc-47d8-996c-5e8ef2dcf0c7"],
+  "Out[170]=",ExpressionUUID->"a1d4de3f-8eeb-4f45-8ff5-39b85ecc4abe"],
 
 Cell[BoxData[
  TemplateBox[{
-   RowBox[{"\"Fri 3 Oct 2025 09:06:35\"", 
+   RowBox[{"\"Sat 13 Dec 2025 08:58:24\"", 
      StyleBox[
       RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
         StyleBox[
-         RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> False]}], 
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
       FontColor -> GrayLevel[0.5]]}], 
    RowBox[{"DateObject", "[", 
      RowBox[{
        RowBox[{"{", 
          RowBox[{
-          "2025", ",", "10", ",", "3", ",", "9", ",", "6", ",", 
-           "35.863198`8.307223993557743"}], "}"}], ",", "\"Instant\"", ",", 
+          "2025", ",", "12", ",", "13", ",", "8", ",", "58", ",", 
+           "24.435311`8.140592853488789"}], "}"}], ",", "\"Instant\"", ",", 
        "\"Gregorian\"", ",", 
-       RowBox[{"-", "4.`"}]}], "]"}]},
+       RowBox[{"-", "5.`"}]}], "]"}]},
   "DateObject",
   Editable->False]], "Output",
  CellChangeTimes->{3.95742967205462*^9, 3.9684718897918987`*^9, 
-  3.968485595869954*^9},
+  3.968478750155655*^9, 3.974623104448633*^9},
  CellLabel->
-  "Out[244]=",ExpressionUUID->"8f5c695d-c726-4a3b-a3ce-33cdcac93e79"]
+  "Out[172]=",ExpressionUUID->"c17d7779-99bd-4756-b1dd-72443ca286be"]
 }, Open  ]],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[{"Now", "\[IndentingNewLine]", 
  RowBox[{
@@ -2575,494 +2578,1315 @@ Cell[BoxData[{"Now", "\[IndentingNewLine]",
           RowBox[{
            RowBox[{"leftUp", "//", "SymDagger"}], ",", " ", "Stick"}], "}"}], 
          "]"}]}], "\[IndentingNewLine]", "}"}], "]"}], ",", "Hom2to3"}], 
-    "]"}]}], ";"}]}], "Input",
+    "]"}]}], ";"}], "\[IndentingNewLine]", "Now"}], "Input",
  CellChangeTimes->{{3.9687497290609417`*^9, 3.968749731421137*^9}, {
-  3.97446451456394*^9, 
-  3.974464602072444*^9}},ExpressionUUID->"b49567fc-39ed-41ab-8e1f-\
-296802cacb92"],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.968501041882761*^9, 3.9685010530037937`*^9}, 
-   3.9744646108053007`*^9},ExpressionUUID->"7323080d-d083-4334-9175-\
-0773fa148841"],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[{
- RowBox[{
-  RowBox[{"pVar", "=", 
-   RowBox[{"Table", "[", 
-    RowBox[{
-     RowBox[{"Symbol", "[", 
-      RowBox[{"\"\<p\>\"", "<>", 
-       RowBox[{"ToString", "[", "i", "]"}]}], "]"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"i", ",", "1", ",", "60"}], "}"}]}], "]"}]}], 
-  ";"}], "\[IndentingNewLine]", "Now", "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"pentPolyRHS", " ", "=", " ", 
-   RowBox[{"Plus", "[", "\[IndentingNewLine]", 
-    RowBox[{
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent1dec0", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p1"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent2dec0", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p2"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent3dec0", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p3"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent4dec0", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p4"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent5dec0", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p5"}], 
-      "  ", 
-      RowBox[{"(*", " ", 
-       RowBox[{"=", " ", "0"}], "*)"}], "  ", "]"}], ",", 
-     "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent6dec0", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p6"}], 
-      "  ", 
-      RowBox[{"(*", " ", 
-       RowBox[{"=", " ", "0"}], "*)"}], "  ", "]"}], ",", 
-     "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent7dec0", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p7"}], 
-      "  ", 
-      RowBox[{"(*", " ", 
-       RowBox[{"=", " ", "0"}], "*)"}], "  ", "]"}], ",", 
-     "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent8dec0", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p8"}], 
-      "  ", 
-      RowBox[{"(*", " ", 
-       RowBox[{"=", " ", "0"}], "*)"}], "  ", "]"}], ",", 
-     "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent9dec0", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p9"}], 
-      "  ", 
-      RowBox[{"(*", " ", 
-       RowBox[{"=", " ", "0"}], "*)"}], "  ", "]"}], ",", 
-     "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent10dec0", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p10"}], 
-      "]"}], ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent1dec4", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p11"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent2dec4", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p12"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent3dec4", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p13"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent4dec4", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p14"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent5dec4", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p15"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent6dec4", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p16"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent7dec4", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p17"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"(*", 
-      RowBox[{
-       RowBox[{"ScaleByConstant", "[", 
-        RowBox[{"pent8dec4", ",", "p18"}], "]"}], ","}], "*)"}], 
-     "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent9dec4", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p19"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent10dec4", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p20"}], 
-      "]"}], ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent1dec1", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p21"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent2dec1", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p22"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent3dec1", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p23"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent4dec1", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p24"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent5dec1", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p25"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent6dec1", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p26"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent7dec1", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p27"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent8dec1", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p28"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent9dec1", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p29"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"(*", 
-      RowBox[{"ScaleByConstant", "[", 
-       RowBox[{"pent10dec1", ",", "p30"}], "]"}], "*)"}], 
-     "\[IndentingNewLine]", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent1dec2", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p31"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent2dec2", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p32"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent3dec2", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p33"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent4dec2", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p34"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent5dec2", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p35"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"(*", 
-      RowBox[{
-       RowBox[{"ScaleByConstant", "[", 
-        RowBox[{"pent6dec2", ",", "p36"}], "]"}], ","}], "*)"}], 
-     "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent7dec2", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p37"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent8dec2", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p38"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent9dec2", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p39"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent10dec2", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p40"}], 
-      "]"}], ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent3dec3", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p41"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent5dec3", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p42"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent8dec3", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p43"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent9dec3", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p44"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent10dec3", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p45"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent2dec3", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p46"}], 
-      "]"}], ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent3dec5", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p47"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent5dec5", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p48"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent8dec5", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p49"}], 
-      "]"}], ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent1dec5", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p50"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent4dec5", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p51"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent2dec5", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p52"}], 
-      "]"}], ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent6dec5", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p53"}], 
-      "]"}], ",", 
-     RowBox[{"(*", " ", 
-      RowBox[{"mistake", ":", " ", 
-       RowBox[{
-       "this", " ", "map", " ", "is", " ", "the", " ", "same", " ", "as", " ",
-         "pent7dec5"}]}], "*)"}], "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent1dec3", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p54"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent4dec3", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p55"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent7dec5", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p56"}], 
-      "]"}], ",", 
-     RowBox[{"(*", " ", 
-      RowBox[{"mistake", ":", " ", 
-       RowBox[{
-       "this", " ", "map", " ", "is", " ", "the", " ", "same", " ", "as", " ",
-         "pent6dec5"}]}], "*)"}], "\[IndentingNewLine]", 
-     "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent6dec3", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p57"}], 
-      "]"}], ",", "\[IndentingNewLine]", 
-     RowBox[{"Times", "[", 
-      RowBox[{
-       RowBox[{"pent10dec5", "[", 
-        RowBox[{"[", 
-         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", "p58"}], 
-      "]"}]}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", "Now"}], "Input",
- CellChangeTimes->{{3.968498266710874*^9, 3.968498426531452*^9}, {
-  3.971262668661541*^9, 3.971262685897423*^9}, {3.974464612653854*^9, 
-  3.974464613824774*^9}},ExpressionUUID->"0fe7e6e6-1f34-4188-89a2-\
-0f2504a5c194"],
+  3.97446451456394*^9, 3.974464602072444*^9}, {3.974619040860938*^9, 
+  3.9746190416534567`*^9}},
+ CellLabel->
+  "In[173]:=",ExpressionUUID->"b49567fc-39ed-41ab-8e1f-296802cacb92"],
 
 Cell[BoxData[
  TemplateBox[{
-   RowBox[{"\"Mon 6 Oct 2025 10:38:24\"", 
+   RowBox[{"\"Sat 13 Dec 2025 08:58:24\"", 
      StyleBox[
       RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
         StyleBox[
-         RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> False]}], 
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
       FontColor -> GrayLevel[0.5]]}], 
    RowBox[{"DateObject", "[", 
      RowBox[{
        RowBox[{"{", 
          RowBox[{
-          "2025", ",", "10", ",", "6", ",", "10", ",", "38", ",", 
-           "24.097257`8.134542592094864"}], "}"}], ",", "\"Instant\"", ",", 
+          "2025", ",", "12", ",", "13", ",", "8", ",", "58", ",", 
+           "24.531744`8.142303406590878"}], "}"}], ",", "\"Instant\"", ",", 
        "\"Gregorian\"", ",", 
-       RowBox[{"-", "4.`"}]}], "]"}]},
+       RowBox[{"-", "5.`"}]}], "]"}]},
   "DateObject",
   Editable->False]], "Output",
- CellChangeTimes->{3.9684984275393543`*^9, 3.968750304106162*^9},
+ CellChangeTimes->{3.974623104547312*^9},
  CellLabel->
-  "Out[591]=",ExpressionUUID->"426c2026-5f68-452b-9512-f9563f951b31"],
+  "Out[173]=",ExpressionUUID->"d00e7c8b-fc61-4532-aaf5-2cf8b5461c22"],
 
 Cell[BoxData[
  TemplateBox[{
-   RowBox[{"\"Mon 6 Oct 2025 10:38:24\"", 
+   RowBox[{"\"Sat 13 Dec 2025 08:59:07\"", 
      StyleBox[
       RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
         StyleBox[
-         RowBox[{"-", "4"}], NumberMarks -> False, StripOnInput -> False]}], 
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
       FontColor -> GrayLevel[0.5]]}], 
    RowBox[{"DateObject", "[", 
      RowBox[{
        RowBox[{"{", 
          RowBox[{
-          "2025", ",", "10", ",", "6", ",", "10", ",", "38", ",", 
-           "24.272315`8.137686182257678"}], "}"}], ",", "\"Instant\"", ",", 
+          "2025", ",", "12", ",", "13", ",", "8", ",", "59", ",", 
+           "7.94595`7.652720815174605"}], "}"}], ",", "\"Instant\"", ",", 
        "\"Gregorian\"", ",", 
-       RowBox[{"-", "4.`"}]}], "]"}]},
+       RowBox[{"-", "5.`"}]}], "]"}]},
   "DateObject",
   Editable->False]], "Output",
- CellChangeTimes->{3.9684984275393543`*^9, 3.968750304274787*^9},
+ CellChangeTimes->{3.974623147947919*^9},
  CellLabel->
-  "Out[593]=",ExpressionUUID->"ccb754ba-adbd-4681-a0fd-d961f8cb5bc6"]
-}, Open  ]],
+  "Out[176]=",ExpressionUUID->"f16998ae-3157-4404-9ac2-0f91ad25ede5"],
 
 Cell[BoxData[
- RowBox[{
-  RowBox[{"pentPolyLHS", " ", "=", " ", 
-   RowBox[{"pentSinglyPoly", "[", 
-    RowBox[{"[", 
-     RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}]}], ";"}]], "Input",
- CellChangeTimes->{{3.968498449032756*^9, 3.968498470781201*^9}},
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 08:59:14\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "8", ",", "59", ",", 
+           "14.28599`7.90748532712977"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974623154288569*^9},
  CellLabel->
-  "In[590]:=",ExpressionUUID->"0cbae556-bde4-45b1-8f4b-53237b819b87"],
+  "Out[178]=",ExpressionUUID->"ac6f0cf5-4ae6-4995-bfb4-6c79d35939a9"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 08:59:20\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "8", ",", "59", ",", 
+           "20.643917`8.067367088001546"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.9746231606459017`*^9},
+ CellLabel->
+  "Out[180]=",ExpressionUUID->"6db345de-42e4-402a-8356-301b67ea2289"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:00:05\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "0", ",", 
+           "5.214335`7.469773917194247"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974623205216598*^9},
+ CellLabel->
+  "Out[182]=",ExpressionUUID->"c6667f8e-98dd-460e-9d29-12307878bf37"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:00:49\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "0", ",", 
+           "49.34528`8.4458205934291"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974623249347595*^9},
+ CellLabel->
+  "Out[184]=",ExpressionUUID->"a2310478-3f9e-45c1-ab04-73f66b392675"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:00:49\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "0", ",", 
+           "49.617012`8.448205582748884"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.9746232496191273`*^9},
+ CellLabel->
+  "Out[187]=",ExpressionUUID->"8a71524f-7190-4a60-95ad-abf91129f3a3"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:00:49\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "0", ",", 
+           "49.899271`8.450669176669146"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.9746232499016533`*^9},
+ CellLabel->
+  "Out[190]=",ExpressionUUID->"810d50fa-3d6f-42a9-9e74-a3fda52a0303"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:00:50\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "0", ",", 
+           "50.706583`8.45763932094999"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.9746232507087393`*^9},
+ CellLabel->
+  "Out[195]=",ExpressionUUID->"96811fd3-ed00-4604-97d7-1cc956410348"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:00:50\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "0", ",", 
+           "50.988047`8.460043352985624"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974623250990345*^9},
+ CellLabel->
+  "Out[198]=",ExpressionUUID->"d16302f4-307a-495d-8d79-401deee8c3a8"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:00:51\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "0", ",", 
+           "51.26107`8.462362642455671"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974623251263319*^9},
+ CellLabel->
+  "Out[201]=",ExpressionUUID->"8f660706-f39a-49b5-9d28-a4969e2658da"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:01:03\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "1", ",", 
+           "3.507358`7.29755508541492"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974623263509763*^9},
+ CellLabel->
+  "Out[203]=",ExpressionUUID->"95e3fc94-7126-482d-8ce4-f13dfe2fef24"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:01:12\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "1", ",", 
+           "12.062624`7.834016776673086"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974623272065029*^9},
+ CellLabel->
+  "Out[205]=",ExpressionUUID->"2256d229-db46-4a9f-93d3-e23f6f171319"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:01:27\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "1", ",", 
+           "27.021341`8.184281879940137"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974623287023777*^9},
+ CellLabel->
+  "Out[207]=",ExpressionUUID->"47a287f9-7f00-4c6d-b2e2-43cb7651c942"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:01:35\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "1", ",", 
+           "35.563051`8.303573992193678"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974623295565337*^9},
+ CellLabel->
+  "Out[209]=",ExpressionUUID->"0d6b9fc0-1e18-4d0f-8cf6-e8b1717b948f"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:01:47\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "1", ",", 
+           "47.457756`8.428882175458766"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.9746233074600897`*^9},
+ CellLabel->
+  "Out[211]=",ExpressionUUID->"4737870a-1745-433d-9145-d22cc21441dc"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:01:54\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "1", ",", 
+           "54.466387`8.488703541956951"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.97462331446894*^9},
+ CellLabel->
+  "Out[213]=",ExpressionUUID->"10e60305-c8ae-4989-bb80-55fcb4227aec"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:02:01\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "2", ",", 
+           "1.701324`6.983362017380868"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.9746233217030973`*^9},
+ CellLabel->
+  "Out[215]=",ExpressionUUID->"c406a791-0564-4d40-ba17-c2ac67897514"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:02:08\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "2", ",", 
+           "8.425987`7.678195771719791"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.9746233284282103`*^9},
+ CellLabel->
+  "Out[217]=",ExpressionUUID->"cc78c7f7-7e7a-492b-b724-c6d3d778533c"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:02:15\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "2", ",", 
+           "15.031598`7.929580137690912"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.9746233350343037`*^9},
+ CellLabel->
+  "Out[219]=",ExpressionUUID->"4ba73f5e-3eb9-46af-8f74-93aee732bdca"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:02:30\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "2", ",", 
+           "30.816302`8.24135550253197"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974623350818532*^9},
+ CellLabel->
+  "Out[221]=",ExpressionUUID->"d1530741-567a-42d2-98f8-d0e34330113a"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:02:40\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "2", ",", 
+           "40.601999`8.361122394420565"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.9746233606046457`*^9},
+ CellLabel->
+  "Out[223]=",ExpressionUUID->"27b06f8d-30ce-4cb4-8406-d2c05a78e81b"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:02:54\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "2", ",", 
+           "54.232437`8.486834094851854"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.9746233742348557`*^9},
+ CellLabel->
+  "Out[225]=",ExpressionUUID->"a66b7763-5c78-453a-bc33-fc87a95298e4"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:03:07\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "3", ",", 
+           "7.132694`7.6058285799855"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.9746233871347017`*^9},
+ CellLabel->
+  "Out[227]=",ExpressionUUID->"6ef36cd0-510f-446b-8498-1491ab0a84b8"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:03:16\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "3", ",", 
+           "16.941358`7.981523204737942"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974623396943596*^9},
+ CellLabel->
+  "Out[229]=",ExpressionUUID->"ea9ebb08-b91a-4eee-816f-476436f868b1"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:03:25\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "3", ",", 
+           "25.502542`8.159158453816302"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974623405504854*^9},
+ CellLabel->
+  "Out[231]=",ExpressionUUID->"0302be60-f39b-45e4-ac75-de16ff9b7dd3"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:03:32\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "3", ",", 
+           "32.958546`8.270543024533836"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974623412961241*^9},
+ CellLabel->
+  "Out[233]=",ExpressionUUID->"46050e6b-84ba-409d-ad97-8c1eb2579e22"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:03:41\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "3", ",", 
+           "41.463582`8.370241795648985"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974623421465824*^9},
+ CellLabel->
+  "Out[235]=",ExpressionUUID->"cb28d893-84be-4df5-82ea-1b8a7225abc2"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:03:49\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "3", ",", 
+           "49.877402`8.450478799782621"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974623429879793*^9},
+ CellLabel->
+  "Out[237]=",ExpressionUUID->"2ecabd06-d904-41d2-a151-559e4f31cef9"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:03:59\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "3", ",", 
+           "59.737892`8.528824866445774"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.9746234397405252`*^9},
+ CellLabel->
+  "Out[239]=",ExpressionUUID->"23ba37f9-f07f-4000-b2bd-d35a8d40c603"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:04:13\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "4", ",", 
+           "13.497548`7.882829866198865"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974623453500188*^9},
+ CellLabel->
+  "Out[241]=",ExpressionUUID->"d06239b1-5ca1-4173-9e65-2a0de46f6c49"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:04:26\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "4", ",", 
+           "26.450512`8.175009065117187"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974623466452551*^9},
+ CellLabel->
+  "Out[243]=",ExpressionUUID->"49d9badc-d5a7-421c-8a0d-f447fa4e899a"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:04:36\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "4", ",", 
+           "36.194064`8.311212329337193"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.9746234761960983`*^9},
+ CellLabel->
+  "Out[245]=",ExpressionUUID->"37f20219-24f0-4123-ab1e-49d442b86a59"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:04:52\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "4", ",", 
+           "52.114904`8.469536917073327"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974623492117285*^9},
+ CellLabel->
+  "Out[247]=",ExpressionUUID->"bbbf805e-dbea-439e-b397-ec44433eaba8"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:04:59\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "4", ",", 
+           "59.64642`8.528159355342062"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974623499648872*^9},
+ CellLabel->
+  "Out[249]=",ExpressionUUID->"9696f563-1a24-4a75-bdea-4fe99f9b704a"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:05:08\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "5", ",", 
+           "8.139756`7.66318637350818"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974623508142095*^9},
+ CellLabel->
+  "Out[251]=",ExpressionUUID->"f71fddcc-f4e2-4a6c-9eb1-fe8b40817ba3"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:05:16\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "5", ",", 
+           "16.717783`7.975753668502633"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974623516720603*^9},
+ CellLabel->
+  "Out[253]=",ExpressionUUID->"b528273f-40e1-424e-8232-66669707feea"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:05:24\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "5", ",", 
+           "24.233462`8.136990444629802"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974623524235503*^9},
+ CellLabel->
+  "Out[255]=",ExpressionUUID->"355c58b3-3116-4ced-a342-61a3c1a6f5b6"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:05:32\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "5", ",", 
+           "32.824967`8.26877927858332"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.9746235328274*^9},
+ CellLabel->
+  "Out[257]=",ExpressionUUID->"47bbfe7d-6ae9-40b6-8cde-8bbde7d5eeac"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:06:24\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "6", ",", 
+           "24.328263`8.138686084703565"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974623584330665*^9},
+ CellLabel->
+  "Out[259]=",ExpressionUUID->"2afb1aa2-a738-4391-8186-129ce53e53ba"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:07:16\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "7", ",", 
+           "16.845341`7.979054791619093"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.9746236368472567`*^9},
+ CellLabel->
+  "Out[261]=",ExpressionUUID->"a2d8454b-8370-415a-85c0-d28439673853"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:07:17\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "7", ",", 
+           "17.338837`7.9915949484002935"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.9746236373412943`*^9},
+ CellLabel->
+  "Out[264]=",ExpressionUUID->"a98b6096-3d10-499c-87a8-9f08cbb483e5"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:07:18\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "7", ",", 
+           "18.183324`8.012248261535781"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.9746236381854486`*^9},
+ CellLabel->
+  "Out[266]=",ExpressionUUID->"3967e101-2aec-4c8e-aeb4-b17f63e1eb42"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:07:20\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "7", ",", 
+           "20.978258`8.074344405961023"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974623640981716*^9},
+ CellLabel->
+  "Out[268]=",ExpressionUUID->"5f44cf77-b850-4446-af49-6a9f3bc6eebd"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:07:28\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "7", ",", 
+           "28.444611`8.206574980385714"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.9746236484463587`*^9},
+ CellLabel->
+  "Out[270]=",ExpressionUUID->"0ba0344c-da91-4840-aedb-59fd106fb867"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:07:35\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "7", ",", 
+           "35.80232`8.306486149568984"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.97462365580499*^9},
+ CellLabel->
+  "Out[272]=",ExpressionUUID->"ad2294ef-ecec-4230-b48f-01a8a3875af2"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:08:25\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "8", ",", 
+           "25.777468`8.163815238739728"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974623705780484*^9},
+ CellLabel->
+  "Out[274]=",ExpressionUUID->"3932df86-8251-46f1-acc8-3e518e8fdde8"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:09:40\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "9", ",", 
+           "40.981075`8.365158324712393"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974623780982267*^9},
+ CellLabel->
+  "Out[276]=",ExpressionUUID->"324a3a61-4baf-4e3b-ad87-3f57cf08f182"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:09:53\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "9", ",", 
+           "53.755414`8.482997185652927"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974623793756543*^9},
+ CellLabel->
+  "Out[278]=",ExpressionUUID->"44e0e04e-90d0-4e67-aaec-ad966d708354"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:10:45\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "10", ",", 
+           "45.758412`8.413045921176192"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974623845759611*^9},
+ CellLabel->
+  "Out[280]=",ExpressionUUID->"f11337f6-d401-4d60-ada8-e2d20135d662"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:10:46\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "10", ",", 
+           "46.276011`8.417930892248412"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974623846277239*^9},
+ CellLabel->
+  "Out[282]=",ExpressionUUID->"d57f13b7-131b-4dd8-b610-b3c4d2ecacc4"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:12:05\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "12", ",", 
+           "5.931029`7.525705035334699"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974623925933619*^9},
+ CellLabel->
+  "Out[284]=",ExpressionUUID->"be96c835-369a-4cf9-baf5-9f86e560d843"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:12:07\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "12", ",", 
+           "7.43163`7.623659066471147"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.9746239274328213`*^9},
+ CellLabel->
+  "Out[286]=",ExpressionUUID->"fc22495c-1975-4e53-acf3-1acb3019db5d"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:12:11\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "12", ",", 
+           "11.819975`7.825191544145389"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974623931821171*^9},
+ CellLabel->
+  "Out[288]=",ExpressionUUID->"fa771005-f0a8-46a3-91d2-03d1cfa1cc71"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:12:16\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "12", ",", 
+           "16.178986`7.961526284000198"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974623936180167*^9},
+ CellLabel->
+  "Out[290]=",ExpressionUUID->"37a29345-e50f-40a2-8742-ccd6f2357b19"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:12:26\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "12", ",", 
+           "26.788796`8.180528177113446"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974623946789976*^9},
+ CellLabel->
+  "Out[292]=",ExpressionUUID->"a5bbb503-3055-467f-bd91-f6b4b4a1c707"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:13:09\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "13", ",", 
+           "9.512723`7.730879837459817"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974623989515031*^9},
+ CellLabel->
+  "Out[294]=",ExpressionUUID->"4dcab3ca-d3e1-4f66-9ed2-ead673eef774"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:13:20\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "13", ",", 
+           "20.664701`8.067804109509916"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.974624000665873*^9},
+ CellLabel->
+  "Out[296]=",ExpressionUUID->"34ab0027-2c7b-453b-81f0-d20a261f97a4"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:14:03\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "14", ",", 
+           "3.1222`7.24703570773252"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.9746240431247597`*^9},
+ CellLabel->
+  "Out[298]=",ExpressionUUID->"71ac41c9-4917-4be2-a2fc-9b8b56583cf6"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[{
- RowBox[{
-  RowBox[{"pentPolyEqns", " ", "=", " ", 
-   RowBox[{
-    RowBox[{"VecGetEqns", "[", 
-     RowBox[{"pentPolyLHS", ",", "pentPolyRHS"}], "]"}], "//", 
-    "DeleteDuplicates"}]}], ";"}], "\[IndentingNewLine]", 
- RowBox[{"Export", "[", 
-  RowBox[{
-  "\"\</Users/calebhill/Documents/UNH/Research/code/OTimes/graph_21b/\
-polynomial_attempt/pentPolyEqns.m\>\"", ",", "pentPolyEqns"}], 
-  "]"}]}], "Input",
- CellChangeTimes->{{3.968498473237627*^9, 3.9684984885410147`*^9}, {
-  3.968498540204414*^9, 3.9684985486128693`*^9}, {3.968750346897149*^9, 
-  3.968750349850411*^9}},
- CellLabel->
-  "In[597]:=",ExpressionUUID->"bb3bb8d4-288a-4579-a183-55cfb53cfaae"],
-
-Cell[BoxData["\<\"/Users/calebhill/Documents/UNH/Research/code/OTimes/graph_\
-21b/polynomial_attempt/pentPolyEqns.m\"\>"], "Output",
- CellChangeTimes->{3.9684985675482073`*^9, 3.968750311792726*^9, 
-  3.968750358876749*^9},
- CellLabel->
-  "Out[598]=",ExpressionUUID->"c5a39f87-5e69-4f71-9ba4-bbbecb3f5ea0"]
-}, Open  ]],
-
-Cell[BoxData[
  RowBox[{
   RowBox[{"pSol", " ", "=", " ", 
    RowBox[{"{", 
@@ -5742,11 +6566,583 @@ Cell[BoxData[
          "NumericalApproximation"],
         AlgebraicNumber[
          Root[1 - 4 #^2 + #^4& , 4, 0], {6, -11, 1, 4}]]}]}], ",", "0", ",", 
-     "0"}], "}"}]}], ";"}]], "Input",ExpressionUUID->"7e3d9287-dac9-483f-ab55-\
-17834a8aa63c"]
+     "0"}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", "Now", "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"pentPolyRHS", " ", "=", " ", 
+   RowBox[{"Plus", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent1dec0", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "1", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent2dec0", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "2", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent3dec0", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "3", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent4dec0", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "4", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent5dec0", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "5", "]"}], "]"}]}], "  ", 
+      RowBox[{"(*", " ", 
+       RowBox[{"=", " ", "0"}], "*)"}], "  ", "]"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent6dec0", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "6", "]"}], "]"}]}], "  ", 
+      RowBox[{"(*", " ", 
+       RowBox[{"=", " ", "0"}], "*)"}], "  ", "]"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent7dec0", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "7", "]"}], "]"}]}], "  ", 
+      RowBox[{"(*", " ", 
+       RowBox[{"=", " ", "0"}], "*)"}], "  ", "]"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent8dec0", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "8", "]"}], "]"}]}], "  ", 
+      RowBox[{"(*", " ", 
+       RowBox[{"=", " ", "0"}], "*)"}], "  ", "]"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent9dec0", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "9", "]"}], "]"}]}], "  ", 
+      RowBox[{"(*", " ", 
+       RowBox[{"=", " ", "0"}], "*)"}], "  ", "]"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent10dec0", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "10", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent1dec4", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "11", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent2dec4", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "12", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent3dec4", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "13", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent4dec4", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "14", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent5dec4", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "15", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent6dec4", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "16", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent7dec4", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "17", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"(*", 
+      RowBox[{
+       RowBox[{"ScaleByConstant", "[", 
+        RowBox[{"pent8dec4", ",", "p18"}], "]"}], ","}], "*)"}], 
+     "\[IndentingNewLine]", 
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent9dec4", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "19", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent10dec4", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "20", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent1dec1", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "21", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent2dec1", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "22", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent3dec1", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "23", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent4dec1", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "24", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent5dec1", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "25", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent6dec1", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "26", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent7dec1", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "27", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent8dec1", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "28", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent9dec1", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "29", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"(*", 
+      RowBox[{"ScaleByConstant", "[", 
+       RowBox[{"pent10dec1", ",", "p30"}], "]"}], "*)"}], 
+     "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent1dec2", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "31", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent2dec2", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "32", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent3dec2", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "33", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent4dec2", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "34", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent5dec2", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "35", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"(*", 
+      RowBox[{
+       RowBox[{"ScaleByConstant", "[", 
+        RowBox[{"pent6dec2", ",", "p36"}], "]"}], ","}], "*)"}], 
+     "\[IndentingNewLine]", 
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent7dec2", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "37", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent8dec2", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "38", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent9dec2", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "39", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent10dec2", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "40", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent3dec3", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "41", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent5dec3", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "42", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent8dec3", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "43", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent9dec3", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "44", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent10dec3", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "45", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent2dec3", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "46", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent3dec5", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "47", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent5dec5", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "48", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent8dec5", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "49", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent1dec5", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "50", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent4dec5", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "51", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent2dec5", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "52", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent6dec5", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "53", "]"}], "]"}]}], "]"}], ",", 
+     RowBox[{"(*", " ", 
+      RowBox[{"mistake", ":", " ", 
+       RowBox[{
+       "this", " ", "map", " ", "is", " ", "the", " ", "same", " ", "as", " ",
+         "pent7dec5"}]}], "*)"}], "\[IndentingNewLine]", 
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent1dec3", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "54", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent4dec3", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "55", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent7dec5", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "56", "]"}], "]"}]}], "]"}], ",", 
+     RowBox[{"(*", " ", 
+      RowBox[{"mistake", ":", " ", 
+       RowBox[{
+       "this", " ", "map", " ", "is", " ", "the", " ", "same", " ", "as", " ",
+         "pent6dec5"}]}], "*)"}], "\[IndentingNewLine]", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent6dec3", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "57", "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+     
+     RowBox[{"Times", "[", 
+      RowBox[{
+       RowBox[{"pent10dec5", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}], ",", 
+       RowBox[{"pSol", "[", 
+        RowBox[{"[", "58", "]"}], "]"}]}], "]"}]}], "\[IndentingNewLine]", 
+    "]"}]}], ";"}], "\[IndentingNewLine]", "Now"}], "Input",
+ CellChangeTimes->{{3.968498266710874*^9, 3.968498426531452*^9}, {
+  3.971262668661541*^9, 3.971262685897423*^9}, {3.974464612653854*^9, 
+  3.974464613824774*^9}, {3.9746187823537188`*^9, 3.97461899723473*^9}, {
+  3.974619071562222*^9, 3.97461907282303*^9}},
+ CellLabel->
+  "In[299]:=",ExpressionUUID->"0fe7e6e6-1f34-4188-89a2-0f2504a5c194"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:14:03\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "14", ",", 
+           "3.291315`7.269944437398492"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.9684984275393543`*^9, 3.968750304106162*^9, 
+  3.9746240432985163`*^9},
+ CellLabel->
+  "Out[300]=",ExpressionUUID->"9fa42438-093a-4923-9d1c-50e2ff985a91"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{"\"Sat 13 Dec 2025 09:14:03\"", 
+     StyleBox[
+      RowBox[{"\"GMT\"", "\[InvisibleSpace]", 
+        StyleBox[
+         RowBox[{"-", "5"}], NumberMarks -> False, StripOnInput -> False]}], 
+      FontColor -> GrayLevel[0.5]]}], 
+   RowBox[{"DateObject", "[", 
+     RowBox[{
+       RowBox[{"{", 
+         RowBox[{
+          "2025", ",", "12", ",", "13", ",", "9", ",", "14", ",", 
+           "3.407101`7.28495999631301"}], "}"}], ",", "\"Instant\"", ",", 
+       "\"Gregorian\"", ",", 
+       RowBox[{"-", "5.`"}]}], "]"}]},
+  "DateObject",
+  Editable->False]], "Output",
+ CellChangeTimes->{3.9684984275393543`*^9, 3.968750304106162*^9, 
+  3.974624043408291*^9},
+ CellLabel->
+  "Out[302]=",ExpressionUUID->"292d341b-4c18-4062-9911-0bc1bc8cd21d"]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"pentPolyLHS", " ", "=", " ", 
+   RowBox[{"pentSinglyPoly", "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "\"\<scalar\>\""}], "]"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"decPentEqns", " ", "=", " ", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"VecGetEqns", "[", 
+      RowBox[{"pentPolyLHS", ",", "pentPolyRHS"}], "]"}], "/.", 
+     RowBox[{"Equal", "->", "Subtract"}]}], "//", "DeleteDuplicates"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"decPentEqns", " ", "=", " ", 
+   RowBox[{"DeleteCases", "[", 
+    RowBox[{"decPentEqns", ",", "True"}], "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.968498449032756*^9, 3.968498470781201*^9}, {
+  3.9746191178120604`*^9, 3.9746191533271112`*^9}},
+ CellLabel->
+  "In[306]:=",ExpressionUUID->"0cbae556-bde4-45b1-8f4b-53237b819b87"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ParallelMap", "[", 
+   RowBox[{"ezReplace", ",", " ", 
+    RowBox[{
+     RowBox[{"ParallelMap", "[", 
+      RowBox[{"ezReplace", ",", "decPentEqns"}], "]"}], "//", 
+     "DeleteDuplicates"}]}], "]"}], "//", "DeleteDuplicates"}]], "Input",
+ CellChangeTimes->{{3.9746192148154173`*^9, 3.974619242811207*^9}, {
+  3.97462408008817*^9, 3.974624083126539*^9}},
+ CellLabel->
+  "In[310]:=",ExpressionUUID->"eb29a87d-9c64-4d90-8f1c-622b1e22f42b"],
+
+Cell[BoxData[
+ RowBox[{"{", "0", "}"}]], "Output",
+ CellChangeTimes->{{3.974624074283587*^9, 3.974624101396311*^9}},
+ CellLabel->
+  "Out[310]=",ExpressionUUID->"fbea09c4-736f-4e61-b50a-542e93b23f88"]
+}, Open  ]]
 },
-WindowSize->{Full, Full},
-WindowMargins->{{Automatic, -1287}, {Automatic, -608}},
+WindowSize->{1124, 803},
+WindowMargins->{{Automatic, -1572}, {856, Automatic}},
 FrontEndVersion->"13.0 for Mac OS X ARM (64-bit) (February 4, 2022)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"401a6d32-b281-4117-9a9f-c7fa951181d1"
@@ -5762,7 +7158,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 426, 9, 81, "Text",ExpressionUUID->"1b697928-3e0d-4a41-8144-7e40ab45f264"],
+Cell[558, 20, 426, 9, 58, "Text",ExpressionUUID->"1b697928-3e0d-4a41-8144-7e40ab45f264"],
 Cell[987, 31, 383, 7, 38, "Text",ExpressionUUID->"47b4c0bb-09fe-418f-a449-67c598ca181c"],
 Cell[CellGroupData[{
 Cell[1395, 42, 2734, 71, 304, "Input",ExpressionUUID->"d00c880e-336d-4555-aa2c-42d1b1445307"],
@@ -5850,25 +7246,84 @@ Cell[68248, 1794, 244, 5, 34, "Output",ExpressionUUID->"6c819720-8027-4841-b257-
 }, Open  ]],
 Cell[68507, 1802, 147, 3, 52, "Input",ExpressionUUID->"6d8ccc63-1118-48bc-93b9-9fdc4bacc8a7"],
 Cell[68657, 1807, 307, 6, 38, "Text",ExpressionUUID->"d01824ac-fe86-48ac-9394-a4e0287d4e6a"],
-Cell[68967, 1815, 3532, 86, 409, "Input",ExpressionUUID->"a10850e0-f634-42d2-aeeb-b8d28728782d"],
+Cell[68967, 1815, 3554, 86, 409, "Input",ExpressionUUID->"a10850e0-f634-42d2-aeeb-b8d28728782d"],
 Cell[CellGroupData[{
-Cell[72524, 1905, 2224, 43, 220, "Input",ExpressionUUID->"b15d1bac-9134-4524-a574-71ba244c3f45"],
-Cell[74751, 1950, 783, 21, 42, "Output",ExpressionUUID->"6c80b84c-07bc-47d8-996c-5e8ef2dcf0c7"],
-Cell[75537, 1973, 783, 21, 42, "Output",ExpressionUUID->"8f5c695d-c726-4a3b-a3ce-33cdcac93e79"]
+Cell[72546, 1905, 2250, 44, 220, "Input",ExpressionUUID->"b15d1bac-9134-4524-a574-71ba244c3f45"],
+Cell[74799, 1951, 806, 21, 42, "Output",ExpressionUUID->"a1d4de3f-8eeb-4f45-8ff5-39b85ecc4abe"],
+Cell[75608, 1974, 808, 21, 42, "Output",ExpressionUUID->"c17d7779-99bd-4756-b1dd-72443ca286be"]
 }, Open  ]],
-Cell[76335, 1997, 22963, 584, 5008, "Input",ExpressionUUID->"b49567fc-39ed-41ab-8e1f-296802cacb92"],
-Cell[99301, 2583, 179, 3, 30, "Input",ExpressionUUID->"7323080d-d083-4334-9175-0773fa148841"],
 Cell[CellGroupData[{
-Cell[99505, 2590, 14266, 389, 1501, "Input",ExpressionUUID->"0fe7e6e6-1f34-4188-89a2-0f2504a5c194"],
-Cell[113774, 2981, 761, 20, 42, "Output",ExpressionUUID->"426c2026-5f68-452b-9512-f9563f951b31"],
-Cell[114538, 3003, 761, 20, 42, "Output",ExpressionUUID->"ccb754ba-adbd-4681-a0fd-d961f8cb5bc6"]
+Cell[76453, 2000, 23067, 585, 5029, "Input",ExpressionUUID->"b49567fc-39ed-41ab-8e1f-296802cacb92"],
+Cell[99523, 2587, 738, 20, 42, "Output",ExpressionUUID->"d00e7c8b-fc61-4532-aaf5-2cf8b5461c22"],
+Cell[100264, 2609, 736, 20, 42, "Output",ExpressionUUID->"f16998ae-3157-4404-9ac2-0f91ad25ede5"],
+Cell[101003, 2631, 736, 20, 42, "Output",ExpressionUUID->"ac6f0cf5-4ae6-4995-bfb4-6c79d35939a9"],
+Cell[101742, 2653, 740, 20, 42, "Output",ExpressionUUID->"6db345de-42e4-402a-8356-301b67ea2289"],
+Cell[102485, 2675, 736, 20, 42, "Output",ExpressionUUID->"c6667f8e-98dd-460e-9d29-12307878bf37"],
+Cell[103224, 2697, 734, 20, 42, "Output",ExpressionUUID->"a2310478-3f9e-45c1-ab04-73f66b392675"],
+Cell[103961, 2719, 739, 20, 42, "Output",ExpressionUUID->"8a71524f-7190-4a60-95ad-abf91129f3a3"],
+Cell[104703, 2741, 739, 20, 42, "Output",ExpressionUUID->"810d50fa-3d6f-42a9-9e74-a3fda52a0303"],
+Cell[105445, 2763, 738, 20, 42, "Output",ExpressionUUID->"96811fd3-ed00-4604-97d7-1cc956410348"],
+Cell[106186, 2785, 737, 20, 42, "Output",ExpressionUUID->"d16302f4-307a-495d-8d79-401deee8c3a8"],
+Cell[106926, 2807, 736, 20, 42, "Output",ExpressionUUID->"8f660706-f39a-49b5-9d28-a4969e2658da"],
+Cell[107665, 2829, 735, 20, 42, "Output",ExpressionUUID->"95e3fc94-7126-482d-8ce4-f13dfe2fef24"],
+Cell[108403, 2851, 737, 20, 42, "Output",ExpressionUUID->"2256d229-db46-4a9f-93d3-e23f6f171319"],
+Cell[109143, 2873, 737, 20, 42, "Output",ExpressionUUID->"47a287f9-7f00-4c6d-b2e2-43cb7651c942"],
+Cell[109883, 2895, 737, 20, 42, "Output",ExpressionUUID->"0d6b9fc0-1e18-4d0f-8cf6-e8b1717b948f"],
+Cell[110623, 2917, 739, 20, 42, "Output",ExpressionUUID->"4737870a-1745-433d-9145-d22cc21441dc"],
+Cell[111365, 2939, 736, 20, 42, "Output",ExpressionUUID->"10e60305-c8ae-4989-bb80-55fcb4227aec"],
+Cell[112104, 2961, 738, 20, 42, "Output",ExpressionUUID->"c406a791-0564-4d40-ba17-c2ac67897514"],
+Cell[112845, 2983, 738, 20, 42, "Output",ExpressionUUID->"cc78c7f7-7e7a-492b-b724-c6d3d778533c"],
+Cell[113586, 3005, 739, 20, 42, "Output",ExpressionUUID->"4ba73f5e-3eb9-46af-8f74-93aee732bdca"],
+Cell[114328, 3027, 736, 20, 42, "Output",ExpressionUUID->"d1530741-567a-42d2-98f8-d0e34330113a"],
+Cell[115067, 3049, 739, 20, 42, "Output",ExpressionUUID->"27b06f8d-30ce-4cb4-8406-d2c05a78e81b"],
+Cell[115809, 3071, 739, 20, 42, "Output",ExpressionUUID->"a66b7763-5c78-453a-bc33-fc87a95298e4"],
+Cell[116551, 3093, 736, 20, 42, "Output",ExpressionUUID->"6ef36cd0-510f-446b-8498-1491ab0a84b8"],
+Cell[117290, 3115, 737, 20, 42, "Output",ExpressionUUID->"ea9ebb08-b91a-4eee-816f-476436f868b1"],
+Cell[118030, 3137, 737, 20, 42, "Output",ExpressionUUID->"0302be60-f39b-45e4-ac75-de16ff9b7dd3"],
+Cell[118770, 3159, 737, 20, 42, "Output",ExpressionUUID->"46050e6b-84ba-409d-ad97-8c1eb2579e22"],
+Cell[119510, 3181, 737, 20, 42, "Output",ExpressionUUID->"cb28d893-84be-4df5-82ea-1b8a7225abc2"],
+Cell[120250, 3203, 737, 20, 42, "Output",ExpressionUUID->"2ecabd06-d904-41d2-a151-559e4f31cef9"],
+Cell[120990, 3225, 739, 20, 42, "Output",ExpressionUUID->"23ba37f9-f07f-4000-b2bd-d35a8d40c603"],
+Cell[121732, 3247, 737, 20, 42, "Output",ExpressionUUID->"d06239b1-5ca1-4173-9e65-2a0de46f6c49"],
+Cell[122472, 3269, 737, 20, 42, "Output",ExpressionUUID->"49d9badc-d5a7-421c-8a0d-f447fa4e899a"],
+Cell[123212, 3291, 739, 20, 42, "Output",ExpressionUUID->"37f20219-24f0-4123-ab1e-49d442b86a59"],
+Cell[123954, 3313, 737, 20, 42, "Output",ExpressionUUID->"bbbf805e-dbea-439e-b397-ec44433eaba8"],
+Cell[124694, 3335, 736, 20, 42, "Output",ExpressionUUID->"9696f563-1a24-4a75-bdea-4fe99f9b704a"],
+Cell[125433, 3357, 735, 20, 42, "Output",ExpressionUUID->"f71fddcc-f4e2-4a6c-9eb1-fe8b40817ba3"],
+Cell[126171, 3379, 737, 20, 42, "Output",ExpressionUUID->"b528273f-40e1-424e-8232-66669707feea"],
+Cell[126911, 3401, 737, 20, 42, "Output",ExpressionUUID->"355c58b3-3116-4ced-a342-61a3c1a6f5b6"],
+Cell[127651, 3423, 734, 20, 42, "Output",ExpressionUUID->"47bbfe7d-6ae9-40b6-8cde-8bbde7d5eeac"],
+Cell[128388, 3445, 737, 20, 42, "Output",ExpressionUUID->"2afb1aa2-a738-4391-8186-129ce53e53ba"],
+Cell[129128, 3467, 739, 20, 42, "Output",ExpressionUUID->"a2d8454b-8370-415a-85c0-d28439673853"],
+Cell[129870, 3489, 740, 20, 42, "Output",ExpressionUUID->"a98b6096-3d10-499c-87a8-9f08cbb483e5"],
+Cell[130613, 3511, 739, 20, 42, "Output",ExpressionUUID->"3967e101-2aec-4c8e-aeb4-b17f63e1eb42"],
+Cell[131355, 3533, 737, 20, 42, "Output",ExpressionUUID->"5f44cf77-b850-4446-af49-6a9f3bc6eebd"],
+Cell[132095, 3555, 739, 20, 42, "Output",ExpressionUUID->"0ba0344c-da91-4840-aedb-59fd106fb867"],
+Cell[132837, 3577, 735, 20, 42, "Output",ExpressionUUID->"ad2294ef-ecec-4230-b48f-01a8a3875af2"],
+Cell[133575, 3599, 737, 20, 42, "Output",ExpressionUUID->"3932df86-8251-46f1-acc8-3e518e8fdde8"],
+Cell[134315, 3621, 737, 20, 42, "Output",ExpressionUUID->"324a3a61-4baf-4e3b-ad87-3f57cf08f182"],
+Cell[135055, 3643, 737, 20, 42, "Output",ExpressionUUID->"44e0e04e-90d0-4e67-aaec-ad966d708354"],
+Cell[135795, 3665, 738, 20, 42, "Output",ExpressionUUID->"f11337f6-d401-4d60-ada8-e2d20135d662"],
+Cell[136536, 3687, 738, 20, 42, "Output",ExpressionUUID->"d57f13b7-131b-4dd8-b610-b3c4d2ecacc4"],
+Cell[137277, 3709, 737, 20, 42, "Output",ExpressionUUID->"be96c835-369a-4cf9-baf5-9f86e560d843"],
+Cell[138017, 3731, 738, 20, 42, "Output",ExpressionUUID->"fc22495c-1975-4e53-acf3-1acb3019db5d"],
+Cell[138758, 3753, 738, 20, 42, "Output",ExpressionUUID->"fa771005-f0a8-46a3-91d2-03d1cfa1cc71"],
+Cell[139499, 3775, 738, 20, 42, "Output",ExpressionUUID->"37a29345-e50f-40a2-8742-ccd6f2357b19"],
+Cell[140240, 3797, 738, 20, 42, "Output",ExpressionUUID->"a5bbb503-3055-467f-bd91-f6b4b4a1c707"],
+Cell[140981, 3819, 737, 20, 42, "Output",ExpressionUUID->"4dcab3ca-d3e1-4f66-9ed2-ead673eef774"],
+Cell[141721, 3841, 738, 20, 42, "Output",ExpressionUUID->"34ab0027-2c7b-453b-81f0-d20a261f97a4"],
+Cell[142462, 3863, 736, 20, 42, "Output",ExpressionUUID->"71ac41c9-4917-4be2-a2fc-9b8b56583cf6"]
 }, Open  ]],
-Cell[115314, 3026, 344, 8, 30, "Input",ExpressionUUID->"0cbae556-bde4-45b1-8f4b-53237b819b87"],
 Cell[CellGroupData[{
-Cell[115683, 3038, 675, 16, 52, "Input",ExpressionUUID->"bb3bb8d4-288a-4579-a183-55cfb53cfaae"],
-Cell[116361, 3056, 306, 5, 34, "Output",ExpressionUUID->"c5a39f87-5e69-4f71-9ba4-bbbecb3f5ea0"]
+Cell[143235, 3888, 122886, 3160, 1760, "Input",ExpressionUUID->"0fe7e6e6-1f34-4188-89a2-0f2504a5c194"],
+Cell[266124, 7050, 788, 21, 42, "Output",ExpressionUUID->"9fa42438-093a-4923-9d1c-50e2ff985a91"],
+Cell[266915, 7073, 785, 21, 42, "Output",ExpressionUUID->"292d341b-4c18-4062-9911-0bc1bc8cd21d"]
 }, Open  ]],
-Cell[116682, 3064, 105465, 2681, 178, "Input",ExpressionUUID->"7e3d9287-dac9-483f-ab55-17834a8aa63c"]
+Cell[267715, 7097, 849, 22, 73, "Input",ExpressionUUID->"0cbae556-bde4-45b1-8f4b-53237b819b87"],
+Cell[CellGroupData[{
+Cell[268589, 7123, 472, 11, 30, "Input",ExpressionUUID->"eb29a87d-9c64-4d90-8f1c-622b1e22f42b"],
+Cell[269064, 7136, 199, 4, 34, "Output",ExpressionUUID->"fbea09c4-736f-4e61-b50a-542e93b23f88"]
+}, Open  ]]
 }
 ]
 *)
